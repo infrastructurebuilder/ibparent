@@ -1,0 +1,6 @@
+.*
+target
+*.iml
+pom.xml.*
+release.properties
+/bin
