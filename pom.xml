@@ -93,6 +93,7 @@
     <egit.github.version>5.1.0.201809111528-r</egit.github.version>
     <embedded.redis.version>0.6</embedded.redis.version>
     <exec.maven.plugin.version>1.4.0</exec.maven.plugin.version>
+    <exception.translator.version>0.2.0</exception.translator.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
     <fluent.hc.version>4.5.2</fluent.hc.version>
     <functional.java.version>4.8.1</functional.java.version>
@@ -196,6 +197,12 @@
 
   <dependencyManagement>
     <dependencies>
+        <dependency>
+      <groupId>com.mscharhag</groupId>
+      <artifactId>et</artifactId>
+      <version>${exception.translator.version}</version>
+    </dependency>
+
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>

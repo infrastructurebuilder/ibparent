@@ -38,16 +38,14 @@
     </site>
   </distributionManagement>
   <issueManagement>
-    <url>${ghe.url.base}/${project.artifactId}/issues</url>
+    <url>${ghe.url.base}/ibparent/issues</url>
     <system>GitHub</system>
   </issueManagement>
   <dependencies>
     <dependency>
       <groupId>com.mscharhag</groupId>
       <artifactId>et</artifactId>
-      <version>0.2.0</version>
     </dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
