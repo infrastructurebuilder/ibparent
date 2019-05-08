@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>2</version>
+    <version>3-SNAPSHOT</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -32,6 +32,12 @@
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
   </issueManagement>
+  <scm>
+    <connection>scm:git:${git.url}</connection>
+    <developerConnection>scm:git:${git.url}</developerConnection>
+    <url>${git.scm.url}</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <maven.archetype.plugin.version>3.0.1</maven.archetype.plugin.version>
@@ -107,7 +113,6 @@
     <git.http.url>${github.url.base}/${project.artifactId}</git.http.url>
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
-    <git.url>${git.url.base}/${project.artifactId}.git</git.url>
     <gmavenplus.plugin.version>1.6.3</gmavenplus.plugin.version>
     <google.dagger.version>2.22.1</google.dagger.version>
     <google.guava.version>27.1-jre</google.guava.version>
