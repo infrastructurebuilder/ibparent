@@ -20,27 +20,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-  <groupId>org.infrastructurebuilder</groupId>
-  <artifactId>ibparent</artifactId>
-  <version>1-SNAPSHOT</version>
+    <groupId>org.infrastructurebuilder</groupId>
+    <artifactId>ibparent</artifactId>
+    <version>1-SNAPSHOT</version>
   </parent>
   <artifactId>ibexceptions</artifactId>
   <packaging>jar</packaging>
   <name>${project.artifactId}</name>
   <description>Infrastructurebilder exceptions</description>
   <inceptionYear>2019</inceptionYear>
-  <url>${ghe.url.base}/${project.artifactId}</url>
-  <distributionManagement>
-    <site>
-      <id>githubd8r</id>
-      <name>GitHub Pages</name>
-      <url>github:http://${team.group.id}.github.io/${project.artifactId}/site/${project.version}/</url>
-    </site>
-  </distributionManagement>
-  <issueManagement>
-    <url>${ghe.url.base}/ibparent/issues</url>
-    <system>GitHub</system>
-  </issueManagement>
+  <url>${github.url.base}/${project.artifactId}</url>
   <dependencies>
     <dependency>
       <groupId>com.mscharhag</groupId>
