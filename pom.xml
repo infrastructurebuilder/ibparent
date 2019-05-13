@@ -359,11 +359,6 @@
         <classifier>test</classifier>
       </dependency>
       <dependency>
-        <groupId>org.infrastructurebuilder</groupId>
-        <artifactId>ibexceptions</artifactId>
-        <version>${ib.exceptions.version}</version>
-      </dependency>
-      <dependency>
         <groupId>io.kamon</groupId>
         <artifactId>sigar-loader</artifactId>
         <version>${sigar.loader.version}</version>
