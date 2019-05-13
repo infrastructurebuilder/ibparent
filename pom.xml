@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>3-SNAPSHOT</version>
+    <version>3</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -64,6 +64,7 @@
     <karaf.tooling.version>4.2.4</karaf.tooling.version>
     <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version>
 
+    <ib.logconfig.version>0.9.0</ib.logconfig.version> <!--  A default.  This may or may not change over time -->
 
 
     <akka.http.version>2.0.5</akka.http.version>
@@ -78,15 +79,13 @@
     <apache.httpclient.version>4.5.8</apache.httpclient.version>
     <apache.poi.version>4.1.0</apache.poi.version>
     <apache.shiro.version>1.4.1</apache.shiro.version>
-    <aspectj.version>1.9.3</aspectj.version>
+    <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.12.2</assertj.core.version>
     <avro.core.version>1.8.0</avro.core.version>
-    <aws.sdk.version>1.11.548</aws.sdk.version>
-    <bettercloud.vault.driver.version>3.1.0</bettercloud.vault.driver.version>
+    <aws.sdk.version>1.11.550</aws.sdk.version>
     <bettercloud.vault.version>4.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.61</bouncycastle.version>
-    <claim.model.version>3.0.1</claim.model.version>
     <commons.beanutils.version>1.9.2</commons.beanutils.version>
     <commons.beanutils.version>1.9.3</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
@@ -98,15 +97,13 @@
     <coveralls.maven.plugin.version>4.3.0</coveralls.maven.plugin.version>
     <coveralls.repoToken>?X?X?XX?</coveralls.repoToken>
     <cucumber.jvm.deps.version>1.0.5</cucumber.jvm.deps.version>
-    <didisoft.pgp.version>3.1.3-5</didisoft.pgp.version>
     <discipline.version>0.7.3</discipline.version>
-    <dispatch.core.version>0.11.2</dispatch.core.version>
     <egit.github.version>5.1.0.201809111528-r</egit.github.version>
     <embedded.redis.version>0.6</embedded.redis.version>
     <exec.maven.plugin.version>1.4.0</exec.maven.plugin.version>
     <exception.translator.version>0.2.0</exception.translator.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
-    <fluent.hc.version>4.5.2</fluent.hc.version>
+    <fluent.hc.version>4.5.8</fluent.hc.version>
     <functional.java.version>4.8.1</functional.java.version>
     <github.host>github.com</github.host>
     <github.url.base>https://${github.host}/${team.group.id}</github.url.base>
@@ -119,8 +116,6 @@
     <h2.database.version>1.4.199</h2.database.version>
     <hazelcast.version>3.12</hazelcast.version>
     <hikari.cp.version>3.3.1</hikari.cp.version>
-    <history.persistence.api.version>1.0.1</history.persistence.api.version>
-    <history.persistence.api.version>2.1.0</history.persistence.api.version>
     <itextpdf.version>5.5.13</itextpdf.version>
     <jackson.version>2.9.8</jackson.version>
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
@@ -132,7 +127,7 @@
     <jacoco.ut.execution.dest.file>${jacoco.ut.execution.data.file}</jacoco.ut.execution.dest.file>
     <jacoco.version>0.8.3</jacoco.version>
     <jarsigner.skip>true</jarsigner.skip>
-    <java.faker.version>0.17.2</java.faker.version>
+    <java.faker.version>0.18</java.faker.version>
     <java.semver4j.version>2.2.0</java.semver4j.version>
     <java.semver.version>0.9.0</java.semver.version>
     <javaslang.version>2.0.5</javaslang.version>
@@ -143,14 +138,14 @@
     <jgit.version>5.3.1.201904271842-r</jgit.version>
     <jmh.version>1.21</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
-    <joda.time.version>2.10.1</joda.time.version>
+    <joda.time.version>2.10.2</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
     <jooq.jooq.version>3.11.11</jooq.jooq.version>
     <jooq.joor.version>0.9.11</jooq.joor.version>
     <jooq.joox.version>1.6.1</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
     <json.version>20180813</json.version>
-    <jsoup.version>1.11.3</jsoup.version>
+    <jsoup.version>1.12.1</jsoup.version>
     <junit.interface.version>0.11</junit.interface.version>
     <kafka.version>2.2.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
@@ -160,10 +155,8 @@
     <logback.version>1.2.3</logback.version>
     <logstash.logback.encoder.version>5.3</logstash.logback.encoder.version>
     <lombok.version>1.18.8</lombok.version>
-    <macro.paradise.version>2.1.0</macro.paradise.version>
     <mockito.core.version>2.21.0</mockito.core.version>
     <mockito.version>2.27.0</mockito.version>
-    <monocle.version>1.4.0</monocle.version>
     <mysql.connector.version>8.0.16</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
@@ -171,8 +164,6 @@
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
-    <reactive.kafka.version>0.10.0</reactive.kafka.version>
-    <refined.version>0.8.4</refined.version>
     <service.lifecycle.api.version>2.0.0</service.lifecycle.api.version>
     <sesame.version>4.1.2</sesame.version>
     <sigar.loader.version>1.6.6-rev002</sigar.loader.version>
@@ -182,9 +173,7 @@
     <slf4j.version>1.7.26</slf4j.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
-    <spring.version>5.1.6.RELEASE</spring.version>
-    <standard.invoker.settings.type>junit</standard.invoker.settings.type>
-    <standard.invoker.settings.version>0.9.1</standard.invoker.settings.version>
+    <spring.version>5.1.7.RELEASE</spring.version>
     <tika.version>1.20</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
     <typesafe.config.version>1.3.4</typesafe.config.version>
@@ -684,12 +673,6 @@
         <artifactId>functionaljava-quickcheck</artifactId>
         <version>${functional.java.version}</version>
       </dependency>
-      <dependency>
-        <groupId>com.didisoft</groupId>
-        <artifactId>pgplib</artifactId>
-        <version>${didisoft.pgp.version}</version>
-      </dependency>
-
       <dependency>
         <groupId>org.jooq</groupId>
         <artifactId>joox-java-6</artifactId>
