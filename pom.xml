@@ -65,7 +65,7 @@
     <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version>
 
     <ib.logconfig.version>0.9.0</ib.logconfig.version> <!--  A default.  This may or may not change over time -->
-
+    <ib.exceptions.version>${project.version}</ib.exceptions.version>
 
     <akka.http.version>2.0.5</akka.http.version>
     <akka.stream.version>2.0.5</akka.stream.version>
@@ -195,7 +195,6 @@
         <artifactId>et</artifactId>
         <version>${exception.translator.version}</version>
       </dependency>
-
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
@@ -358,6 +357,11 @@
         <artifactId>iblogconfig</artifactId>
         <version>${ib.logconfig.version}</version>
         <classifier>test</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder</groupId>
+        <artifactId>ibexceptions</artifactId>
+        <version>${ib.exceptions.version}</version>
       </dependency>
       <dependency>
         <groupId>io.kamon</groupId>
