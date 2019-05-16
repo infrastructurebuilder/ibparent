@@ -30,6 +30,7 @@
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
   </issueManagement>
+
   <scm>
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
@@ -80,7 +81,7 @@
     <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.12.2</assertj.core.version>
     <avro.core.version>1.8.0</avro.core.version>
-    <aws.sdk.version>1.11.550</aws.sdk.version>
+    <aws.sdk.version>1.11.553</aws.sdk.version>
     <bettercloud.vault.version>4.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.61</bouncycastle.version>
@@ -115,7 +116,7 @@
     <hazelcast.version>3.12</hazelcast.version>
     <hikari.cp.version>3.3.1</hikari.cp.version>
     <itextpdf.version>5.5.13</itextpdf.version>
-    <jackson.version>2.9.8</jackson.version>
+    <jackson.version>2.9.9</jackson.version>
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
     <jacoco.it.execution.dest.file>${jacoco.it.execution.data.file}</jacoco.it.execution.dest.file>
     <jacoco.maven.plugin.version>${jacoco.version}</jacoco.maven.plugin.version>
@@ -170,7 +171,7 @@
     <site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
     <slf4j.version>1.7.26</slf4j.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
+    <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
     <spring.version>5.1.7.RELEASE</spring.version>
     <tika.version>1.20</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
