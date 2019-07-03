@@ -15,7 +15,9 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
@@ -49,6 +51,7 @@
     <maven.javadoc.plugin.version>3.1.0</maven.javadoc.plugin.version>
     <maven.jdepend.plugin.version>2.0</maven.jdepend.plugin.version>
     <maven.jxr.plugin.version>2.5</maven.jxr.plugin.version>
+    <maven.modello.plugin.version>1.9.1</maven.modello.plugin.version>
     <maven.plexus.component.metadata.version>2.0.0</maven.plexus.component.metadata.version>
     <maven.plugin.annotations.version>3.6.1</maven.plugin.annotations.version>
     <maven.plugin.plugin.version>3.6.0</maven.plugin.plugin.version>
@@ -1007,6 +1010,14 @@
           <version>${maven.war.plugin.version}</version>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.modello</groupId>
+          <artifactId>modello-maven-plugin</artifactId>
+          <version>${maven.modello.plugin.version}</version>
+          <configuration>
+            <useJava5>true</useJava5>
+          </configuration>
+        </plugin>
+        <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
           <version>${maven.bundle.plugin.version}</version>
@@ -1118,15 +1129,18 @@
               <configuration>
                 <haltOnFailure>true</haltOnFailure>
                 <rules>
-                  <rule implementation="org.jacoco.maven.RuleConfiguration">
+                  <rule
+                    implementation="org.jacoco.maven.RuleConfiguration">
                     <element>BUNDLE</element>
                     <limits>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>INSTRUCTION</counter>
                         <value>COVEREDRATIO</value>
                         <minimum>.${test.coverage.percentage.required}</minimum>
                       </limit>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>CLASS</counter>
                         <value>MISSEDCOUNT</value>
                         <maximum>${jacoco.max.missed.classes}</maximum>
