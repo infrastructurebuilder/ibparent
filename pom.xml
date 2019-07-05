@@ -938,6 +938,14 @@
             <skipTests>false</skipTests>
             <trimStackTrace>false</trimStackTrace>
             <systemPropertyVariables>
+              <!--  Keep this list in-sync with maven-surefire-plugin list  -->
+              <localRepository>${settings.localRepository}</localRepository>
+              <projectArtifactId>${project.artifactId}</projectArtifactId>
+              <projectBuildDirectory>${project.build.directory}</projectBuildDirectory>
+              <projectBuildOutputDirectory>${project.build.outputDirectory}</projectBuildOutputDirectory>
+              <projectGroupId>${project.groupId}</projectGroupId>
+              <projectVersion>${project.version}</projectVersion>
+              <target_dir>${project.build.directory}</target_dir>
             </systemPropertyVariables>
           </configuration>
         </plugin>
@@ -995,9 +1003,15 @@
             <failIfNoTests>${surefire.failIfNoTests}</failIfNoTests>
             <skipTests>false</skipTests>
             <trimStackTrace>false</trimStackTrace>
+               <!--  Keep this list in-sync with maven-failsafe-plugin list  -->
             <systemPropertyVariables>
+              <localRepository>${settings.localRepository}</localRepository>
+              <projectArtifactId>${project.artifactId}</projectArtifactId>
+              <projectBuildDirectory>${project.build.directory}</projectBuildDirectory>
+              <projectBuildOutputDirectory>${project.build.outputDirectory}</projectBuildOutputDirectory>
+              <projectGroupId>${project.groupId}</projectGroupId>
+              <projectVersion>${project.version}</projectVersion>
               <target_dir>${project.build.directory}</target_dir>
-              <hazelcast.phone.home.enabled>false</hazelcast.phone.home.enabled>
             </systemPropertyVariables>
           </configuration>
         </plugin>
