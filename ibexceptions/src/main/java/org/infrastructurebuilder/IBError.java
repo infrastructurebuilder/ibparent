@@ -15,8 +15,17 @@
  */
 package org.infrastructurebuilder;
 
+/**
+ * Needs some javadocs here
+ * @author mykel.alvis
+ *
+ */
 public interface IBError {
 
+  /**
+   * Produce the error's message
+   * @return Non-null string message
+   */
   String getMessage();
 
 }
