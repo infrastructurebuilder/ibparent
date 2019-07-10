@@ -39,6 +39,7 @@
   </scm>
 
   <properties>
+    <maven.antrun.plugin.version>1.8</maven.antrun.plugin.version>
     <maven.archetype.plugin.version>3.1.1</maven.archetype.plugin.version>
     <maven.bundle.plugin.version>4.2.0</maven.bundle.plugin.version>
     <maven.cobertura.version>2.7</maven.cobertura.version>
@@ -921,6 +922,10 @@
         <plugin>
           <artifactId>maven-archetype-plugin</artifactId>
           <version>${maven.archetype.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>${maven.antrun.plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
