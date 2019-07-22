@@ -15,12 +15,14 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>8</version>
+    <version>9-SNAPSHOT</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -105,6 +107,7 @@
     <exception.translator.version>0.2.0</exception.translator.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
     <fluent.hc.version>4.5.9</fluent.hc.version>
+    <freemarker.version>2.3.28</freemarker.version>
     <functional.java.version>4.8.1</functional.java.version>
     <github.host>github.com</github.host>
     <github.url.base>https://${github.host}/${team.group.id}</github.url.base>
@@ -179,6 +182,7 @@
     <trove4j.version>3.0.3</trove4j.version>
     <typesafe.config.version>1.3.4</typesafe.config.version>
     <validation.api.version>2.0.1.Final</validation.api.version>
+    <velocity.version>2.1</velocity.version>
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.version>3.7.1</vertx.version>
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
@@ -245,6 +249,11 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>${freemarker.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
@@ -538,6 +547,17 @@
         <artifactId>tika-core</artifactId>
         <version>${tika.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-engine-core</artifactId>
+        <version>${velocity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-engine-scripting</artifactId>
+        <version>${velocity.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
@@ -1148,15 +1168,18 @@
               <configuration>
                 <haltOnFailure>true</haltOnFailure>
                 <rules>
-                  <rule implementation="org.jacoco.maven.RuleConfiguration">
+                  <rule
+                    implementation="org.jacoco.maven.RuleConfiguration">
                     <element>BUNDLE</element>
                     <limits>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>INSTRUCTION</counter>
                         <value>COVEREDRATIO</value>
                         <minimum>.${test.coverage.percentage.required}</minimum>
                       </limit>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>CLASS</counter>
                         <value>MISSEDCOUNT</value>
                         <maximum>${jacoco.max.missed.classes}</maximum>
