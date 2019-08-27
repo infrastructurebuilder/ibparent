@@ -89,7 +89,7 @@
     <bettercloud.vault.version>4.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.62</bouncycastle.version>
-    <chronicle.map.version>3.17.3</chronicle.map.version>
+    <chronicle.map.version>3.17.4</chronicle.map.version>
     <commons.beanutils.version>1.9.2</commons.beanutils.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
