@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>10</version>
+    <version>11-SNAPSHOT</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
