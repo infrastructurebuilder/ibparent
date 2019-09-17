@@ -83,7 +83,7 @@
     <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.13.2</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.631</aws.sdk.version>
+    <aws.sdk.version>1.11.632</aws.sdk.version>
     <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.63</bouncycastle.version>
