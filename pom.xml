@@ -472,6 +472,11 @@
         <groupId>net.sf.corn</groupId>
         <artifactId>corn-cps</artifactId>
         <version>${corn.cps.version}</version>
+        <exclusions>
+        <exclusion>
+          <groupId>com.sun.tools</groupId>
+          <artifactId>tools</artifactId>
+        </exclusion></exclusions>
       </dependency>
       <dependency>
         <groupId>net.sf.trove4j</groupId>
