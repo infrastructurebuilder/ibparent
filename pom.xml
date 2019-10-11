@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>12</version>
+    <version>13-SNAPSHOT</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -66,7 +66,7 @@
     <maven.taglist.plugin.version>2.4</maven.taglist.plugin.version>
     <maven.war.plugin.version>3.2.3</maven.war.plugin.version>
 
-    <karaf.tooling.version>4.2.6</karaf.tooling.version>
+    <karaf.tooling.version>4.2.7</karaf.tooling.version>
     <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version>
 
     <ib.logconfig.version>0.10.0</ib.logconfig.version> <!--  A default.  This may or may not change over time -->
@@ -87,11 +87,11 @@
     <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.13.2</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.641</aws.sdk.version>
+    <aws.sdk.version>1.11.650</aws.sdk.version>
     <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.63</bouncycastle.version>
-    <chronicle.map.version>3.17.5</chronicle.map.version>
+    <chronicle.map.version>3.17.6</chronicle.map.version>
     <commons.beanutils.version>1.9.2</commons.beanutils.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
@@ -121,7 +121,7 @@
     <google.dagger.version>2.24</google.dagger.version>
     <google.guava.version>28.1-jre</google.guava.version>
     <h2.database.version>1.4.199</h2.database.version>
-    <hazelcast.version>3.12.2</hazelcast.version>
+    <hazelcast.version>3.12.3</hazelcast.version>
     <hikari.cp.version>3.4.1</hikari.cp.version>
     <itextpdf.version>5.5.13.1</itextpdf.version>
     <jackson.version>2.9.9</jackson.version>
@@ -163,7 +163,8 @@
     <logstash.logback.encoder.version>6.2</logstash.logback.encoder.version>
     <lombok.version>1.18.10</lombok.version>
     <mockito.core.version>2.21.0</mockito.core.version>
-    <mockito.version>3.0.0</mockito.version>
+    <mockito.version>3.1.0</mockito.version>
+    <mybatis.version>3.5.2</mybatis.version>
     <mysql.connector.version>8.0.17</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
@@ -179,8 +180,8 @@
     <site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
     <slf4j.version>1.7.26</slf4j.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.1.8.RELEASE</spring.boot.version>
-    <spring.version>5.1.10.RELEASE</spring.version>
+    <spring.boot.version>2.1.9.RELEASE</spring.boot.version>
+    <spring.version>5.2.0.RELEASE</spring.version>
     <tika.version>1.22</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
     <typesafe.config.version>1.3.4</typesafe.config.version>
@@ -736,11 +737,6 @@
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
-        <artifactId>mockito-all</artifactId>
-        <version>2.0.2-beta</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>${mockito.version}</version>
         <scope>test</scope>
@@ -748,7 +744,7 @@
       <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
-        <version>3.2.5</version>
+        <version>${mybatis.version}</version>
       </dependency>
       <dependency>
         <groupId>org.openjdk.jmh</groupId>
