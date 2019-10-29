@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>14-SNAPSHOT</version>
+    <version>14</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -83,9 +83,9 @@
     <apache.poi.version>4.1.1</apache.poi.version>
     <apache.shiro.version>1.4.1</apache.shiro.version>
     <aspectj.version>1.9.4</aspectj.version>
-    <assertj.core.version>3.13.2</assertj.core.version>
+    <assertj.core.version>3.14.0</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.659</aws.sdk.version>
+    <aws.sdk.version>1.11.661</aws.sdk.version>
     <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
