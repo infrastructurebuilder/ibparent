@@ -123,7 +123,7 @@
     <hazelcast.version>3.12.3</hazelcast.version>
     <hikari.cp.version>3.4.1</hikari.cp.version>
     <itextpdf.version>5.5.13.1</itextpdf.version>
-    <jackson.version>2.9.9</jackson.version>
+    <jackson.version>2.10.0.pr3</jackson.version><!-- I hate doing this, but there's a vulnerability -->
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
     <jacoco.it.execution.dest.file>${jacoco.it.execution.data.file}</jacoco.it.execution.dest.file>
     <jacoco.maven.plugin.version>${jacoco.version}</jacoco.maven.plugin.version>
