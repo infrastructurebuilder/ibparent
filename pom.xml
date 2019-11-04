@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>14</version>
+    <version>15-SNAPSHOT</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -58,7 +58,6 @@
     <maven.pmd.plugin.version>3.10.0</maven.pmd.plugin.version>
     <maven.shade.plugin.version>3.2.1</maven.shade.plugin.version>
     <maven.sisu.plugin.version>0.3.3</maven.sisu.plugin.version><!-- 0.3.3 -->
-    <maven.source.plugin.version>3.1.0</maven.source.plugin.version>
     <maven.surefire.plugin.version>3.0.0-M3</maven.surefire.plugin.version>
     <maven.surefire.report.plugin.version>2.2.0</maven.surefire.report.plugin.version>
     <maven.taglist.plugin.version>2.4</maven.taglist.plugin.version>
@@ -85,7 +84,7 @@
     <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.14.0</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.661</aws.sdk.version>
+    <aws.sdk.version>1.11.665</aws.sdk.version>
     <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
@@ -120,7 +119,7 @@
     <google.dagger.version>2.25.2</google.dagger.version>
     <google.guava.version>28.1-jre</google.guava.version>
     <h2.database.version>1.4.200</h2.database.version>
-    <hazelcast.version>3.12.3</hazelcast.version>
+    <hazelcast.version>3.12.4</hazelcast.version>
     <hikari.cp.version>3.4.1</hikari.cp.version>
     <itextpdf.version>5.5.13.1</itextpdf.version>
     <jackson.version>2.10.0.pr3</jackson.version><!-- I hate doing this, but there's a vulnerability -->
@@ -142,11 +141,11 @@
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.78</jcommander.version>
     <jgit.version>5.5.1.201910021850-r</jgit.version>
-    <jmh.version>1.21</jmh.version>
+    <jmh.version>1.22</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.5</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.12.2</jooq.jooq.version>
+    <jooq.jooq.version>3.12.3</jooq.jooq.version>
     <jooq.joor.version>0.9.12</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
@@ -182,7 +181,7 @@
     <snappy.java.version>1.1.7.3</snappy.java.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
-    <spring.version>5.2.0.RELEASE</spring.version>
+    <spring.version>5.2.1.RELEASE</spring.version>
     <sqlite.jdbc.version>3.28.0</sqlite.jdbc.version>
     <tika.version>1.22</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
