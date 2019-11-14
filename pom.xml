@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>15</version>
+    <version>16</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -80,11 +80,11 @@
     <apache.curator.version>4.2.0</apache.curator.version>
     <apache.httpclient.version>4.5.10</apache.httpclient.version>
     <apache.poi.version>4.1.1</apache.poi.version>
-    <apache.shiro.version>1.4.1</apache.shiro.version>
+    <apache.shiro.version>1.4.2</apache.shiro.version>
     <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.14.0</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.671</aws.sdk.version>
+    <aws.sdk.version>1.11.674</aws.sdk.version>
     <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
@@ -115,7 +115,7 @@
     <git.http.url>${github.url.base}/${project.artifactId}</git.http.url>
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
-    <gmavenplus.plugin.version>1.8.0</gmavenplus.plugin.version>
+    <gmavenplus.plugin.version>1.8.1</gmavenplus.plugin.version>
     <google.dagger.version>2.25.2</google.dagger.version>
     <google.guava.version>28.1-jre</google.guava.version>
     <h2.database.version>1.4.200</h2.database.version>
@@ -167,7 +167,7 @@
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.0</opencsv.version>
-    <owasp.dependency.check.maven.version>5.2.2</owasp.dependency.check.maven.version>
+    <owasp.dependency.check.maven.version>5.2.4</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
