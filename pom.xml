@@ -15,7 +15,9 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
@@ -101,6 +103,7 @@
     <coveralls.repoToken>?X?X?XX?</coveralls.repoToken>
     <cucumber.jvm.deps.version>1.0.5</cucumber.jvm.deps.version>
     <discipline.version>0.7.3</discipline.version>
+    <derby.version>10.15.1.3</derby.version>
     <dom4j.version>2.1.1</dom4j.version>
     <egit.github.version>5.1.0.201809111528-r</egit.github.version>
     <embedded.redis.version>0.6</embedded.redis.version>
@@ -151,6 +154,7 @@
     <jsonassert.version>1.5.0</jsonassert.version>
     <json.version>20190722</json.version>
     <jsoup.version>1.12.1</jsoup.version>
+    <jtds.version>1.3.1</jtds.version>
     <junit.interface.version>0.11</junit.interface.version>
     <kafka.version>2.3.1</kafka.version>
     <kamon.version>0.6.5</kamon.version>
@@ -160,6 +164,7 @@
     <logback.version>1.2.3</logback.version>
     <logstash.logback.encoder.version>6.2</logstash.logback.encoder.version>
     <lombok.version>1.18.10</lombok.version>
+    <mariadb.java.client.version>2.5.1</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
     <mockito.version>3.1.0</mockito.version>
     <mybatis.version>3.5.3</mybatis.version>
@@ -202,33 +207,39 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.mscharhag</groupId>
         <artifactId>et</artifactId>
         <version>${exception.translator.version}</version>
       </dependency>
       <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>${logback.version}</version>
-      </dependency>
-
-
-      <dependency>
-        <groupId>org.skyscreamer</groupId>
-        <artifactId>jsonassert</artifactId>
-        <version>${jsonassert.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>com.vaadin.external.google</groupId>
-            <artifactId>android-json</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-
-      <dependency>
         <groupId>com.amazonaws</groupId>
         <artifactId>amazon-kinesis-client</artifactId>
         <version>${amazon.kinesis.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk</artifactId>
+        <version>${aws.sdk.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-s3</artifactId>
+        <version>${aws.sdk.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-sns</artifactId>
+        <version>${aws.sdk.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-sqs</artifactId>
+        <version>${aws.sdk.version}</version>
       </dependency>
       <dependency>
         <groupId>com.bettercloud</groupId>
@@ -254,11 +265,6 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.freemarker</groupId>
-        <artifactId>freemarker</artifactId>
-        <version>${freemarker.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
@@ -301,6 +307,7 @@
         <artifactId>guava</artifactId>
         <version>${google.guava.version}</version>
       </dependency>
+
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
@@ -372,12 +379,6 @@
         <artifactId>cucumber-jvm-deps</artifactId>
         <version>${cucumber.jvm.deps.version}</version>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.infrastructurebuilder.util</groupId>
-        <artifactId>iblogconfig</artifactId>
-        <version>${ib.logconfig.version}</version>
-        <classifier>test</classifier>
       </dependency>
       <dependency>
         <groupId>io.kamon</groupId>
@@ -492,6 +493,12 @@
         <version>${trove4j.version}</version>
       </dependency>
       <dependency>
+        <groupId>net.sourceforge.jtds</groupId>
+        <artifactId>jtds</artifactId>
+        <version>${jtds.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.apache.ant</groupId>
         <artifactId>ant</artifactId>
         <version>${apache.ant.version}</version>
@@ -531,6 +538,16 @@
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-test</artifactId>
         <version>${apache.curator.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.derby</groupId>
+        <artifactId>derby</artifactId>
+        <version>${derby.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.derby</groupId>
+        <artifactId>derbyclient</artifactId>
+        <version>${derby.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -634,6 +651,11 @@
         <artifactId>org.eclipse.egit.github.core</artifactId>
         <version>${egit.github.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>${freemarker.version}</version>
+      </dependency>
       <!-- FIXME The org.functionaljava deps appear dangerous in the face of changing JVM editions -->
       <dependency>
         <groupId>org.functionaljava</groupId>
@@ -649,6 +671,12 @@
         <groupId>org.functionaljava</groupId>
         <artifactId>functionaljava_1.8</artifactId>
         <version>${functional.java.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder.util</groupId>
+        <artifactId>iblogconfig</artifactId>
+        <version>${ib.logconfig.version}</version>
+        <classifier>test</classifier>
       </dependency>
       <dependency>
         <groupId>org.jacoco</groupId>
@@ -698,31 +726,27 @@
         <version>${jooq.joor.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.mariadb.jdbc</groupId>
+        <artifactId>mariadb-java-client</artifactId>
+        <version>${mariadb.java.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.skyscreamer</groupId>
+        <artifactId>jsonassert</artifactId>
+        <version>${jsonassert.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
         <groupId>org.xerial.snappy</groupId>
         <artifactId>snappy-java</artifactId>
         <version>${snappy.java.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>com.amazonaws</groupId>
-        <artifactId>aws-java-sdk</artifactId>
-        <version>${aws.sdk.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.amazonaws</groupId>
-        <artifactId>aws-java-sdk-s3</artifactId>
-        <version>${aws.sdk.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.amazonaws</groupId>
-        <artifactId>aws-java-sdk-sns</artifactId>
-        <version>${aws.sdk.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.amazonaws</groupId>
-        <artifactId>aws-java-sdk-sqs</artifactId>
-        <version>${aws.sdk.version}</version>
-      </dependency>
       <dependency>
         <groupId>org.functionaljava</groupId>
         <artifactId>functionaljava</artifactId>
@@ -1225,15 +1249,18 @@
               <configuration>
                 <haltOnFailure>true</haltOnFailure>
                 <rules>
-                  <rule implementation="org.jacoco.maven.RuleConfiguration">
+                  <rule
+                    implementation="org.jacoco.maven.RuleConfiguration">
                     <element>BUNDLE</element>
                     <limits>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>INSTRUCTION</counter>
                         <value>COVEREDRATIO</value>
                         <minimum>.${test.coverage.percentage.required}</minimum>
                       </limit>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>CLASS</counter>
                         <value>MISSEDCOUNT</value>
                         <maximum>${jacoco.max.missed.classes}</maximum>
