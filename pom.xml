@@ -15,7 +15,9 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
@@ -25,7 +27,7 @@
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
   <url>${ib.site.view.url}/</url>
-  <version>22-SNAPSHOT</version>
+  <version>21-SNAPSHOT</version>
   <issueManagement>
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
@@ -84,7 +86,7 @@
     <aspectj.version>1.9.4</aspectj.version>
     <assertj.core.version>3.14.0</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.680</aws.sdk.version>
+    <aws.sdk.version>1.11.679</aws.sdk.version>
     <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
@@ -1247,15 +1249,18 @@
               <configuration>
                 <haltOnFailure>true</haltOnFailure>
                 <rules>
-                  <rule implementation="org.jacoco.maven.RuleConfiguration">
+                  <rule
+                    implementation="org.jacoco.maven.RuleConfiguration">
                     <element>BUNDLE</element>
                     <limits>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>INSTRUCTION</counter>
                         <value>COVEREDRATIO</value>
                         <minimum>.${test.coverage.percentage.required}</minimum>
                       </limit>
-                      <limit implementation="org.jacoco.report.check.Limit">
+                      <limit
+                        implementation="org.jacoco.report.check.Limit">
                         <counter>CLASS</counter>
                         <value>MISSEDCOUNT</value>
                         <maximum>${jacoco.max.missed.classes}</maximum>
