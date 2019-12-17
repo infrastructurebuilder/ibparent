@@ -87,8 +87,8 @@
     <aspectj.version>1.9.5</aspectj.version>
     <assertj.core.version>3.14.0</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.693</aws.sdk.version>
-    <bettercloud.vault.version>5.0.0</bettercloud.vault.version>
+    <aws.sdk.version>1.11.694</aws.sdk.version>
+    <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
     <chronicle.map.version>3.17.8</chronicle.map.version>
@@ -121,7 +121,7 @@
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>1.8.1</gmavenplus.plugin.version>
-    <google.dagger.version>2.25.2</google.dagger.version>
+    <google.dagger.version>2.25.3</google.dagger.version>
     <google.guava.version>28.1-jre</google.guava.version>
     <google.protobuf.java.version>3.11.1</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
@@ -146,7 +146,6 @@
     <javax.inject.version>1</javax.inject.version>
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.78</jcommander.version>
-    <jgit.version>5.6.0.201912101111-r</jgit.version>
     <jmh.version>1.22</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.5</joda.time.version>
