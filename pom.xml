@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>19-SNAPSHOT</version>
+    <version>20</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -41,6 +41,7 @@
   </scm>
 
   <properties>
+
     <maven.antrun.plugin.version>1.8</maven.antrun.plugin.version>
     <maven.archetype.plugin.version>3.1.2</maven.archetype.plugin.version>
     <maven.bundle.plugin.version>4.2.1</maven.bundle.plugin.version>
