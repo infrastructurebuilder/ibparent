@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>21</version>
+    <version>22</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -86,7 +86,7 @@
     <aspectj.version>1.9.5</aspectj.version>
     <assertj.core.version>3.14.0</assertj.core.version>
     <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.696</aws.sdk.version>
+    <aws.sdk.version>1.11.698</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
