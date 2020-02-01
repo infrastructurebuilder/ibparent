@@ -159,7 +159,7 @@
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.5</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.12.3</jooq.jooq.version>
+    <jooq.jooq.version>3.12.4</jooq.jooq.version>
     <jooq.joor.version>0.9.12</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
