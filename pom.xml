@@ -57,7 +57,7 @@
     <maven.plugin.plugin.version>3.6.0</maven.plugin.plugin.version>
 
     <maven.pmd.plugin.version>3.10.0</maven.pmd.plugin.version>
-    <maven.shade.plugin.version>3.2.1</maven.shade.plugin.version>
+    <maven.shade.plugin.version>3.2.2</maven.shade.plugin.version>
     <maven.sisu.plugin.version>0.3.4</maven.sisu.plugin.version>
     <maven.surefire.plugin.version>3.0.0-M4</maven.surefire.plugin.version>
     <maven.surefire.report.plugin.version>2.2.0</maven.surefire.report.plugin.version>
@@ -81,12 +81,12 @@
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
     <apache.curator.version>4.2.0</apache.curator.version>
     <apache.httpclient.version>4.5.11</apache.httpclient.version>
-    <apache.poi.version>4.1.1</apache.poi.version>
+    <apache.poi.version>4.1.2</apache.poi.version>
     <apache.shiro.version>1.5.0</apache.shiro.version>
     <aspectj.version>1.9.5</aspectj.version>
     <assertj.core.version>3.15.0</assertj.core.version>
-    <avro.core.version>1.9.1</avro.core.version>
-    <aws.sdk.version>1.11.718</aws.sdk.version>
+    <avro.core.version>1.9.2</avro.core.version>
+    <aws.sdk.version>1.11.726</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
@@ -122,7 +122,7 @@
     <gmavenplus.plugin.version>1.8.1</gmavenplus.plugin.version>
     <google.dagger.version>2.26</google.dagger.version>
     <google.guava.version>28.2-jre</google.guava.version>
-    <google.protobuf.java.version>3.11.3</google.protobuf.java.version>
+    <google.protobuf.java.version>3.11.4</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
     <hazelcast.version>4.0</hazelcast.version>
     <hikari.cp.version>3.4.2</hikari.cp.version>
@@ -137,7 +137,7 @@
     <jacoco.ut.execution.dest.file>${jacoco.ut.execution.data.file}</jacoco.ut.execution.dest.file>
     <jacoco.version>0.8.5</jacoco.version>
     <jarsigner.skip>true</jarsigner.skip>
-    <java.faker.version>1.0.1</java.faker.version>
+    <java.faker.version>1.0.2</java.faker.version>
     <java.semver4j.version>3.1.0</java.semver4j.version>
     <java.semver.version>0.9.0</java.semver.version>
     <javaslang.version>2.0.5</javaslang.version>
@@ -149,7 +149,7 @@
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.5</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.12.4</jooq.jooq.version>
+    <jooq.jooq.version>3.13.0</jooq.jooq.version>
     <jooq.joor.version>0.9.12</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
@@ -186,7 +186,7 @@
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
     <snappy.java.version>1.1.7.3</snappy.java.version>
     <spotbugs.maven.plugin.version>3.1.12.2</spotbugs.maven.plugin.version>
-    <spotbugs.version>3.1.12</spotbugs.version>
+    <spotbugs.version>3.1.12</spotbugs.version> <!-- 4.0.0 -->
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
     <spring.version>5.2.3.RELEASE</spring.version>
