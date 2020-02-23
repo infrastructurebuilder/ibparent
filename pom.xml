@@ -82,11 +82,11 @@
     <apache.curator.version>4.2.0</apache.curator.version>
     <apache.httpclient.version>4.5.11</apache.httpclient.version>
     <apache.poi.version>4.1.2</apache.poi.version>
-    <apache.shiro.version>1.5.0</apache.shiro.version>
+    <apache.shiro.version>1.5.1</apache.shiro.version>
     <aspectj.version>1.9.5</aspectj.version>
     <assertj.core.version>3.15.0</assertj.core.version>
     <avro.core.version>1.9.2</avro.core.version>
-    <aws.sdk.version>1.11.726</aws.sdk.version>
+    <aws.sdk.version>1.11.728</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.64</bouncycastle.version>
@@ -149,7 +149,7 @@
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.5</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.13.0</jooq.jooq.version>
+    <jooq.jooq.version>3.13.1</jooq.jooq.version>
     <jooq.joor.version>0.9.12</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
@@ -159,7 +159,7 @@
     <junit.interface.version>0.11</junit.interface.version>
     <kafka.version>2.4.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
-    <kohsuke.github.api.version>1.106</kohsuke.github.api.version>
+    <kohsuke.github.api.version>1.107</kohsuke.github.api.version>
     <kotlin.version>1.3.61</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
@@ -167,7 +167,7 @@
     <lombok.version>1.18.12</lombok.version>
     <mariadb.java.client.version>2.5.4</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
-    <mockito.version>3.2.4</mockito.version>
+    <mockito.version>3.3.0</mockito.version>
     <mybatis.version>3.5.4</mybatis.version>
     <mysql.connector.version>8.0.19</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
