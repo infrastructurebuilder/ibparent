@@ -25,7 +25,7 @@
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
   <url>${ib.site.view.url}/</url>
-  <version>33-SNAPSHOT</version>
+  <version>33</version>
   <issueManagement>
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
@@ -35,7 +35,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
+    <tag>ibparent-33</tag>
   </scm>
 
   <properties>
@@ -1072,8 +1072,7 @@
           <version>${maven.compiler.plugin.version}</version>
           <configuration>
             <release>${maven.compiler.jdk.version}</release>
-            <!-- JDK <= 8
-            <source>${maven.compiler.jdk.version}</source>
+            <!-- JDK <= 8 <source>${maven.compiler.jdk.version}</source>
             <target>${maven.compiler.jdk.version}</target>
              -->
             <configuration>
