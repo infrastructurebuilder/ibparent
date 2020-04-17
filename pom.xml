@@ -150,6 +150,7 @@
     <javax.inject.version>1</javax.inject.version>
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.78</jcommander.version>
+    <discord.jda.version>1.2.2_139</discord.jda.version>
     <jmh.version>1.23</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.5</joda.time.version>
@@ -210,6 +211,7 @@
     <webjars.rickshaw.version>1.5.0</webjars.rickshaw.version>
     <zt.exec.version>1.11</zt.exec.version>
     <zt.processkiller.version>1.10</zt.processkiller.version>
+
   </properties>
 
   <dependencyManagement>
@@ -483,6 +485,11 @@
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>${mysql.connector.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.dv8tion</groupId>
+        <artifactId>JDA</artifactId>
+        <version>${discord.jda.version}</version>
       </dependency>
       <dependency>
         <groupId>net.logstash.logback</groupId>
