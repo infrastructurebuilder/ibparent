@@ -736,9 +736,26 @@
         <artifactId>joda-convert</artifactId>
         <version>${joda.convert.version}</version>
       </dependency>
+      <!--
+
+      No more Java 8 for this tree
+
       <dependency>
         <groupId>org.jooq</groupId>
         <artifactId>jool-java-8</artifactId>
+        <version>${jooq.jool.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jooq</groupId>
+        <artifactId>joor-java-8</artifactId>
+        <version>${jooq.joor.version}</version>
+      </dependency>
+
+      -->
+
+      <dependency>
+        <groupId>org.jooq</groupId>
+        <artifactId>jool</artifactId>
         <version>${jooq.jool.version}</version>
       </dependency>
       <dependency>
@@ -754,7 +771,7 @@
 
       <dependency>
         <groupId>org.jooq</groupId>
-        <artifactId>joor-java-8</artifactId>
+        <artifactId>joor</artifactId>
         <version>${jooq.joor.version}</version>
       </dependency>
       <dependency>
