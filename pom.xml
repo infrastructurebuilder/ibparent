@@ -44,7 +44,7 @@
     <maven.archetype.plugin.version>3.1.2</maven.archetype.plugin.version>
     <maven.bundle.plugin.version>4.2.1</maven.bundle.plugin.version>
     <maven.cobertura.version>2.7</maven.cobertura.version>
-    <maven.compiler.jdk.version>1.8</maven.compiler.jdk.version>
+    <maven.compiler.jdk.version>11</maven.compiler.jdk.version>
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
     <maven.eclipse.plugin.version>2.10</maven.eclipse.plugin.version>
     <maven.failsafe.plugin.version>3.0.0-M4</maven.failsafe.plugin.version>
@@ -1071,9 +1071,11 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven.compiler.plugin.version}</version>
           <configuration>
-            <!-- JDK 9+ <release>${maven.compiler.jdk.version}</release> -->
+            <release>${maven.compiler.jdk.version}</release>
+            <!-- JDK <= 8
             <source>${maven.compiler.jdk.version}</source>
             <target>${maven.compiler.jdk.version}</target>
+             -->
             <configuration>
               <compilerArgs>
                 <arg>-Xlint</arg>
