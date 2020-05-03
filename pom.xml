@@ -15,12 +15,14 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>25</version>
+    <version>26</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -82,11 +84,11 @@
     <apache.curator.version>4.3.0</apache.curator.version>
     <apache.httpclient.version>4.5.12</apache.httpclient.version>
     <apache.poi.version>4.1.2</apache.poi.version>
-    <apache.shiro.version>1.5.2</apache.shiro.version>
+    <apache.shiro.version>1.5.3</apache.shiro.version>
     <aspectj.version>1.9.5</aspectj.version>
     <assertj.core.version>3.15.0</assertj.core.version>
     <avro.core.version>1.9.2</avro.core.version>
-    <aws.sdk.version>1.11.764</aws.sdk.version>
+    <aws.sdk.version>1.11.774</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.65</bouncycastle.version>
@@ -123,12 +125,13 @@
     <gmavenplus.plugin.version>1.9.0</gmavenplus.plugin.version>
     <google.dagger.version>2.27</google.dagger.version>
     <google.guava.version>29.0-jre</google.guava.version>
+    <google.inject.guice.version>4.2.3</google.inject.guice.version>
     <google.protobuf.java.version>3.11.4</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
     <hazelcast.version>4.0.1</hazelcast.version>
-    <hikari.cp.version>3.4.2</hikari.cp.version>
+    <hikari.cp.version>3.4.3</hikari.cp.version>
     <itextpdf.version>5.5.13.1</itextpdf.version>
-    <jackson.version>2.10.3</jackson.version>
+    <jackson.version>2.11.0</jackson.version>
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
     <jacoco.it.execution.dest.file>${jacoco.it.execution.data.file}</jacoco.it.execution.dest.file>
     <jacoco.maven.plugin.version>${jacoco.version}</jacoco.maven.plugin.version>
@@ -140,19 +143,24 @@
     <jarsigner.skip>true</jarsigner.skip>
     <java.faker.version>1.0.2</java.faker.version>
     <java.semver4j.version>3.1.0</java.semver4j.version>
+    <java.emoji.java.version>5.1.1</java.emoji.java.version>
+    <java.userinfo.java.version>1.1.0</java.userinfo.java.version>
+
+    <java.semver4j.version>3.1.0</java.semver4j.version>
     <java.semver.version>0.9.0</java.semver.version>
     <javaslang.version>2.0.5</javaslang.version>
     <java.websocket.version>1.4.1</java.websocket.version>
     <javax.inject.version>1</javax.inject.version>
+    <jaxb.api.version>2.3.1</jaxb.api.version>
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.78</jcommander.version>
     <discord.jda.version>1.2.2_139</discord.jda.version>
     <jmh.version>1.23</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
-    <joda.time.version>2.10.5</joda.time.version>
+    <joda.time.version>2.10.6</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
     <jooq.jooq.version>3.13.1</jooq.jooq.version>
-    <jooq.joor.version>0.9.12</jooq.joor.version>
+    <jooq.joor.version>0.9.13</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
     <json.version>20190722</json.version>
@@ -171,7 +179,7 @@
     <mockito.core.version>2.21.0</mockito.core.version>
     <mockito.version>3.3.3</mockito.version>
     <mybatis.version>3.5.4</mybatis.version>
-    <mysql.connector.version>8.0.19</mysql.connector.version>
+    <mysql.connector.version>8.0.20</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.1</opencsv.version>
@@ -188,18 +196,21 @@
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
     <snappy.java.version>1.1.7.3</snappy.java.version>
     <spotbugs.maven.plugin.version>4.0.0</spotbugs.maven.plugin.version>
-    <spotbugs.version>4.0.2</spotbugs.version> <!-- 4.0.0 -->
+    <spotbugs.version>4.0.2</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
-    <spring.version>5.2.5.RELEASE</spring.version>
+    <spring.version>5.2.6.RELEASE</spring.version>
     <sqlite.jdbc.version>3.30.1</sqlite.jdbc.version>
-    <tika.version>1.24</tika.version>
+    <tika.version>1.24.1</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
     <typesafe.config.version>1.4.0</typesafe.config.version>
     <validation.api.version>2.0.1.Final</validation.api.version>
     <velocity.version>2.2</velocity.version>
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
+    <vertx.guice.version>2.3.1</vertx.guice.version>
+    <vertx.jooq.version>5.1.1</vertx.jooq.version>
     <vertx.version>3.9.0</vertx.version>
+
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
     <webjars.emberjs.version>1.12.0</webjars.emberjs.version>
     <webjars.handlebars.version>4.0.14</webjars.handlebars.version>
@@ -258,6 +269,12 @@
         <version>${jcommander.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.englishtown.vertx</groupId>
+        <artifactId>vertx-guice</artifactId>
+        <version>${vertx.guice.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
         <version>${jackson.version}</version>
@@ -314,6 +331,12 @@
         <version>${google.guava.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${google.inject.guice.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
         <version>${google.protobuf.java.version}</version>
@@ -360,6 +383,16 @@
         <version>${java.semver4j.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.vdurmont</groupId>
+        <artifactId>emoji-java</artifactId>
+        <version>${java.emoji.java.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.vdurmont</groupId>
+        <artifactId>userinfo-java</artifactId>
+        <version>${java.userinfo.java.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.zaxxer</groupId>
         <artifactId>HikariCP</artifactId>
         <version>${hikari.cp.version}</version>
@@ -395,6 +428,86 @@
         <groupId>io.dropwizard</groupId>
         <artifactId>dropwizard-core</artifactId>
         <version>${dropwizard.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-generate</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-rx-reactive</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-completablefuture-reactive</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-classic-reactive</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-shared-reactive</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-rx-async</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-rx-jdbc</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-rx</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-completablefuture-async</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-completablefuture-jdbc</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-completablefuture</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-classic-async</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-classic-jdbc</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-classic</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-shared-async</artifactId>
+        <version>${vertx.jooq.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-shared</artifactId>
+        <version>${vertx.jooq.version}</version>
       </dependency>
       <dependency>
         <groupId>io.kamon</groupId>
@@ -472,6 +585,12 @@
         <artifactId>validation-api</artifactId>
         <version>${validation.api.version}</version>
       </dependency>
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${jaxb.api.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>joda-time</groupId>
         <artifactId>joda-time</artifactId>
