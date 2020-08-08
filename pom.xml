@@ -15,7 +15,8 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
@@ -122,6 +123,7 @@
     <google.dagger.version>2.28.3</google.dagger.version>
     <google.guava.version>29.0-jre</google.guava.version>
     <google.inject.guice.version>4.2.3</google.inject.guice.version>
+    <google.maps.services.version>0.14.0</google.maps.services.version>
     <google.protobuf.java.version>3.12.2</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
     <hazelcast.version>4.0.2</hazelcast.version>
@@ -331,7 +333,11 @@
         <artifactId>guice</artifactId>
         <version>${google.inject.guice.version}</version>
       </dependency>
-
+      <dependency>
+        <groupId>com.google.maps</groupId>
+        <artifactId>google-maps-services</artifactId>
+        <version>${google.maps.services.version}</version>
+      </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
@@ -851,23 +857,6 @@
         <artifactId>joda-convert</artifactId>
         <version>${joda.convert.version}</version>
       </dependency>
-      <!--
-
-      No more Java 8 for this tree
-
-      <dependency>
-        <groupId>org.jooq</groupId>
-        <artifactId>jool-java-8</artifactId>
-        <version>${jooq.jool.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jooq</groupId>
-        <artifactId>joor-java-8</artifactId>
-        <version>${jooq.joor.version}</version>
-      </dependency>
-
-      -->
-
       <dependency>
         <groupId>org.jooq</groupId>
         <artifactId>jool</artifactId>
@@ -1192,8 +1181,7 @@
           <configuration>
             <release>${maven.compiler.jdk.version}</release>
             <!-- JDK <= 8 <source>${maven.compiler.jdk.version}</source>
-            <target>${maven.compiler.jdk.version}</target>
-             -->
+              <target>${maven.compiler.jdk.version}</target> -->
             <configuration>
               <compilerArgs>
                 <arg>-Xlint</arg>
