@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>31-SNAPSHOT</version>
+    <version>31</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -62,7 +62,7 @@
     <maven.taglist.plugin.version>2.4</maven.taglist.plugin.version>
     <maven.war.plugin.version>3.3.1</maven.war.plugin.version>
 
-    <karaf.tooling.version>4.2.9</karaf.tooling.version>
+    <karaf.tooling.version>4.2.10</karaf.tooling.version>
     <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version>
 
     <ib.logconfig.version>0.11.0</ib.logconfig.version> <!-- A default. This may or may not change over time -->
@@ -73,27 +73,27 @@
     <akka.version>2.5.17</akka.version>
     <amazon.kinesis.client.version>1.14.0</amazon.kinesis.client.version>
     <antlr4.version>4.8-1</antlr4.version>
-    <apache.ant.version>1.10.8</apache.ant.version>
-    <apache.commons.codec.version>1.14</apache.commons.codec.version>
+    <apache.ant.version>1.10.9</apache.ant.version>
+    <apache.commons.codec.version>1.15</apache.commons.codec.version>
     <apache.commons.lang3.version>3.11</apache.commons.lang3.version>
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
     <apache.curator.version>5.1.0</apache.curator.version>
-    <apache.httpclient.version>4.5.12</apache.httpclient.version>
+    <apache.httpclient.version>4.5.13</apache.httpclient.version>
     <apache.poi.version>4.1.2</apache.poi.version>
-    <apache.shiro.version>1.6.0</apache.shiro.version>
+    <apache.shiro.version>1.7.0</apache.shiro.version>
     <aspectj.version>1.9.6</aspectj.version>
-    <assertj.core.version>3.16.1</assertj.core.version>
+    <assertj.core.version>3.18.0</assertj.core.version>
     <avro.core.version>1.10.0</avro.core.version>
-    <aws.sdk.version>1.11.844</aws.sdk.version>
+    <aws.sdk.version>1.11.890</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.66</bouncycastle.version>
-    <chronicle.map.version>3.20.2</chronicle.map.version>
+    <chronicle.map.version>3.20.83</chronicle.map.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
-    <commons.dbcp2.version>2.7.0</commons.dbcp2.version>
+    <commons.dbcp2.version>2.8.0</commons.dbcp2.version>
     <commons.email.version>1.5</commons.email.version>
-    <commons.io.version>2.7</commons.io.version>
+    <commons.io.version>2.8.0</commons.io.version>
     <commons.pool.version>1.6</commons.pool.version>
     <commons.vfs2.version>2.6.0</commons.vfs2.version>
     <corn.cps.version>1.1.10</corn.cps.version>
@@ -102,7 +102,7 @@
     <cucumber.jvm.deps.version>1.0.5</cucumber.jvm.deps.version>
     <discipline.version>0.7.3</discipline.version>
     <derby.version>10.15.2.0</derby.version>
-    <dropwizard.version>2.0.12</dropwizard.version>
+    <dropwizard.version>2.0.14</dropwizard.version>
     <dom4j.version>2.1.3</dom4j.version>
     <egit.github.version>5.1.0.201809111528-r</egit.github.version>
     <embedded.redis.version>0.6</embedded.redis.version>
@@ -110,7 +110,7 @@
     <exception.translator.version>0.2.0</exception.translator.version>
     <findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
-    <fluent.hc.version>4.5.12</fluent.hc.version>
+    <fluent.hc.version>4.5.13</fluent.hc.version>
     <freemarker.version>2.3.30</freemarker.version>
     <functional.java.version>4.8.1</functional.java.version>
     <github.host>github.com</github.host>
@@ -118,17 +118,17 @@
     <git.http.url>${github.url.base}/${project.artifactId}</git.http.url>
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
-    <gmavenplus.plugin.version>1.10.0</gmavenplus.plugin.version>
-    <google.dagger.version>2.28.3</google.dagger.version>
-    <google.guava.version>29.0-jre</google.guava.version>
+    <gmavenplus.plugin.version>1.11.0</gmavenplus.plugin.version>
+    <google.dagger.version>2.29.1</google.dagger.version>
+    <google.guava.version>30.0-jre</google.guava.version>
     <google.inject.guice.version>4.2.3</google.inject.guice.version>
     <google.maps.services.version>0.15.0</google.maps.services.version>
-    <google.protobuf.java.version>3.12.2</google.protobuf.java.version>
+    <google.protobuf.java.version>3.13.0</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
-    <hazelcast.version>4.0.2</hazelcast.version>
+    <hazelcast.version>4.0.3</hazelcast.version>
     <hikari.cp.version>3.4.5</hikari.cp.version>
-    <itextpdf.version>5.5.13.1</itextpdf.version>
-    <jackson.version>2.11.2</jackson.version>
+    <itextpdf.version>5.5.13.2</itextpdf.version>
+    <jackson.version>2.11.3</jackson.version>
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
     <jacoco.it.execution.dest.file>${jacoco.it.execution.data.file}</jacoco.it.execution.dest.file>
     <jacoco.maven.plugin.version>${jacoco.version}</jacoco.maven.plugin.version>
@@ -136,7 +136,7 @@
     <jacoco.skip>false</jacoco.skip>
     <jacoco.ut.execution.data.file>${project.build.directory}/jacoco-ut.data</jacoco.ut.execution.data.file>
     <jacoco.ut.execution.dest.file>${jacoco.ut.execution.data.file}</jacoco.ut.execution.dest.file>
-    <jacoco.version>0.8.5</jacoco.version>
+    <jacoco.version>0.8.6</jacoco.version>
     <jarsigner.skip>true</jarsigner.skip>
     <java.faker.version>1.0.2</java.faker.version>
     <java.semver4j.version>3.1.0</java.semver4j.version>
@@ -152,11 +152,11 @@
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.78</jcommander.version>
     <discord.jda.version>1.2.2_139</discord.jda.version>
-    <jmh.version>1.25</jmh.version>
+    <jmh.version>1.26</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
-    <joda.time.version>2.10.6</joda.time.version>
+    <joda.time.version>2.10.8</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.13.4</jooq.jooq.version>
+    <jooq.jooq.version>3.14.1</jooq.jooq.version>
     <jooq.joor.version>0.9.13</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.0</jsonassert.version>
@@ -167,20 +167,20 @@
     <kafka.version>2.6.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
     <kohsuke.github.api.version>1.116</kohsuke.github.api.version>
-    <kotlin.version>1.4.0</kotlin.version>
+    <kotlin.version>1.4.10</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
     <logstash.logback.encoder.version>6.4</logstash.logback.encoder.version>
-    <lombok.version>1.18.12</lombok.version>
-    <mariadb.java.client.version>2.6.2</mariadb.java.client.version>
+    <lombok.version>1.18.16</lombok.version>
+    <mariadb.java.client.version>2.7.0</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
-    <mockito.version>3.5.0</mockito.version>
-    <mybatis.version>3.5.5</mybatis.version>
-    <mysql.connector.version>8.0.21</mysql.connector.version>
+    <mockito.version>3.6.0</mockito.version>
+    <mybatis.version>3.5.6</mybatis.version>
+    <mysql.connector.version>8.0.22</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
-    <opencsv.version>5.2</opencsv.version>
-    <owasp.dependency.check.maven.version>5.3.2</owasp.dependency.check.maven.version>
+    <opencsv.version>5.3</opencsv.version>
+    <owasp.dependency.check.maven.version>6.0.2</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
@@ -191,29 +191,29 @@
     <simulacrum.version>0.11.0</simulacrum.version>
     <site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
-    <snappy.java.version>1.1.7.6</snappy.java.version>
-    <spotbugs.maven.plugin.version>4.0.4</spotbugs.maven.plugin.version>
-    <spotbugs.version>4.1.1</spotbugs.version>
+    <snappy.java.version>1.1.8</snappy.java.version>
+    <spotbugs.maven.plugin.version>4.1.4</spotbugs.maven.plugin.version>
+    <spotbugs.version>4.1.4</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
-    <spring.version>5.2.8.RELEASE</spring.version>
+    <spring.boot.version>2.3.4.RELEASE</spring.boot.version>
+    <spring.version>5.3.0</spring.version>
     <sqlite.jdbc.version>3.32.3.2</sqlite.jdbc.version>
     <tika.version>1.24.1</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
-    <typesafe.config.version>1.4.0</typesafe.config.version>
+    <typesafe.config.version>1.4.1</typesafe.config.version>
     <validation.api.version>2.0.1.Final</validation.api.version>
     <velocity.version>2.2</velocity.version>
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
-    <vertx.jooq.version>5.2.0</vertx.jooq.version>
-    <vertx.version>3.9.2</vertx.version>
+    <vertx.jooq.version>5.2.1</vertx.jooq.version>
+    <vertx.version>3.9.4</vertx.version>
 
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
     <webjars.emberjs.version>1.12.0</webjars.emberjs.version>
     <webjars.handlebars.version>4.0.14</webjars.handlebars.version>
     <webjars.ink.version>3.1.2</webjars.ink.version>
     <webjars.rickshaw.version>1.5.0</webjars.rickshaw.version>
-    <zt.exec.version>1.11</zt.exec.version>
+    <zt.exec.version>1.12</zt.exec.version>
     <zt.processkiller.version>1.10</zt.processkiller.version>
 
   </properties>
