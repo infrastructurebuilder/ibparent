@@ -1578,6 +1578,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
             <configuration>
+              <detectJavaApiLink>false</detectJavaApiLink>
               <additionalparam>-Xdoclint:none</additionalparam>
               <additionalJOption>-Xdoclint:none</additionalJOption>
             </configuration>
