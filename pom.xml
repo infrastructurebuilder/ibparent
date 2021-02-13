@@ -15,12 +15,13 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>34</version>
+    <version>35-SNAPSHOT</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -1244,6 +1245,9 @@
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${maven.javadoc.plugin.version}</version>
+          <configuration>
+            <detectJavaApiLink>false</detectJavaApiLink>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-plugin-plugin</artifactId>
@@ -1544,6 +1548,7 @@
         <configuration>
           <additionalparam>-Xdoclint:none</additionalparam>
           <additionalJOption>-Xdoclint:none</additionalJOption>
+          <detectJavaApiLink>false</detectJavaApiLink>
         </configuration>
         <reportSets>
           <reportSet>

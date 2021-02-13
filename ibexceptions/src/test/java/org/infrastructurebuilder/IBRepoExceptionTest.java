@@ -17,6 +17,8 @@ package org.infrastructurebuilder;
 
 import static org.junit.Assert.assertNotNull;
 
+import org.infrastructurebuilder.exceptions.IBException;
+import org.infrastructurebuilder.exceptions.IBRepoException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

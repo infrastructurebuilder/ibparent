@@ -7,6 +7,12 @@ This parent is meant to be a unifying version and config parent for IB projects.
 necessary plugins and manages most of the relevant dependencies for dealing with our internal projects as well
 as giving us a platform for keeping those up to date.
 
+### Exception Translator
+
+The code from the [com.mscharhag.ET](git@github.com:mscharhag/ET.git) package was directly
+into `ibexceptions` for modularization.  If the ET project ever releases with modules,
+we will remove it and start depending on that module.
+
 ## Changes
 
 This parent releases regularly.  Usually, this means every 2 weeks or so, but might mean more frequently if

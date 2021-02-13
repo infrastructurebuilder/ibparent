@@ -13,13 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.infrastructurebuilder;
-
-public interface IBService<T, C, I> {
-  C getConfigInstance(I configInit);
-
-  T getInstance();
-
-  void initialize(C config);
+/**
+ * @author mykel.alvis
+ *
+ */
+module ibexceptions {
+  exports org.infrastructurebuilder;
+  exports org.infrastructurebuilder.exceptions;
+  exports com.mscharhag.et.impl;
+  exports com.mscharhag.et;
 
 }

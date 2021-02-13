@@ -20,6 +20,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.function.Supplier;
 
+import org.infrastructurebuilder.exceptions.IBRepoException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

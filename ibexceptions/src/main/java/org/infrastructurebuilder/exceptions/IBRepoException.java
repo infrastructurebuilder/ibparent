@@ -13,36 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.infrastructurebuilder;
+package org.infrastructurebuilder.exceptions;
 
-import com.mscharhag.et.ET;
-import com.mscharhag.et.ExceptionTranslator;
-
-public class IBException extends RuntimeException {
+public class IBRepoException extends IBException {
 
   /**
-   *
-   */
-  private static final long serialVersionUID = -3615731463803876276L;
-  public static ExceptionTranslator cet = ET.newConfiguration().translate(Exception.class).to(IBException.class).done();
+  *
+  */
+  private static final long serialVersionUID = -3526372440262133047L;
 
-  public IBException() {
+  public IBRepoException() {
+    super();
   }
 
-  public IBException(final String message) {
+  public IBRepoException(final String message) {
     super(message);
   }
 
-  public IBException(final String message, final Throwable cause) {
+  public IBRepoException(final String message, final Throwable cause) {
     super(message, cause);
   }
 
-  public IBException(final String message, final Throwable cause, final boolean enableSuppression,
+  public IBRepoException(final String message, final Throwable cause, final boolean enableSuppression,
       final boolean writableStackTrace) {
     super(message, cause, enableSuppression, writableStackTrace);
   }
 
-  public IBException(final Throwable cause) {
+  public IBRepoException(final Throwable cause) {
     super(cause);
   }
 
