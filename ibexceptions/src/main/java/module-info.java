@@ -17,10 +17,9 @@
  * @author mykel.alvis
  *
  */
-module ibexceptions {
-  exports org.infrastructurebuilder;
+module org.infrastructurebuilder.exceptions {
   exports org.infrastructurebuilder.exceptions;
+  exports org.infrastructurebuilder.util.versions;
   exports com.mscharhag.et.impl;
   exports com.mscharhag.et;
-
 }

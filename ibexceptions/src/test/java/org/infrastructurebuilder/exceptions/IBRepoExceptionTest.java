@@ -13,59 +13,57 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.infrastructurebuilder;
+package org.infrastructurebuilder.exceptions;
 
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import org.infrastructurebuilder.exceptions.IBException;
-import org.infrastructurebuilder.exceptions.IBRepoException;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class IBRepoExceptionTest {
 
-  @BeforeClass
+  @BeforeAll
   public static void setUpBeforeClass() throws Exception {
   }
 
-  @AfterClass
+  @AfterAll
   public static void tearDownAfterClass() throws Exception {
   }
 
-  @Before
+  @BeforeEach
   public void setUp() throws Exception {
   }
 
-  @After
+  @AfterEach
   public void tearDown() throws Exception {
   }
 
   @Test
   public void testIBMavenException() {
-    assertNotNull("Empty maven exception", new IBRepoException());
+    assertNotNull( new IBRepoException(),"Empty maven exception");
   }
 
   @Test
   public void testIBMavenExceptionString() {
-    assertNotNull("With string", new IBRepoException("ABC"));
+    assertNotNull( new IBRepoException("ABC"),"With string");
   }
 
   @Test
   public void testIBMavenExceptionStringThrowable() {
-    assertNotNull("With string", new IBRepoException("ABC", new IBException("DEF")));
+    assertNotNull( new IBRepoException("ABC", new IBException("DEF")));
   }
 
   @Test
   public void testIBMavenExceptionStringThrowableBooleanBoolean() {
-    assertNotNull("With string", new IBRepoException("ABC", new IBException("DEF"), true, true));
+    assertNotNull(new IBRepoException("ABC", new IBException("DEF"), true, true));
   }
 
   @Test
   public void testIBMavenExceptionThrowable() {
-    assertNotNull("With  string", new IBRepoException(new IBException()));
+    assertNotNull(new IBRepoException(new IBException()));
   }
 
 }
