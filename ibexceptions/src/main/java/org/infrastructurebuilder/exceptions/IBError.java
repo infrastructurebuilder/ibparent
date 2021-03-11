@@ -13,22 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.infrastructurebuilder;
+package org.infrastructurebuilder.exceptions;
 
-import java.util.function.Supplier;
+/**
+ * Needs some javadocs here
+ * @author mykel.alvis
+ *
+ */
+public interface IBError {
 
-public interface IBVersionsSupplier {
-  default Supplier<String> getArtifactDependency() {
-    return () -> getGroupId().get() + ":" + getArtifactId().get() + ":" + getVersion().get();
-  }
+  /**
+   * Produce the error's message
+   * @return Non-null string message
+   */
+  String getMessage();
 
-  Supplier<String> getGroupId();
-
-  Supplier<String> getArtifactId();
-
-  Supplier<String> getVersion();
-
-  Supplier<String> getExtension();
-
-  Supplier<String> getAPIVersion();
 }

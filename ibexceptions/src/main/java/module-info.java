@@ -13,19 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.infrastructurebuilder;
-
 /**
- * Needs some javadocs here
  * @author mykel.alvis
  *
  */
-public interface IBError {
-
-  /**
-   * Produce the error's message
-   * @return Non-null string message
-   */
-  String getMessage();
-
+module org.infrastructurebuilder.exceptions {
+  exports org.infrastructurebuilder.exceptions;
+  exports org.infrastructurebuilder.util.versions;
+  exports com.mscharhag.et.impl;
+  exports com.mscharhag.et;
 }
