@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>36</version>
+    <version>37</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -72,7 +72,7 @@
     <akka.stream.version>2.0.5</akka.stream.version>
     <akka.version>2.5.17</akka.version>
     <amazon.kinesis.client.version>1.14.2</amazon.kinesis.client.version>
-    <antlr4.version>4.9.1</antlr4.version>
+    <antlr4.version>4.9.2</antlr4.version>
     <apache.ant.version>1.10.9</apache.ant.version>
     <apache.commons.codec.version>1.15</apache.commons.codec.version>
     <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
@@ -84,7 +84,7 @@
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.19.0</assertj.core.version>
     <avro.core.version>1.10.1</avro.core.version>
-    <aws.sdk.version>1.11.972</aws.sdk.version>
+    <aws.sdk.version>1.11.975</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.68</bouncycastle.version>
@@ -180,8 +180,8 @@
     <mysql.connector.version>8.0.24</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
-    <opencsv.version>5.3</opencsv.version>
-    <owasp.dependency.check.maven.version>6.1.1</owasp.dependency.check.maven.version>
+    <opencsv.version>5.4</opencsv.version>
+    <owasp.dependency.check.maven.version>6.1.2</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
@@ -197,7 +197,7 @@
     <spotbugs.version>4.2.2</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>2.4.3</spring.boot.version>
-    <spring.version>5.3.4</spring.version>
+    <spring.version>5.3.5</spring.version>
     <sqlite.jdbc.version>3.34.0</sqlite.jdbc.version>
     <tika.version>1.25</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
@@ -207,7 +207,7 @@
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
     <vertx.jooq.version>5.2.1</vertx.jooq.version>
-    <vertx.version>4.0.2</vertx.version>
+    <vertx.version>4.0.3</vertx.version>
 
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
     <webjars.emberjs.version>1.12.0</webjars.emberjs.version>
