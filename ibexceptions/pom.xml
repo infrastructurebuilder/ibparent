@@ -29,12 +29,6 @@
   <inceptionYear>2019</inceptionYear>
   <url>${github.url.base}/${project.artifactId}</url>
   <dependencies>
-  <!--
-    <dependency>
-      <groupId>javax.inject</groupId>
-      <artifactId>javax.inject</artifactId>
-    </dependency>
-   -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
