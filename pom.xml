@@ -15,12 +15,13 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>38</version>
+    <version>39</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -83,12 +84,13 @@
     <apache.shiro.version>1.7.1</apache.shiro.version>
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.19.0</assertj.core.version>
-    <avro.core.version>1.10.1</avro.core.version>
-    <aws.sdk.version>1.11.975</aws.sdk.version>
+    <avro.core.version>1.10.2</avro.core.version>
+    <aws.sdk.version>1.11.980</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.68</bouncycastle.version>
     <chronicle.map.version>3.20.84</chronicle.map.version>
+    <classgraph.version>4.8.103</classgraph.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.8.0</commons.dbcp2.version>
@@ -112,7 +114,7 @@
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
     <fluent.hc.version>4.5.13</fluent.hc.version>
     <freemarker.version>2.3.31</freemarker.version>
-    <functional.java.version>4.8.1</functional.java.version>
+    <functional.java.version>4.9</functional.java.version>
     <github.host>github.com</github.host>
     <github.url.base>https://${github.host}/${team.group.id}</github.url.base>
     <git.http.url>${github.url.base}/${project.artifactId}</git.http.url>
@@ -158,7 +160,7 @@
     <jooq.jooq.version>3.14.8</jooq.jooq.version>
     <jooq.joor.version>0.9.13</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
-    <jsonassert.version>1.5.1.0</jsonassert.version>
+    <jsonassert.version>1.5.1.1</jsonassert.version>
     <json.version>20210307</json.version>
     <jsoup.version>1.13.1</jsoup.version>
     <jtds.version>1.3.1</jtds.version>
@@ -166,7 +168,7 @@
     <junit.platform.maven.plugin.version>1.1.2</junit.platform.maven.plugin.version>
     <kafka.version>2.7.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
-    <kohsuke.github.api.version>1.123</kohsuke.github.api.version>
+    <kohsuke.github.api.version>1.124</kohsuke.github.api.version>
     <kotlin.version>1.4.30</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
@@ -181,7 +183,7 @@
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.4</opencsv.version>
-    <owasp.dependency.check.maven.version>6.1.2</owasp.dependency.check.maven.version>
+    <owasp.dependency.check.maven.version>6.1.3</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
@@ -193,10 +195,10 @@
     <site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
     <snappy.java.version>1.1.8.4</snappy.java.version>
-    <spotbugs.maven.plugin.version>4.2.0</spotbugs.maven.plugin.version>
+    <spotbugs.maven.plugin.version>4.2.2</spotbugs.maven.plugin.version>
     <spotbugs.version>4.2.2</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.4.3</spring.boot.version>
+    <spring.boot.version>2.4.4</spring.boot.version>
     <spring.version>5.3.5</spring.version>
     <sqlite.jdbc.version>3.34.0</sqlite.jdbc.version>
     <tika.version>1.25</tika.version>
@@ -206,7 +208,7 @@
     <velocity.version>2.3</velocity.version>
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
-    <vertx.jooq.version>5.2.1</vertx.jooq.version>
+    <vertx.jooq.version>6.2.0</vertx.jooq.version>
     <vertx.version>4.0.3</vertx.version>
 
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
@@ -433,6 +435,11 @@
         <version>${dropwizard.version}</version>
       </dependency>
       <dependency>
+        <groupId>io.github.classgraph</groupId>
+        <artifactId>classgraph</artifactId>
+        <version>${classgraph.version}</version>
+      </dependency>
+      <dependency>
         <groupId>io.github.jklingsporn</groupId>
         <artifactId>vertx-jooq-generate</artifactId>
         <version>${vertx.jooq.version}</version>
@@ -619,6 +626,7 @@
         <artifactId>chronicle-map</artifactId>
         <version>${chronicle.map.version}</version>
       </dependency>
+      <!-- No longer using corn-cps
       <dependency>
         <groupId>net.sf.corn</groupId>
         <artifactId>corn-cps</artifactId>
@@ -630,6 +638,7 @@
           </exclusion>
         </exclusions>
       </dependency>
+      -->
       <dependency>
         <groupId>net.sf.trove4j</groupId>
         <artifactId>trove4j</artifactId>
@@ -813,21 +822,21 @@
         of changing JVM editions -->
       <dependency>
         <groupId>org.functionaljava</groupId>
-        <artifactId>functionaljava-java-core_1.8</artifactId>
+        <artifactId>functionaljava-java-core</artifactId>
         <version>${functional.java.version}</version>
       </dependency>
       <dependency>
         <groupId>org.functionaljava</groupId>
-        <artifactId>functionaljava-quickcheck_1.8</artifactId>
+        <artifactId>functionaljava-quickcheck</artifactId>
         <version>${functional.java.version}</version>
       </dependency>
       <dependency>
         <groupId>org.functionaljava</groupId>
-        <artifactId>functionaljava_1.8</artifactId>
+        <artifactId>functionaljava</artifactId>
         <version>${functional.java.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.infrastructurebuilder.util</groupId>
+        <groupId>org.infrastructurebuilder.util.logging</groupId>
         <artifactId>iblogconfig</artifactId>
         <version>${ib.logconfig.version}</version>
         <classifier>test</classifier>
@@ -885,7 +894,7 @@
         <version>${mariadb.java.client.version}</version>
       </dependency>
       <dependency>
-<!--         <groupId>org.skyscreamer</groupId> -->
+<!--         <groupId>org.infrastructurebuilder.usurped</groupId> -->
         <groupId>org.infrastructurebuilder.usurped</groupId>
         <artifactId>jsonassert</artifactId>
         <version>${jsonassert.version}</version>
