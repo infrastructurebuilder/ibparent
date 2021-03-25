@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>39</version>
+    <version>41</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -84,7 +84,7 @@
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.19.0</assertj.core.version>
     <avro.core.version>1.10.2</avro.core.version>
-    <aws.sdk.version>1.11.980</aws.sdk.version>
+    <aws.sdk.version>1.11.982</aws.sdk.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.68</bouncycastle.version>
@@ -126,7 +126,7 @@
     <google.maps.services.version>0.18.0</google.maps.services.version>
     <google.protobuf.java.version>3.13.0</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
-    <hazelcast.version>4.1.1</hazelcast.version>
+    <hazelcast.version>4.2</hazelcast.version>
     <hikari.cp.version>4.0.3</hikari.cp.version>
     <itextpdf.version>5.5.13.2</itextpdf.version>
     <jackson.version>2.12.2</jackson.version>
@@ -152,7 +152,7 @@
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.81</jcommander.version>
     <discord.jda.version>1.2.2_139</discord.jda.version>
-    <jmh.version>1.28</jmh.version>
+    <jmh.version>1.29</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.10</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
