@@ -911,17 +911,6 @@
         <artifactId>snappy-java</artifactId>
         <version>${snappy.java.version}</version>
       </dependency>
-
-      <dependency>
-        <groupId>org.functionaljava</groupId>
-        <artifactId>functionaljava</artifactId>
-        <version>${functional.java.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.functionaljava</groupId>
-        <artifactId>functionaljava-quickcheck</artifactId>
-        <version>${functional.java.version}</version>
-      </dependency>
       <dependency>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs</artifactId>
