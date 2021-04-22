@@ -15,12 +15,13 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>41</version>
+    <version>42</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -85,6 +86,7 @@
     <assertj.core.version>3.19.0</assertj.core.version>
     <avro.core.version>1.10.2</avro.core.version>
     <aws.sdk.version>1.11.982</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.16.34</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.68</bouncycastle.version>
@@ -178,7 +180,7 @@
     <mockito.version>3.8.0</mockito.version>
     <moditect.maven.plugin.version>1.0.0.RC1</moditect.maven.plugin.version>
     <mybatis.version>3.5.6</mybatis.version>
-    <mysql.connector.version>8.0.24</mysql.connector.version>
+    <mysql.connector.version>8.0.23</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.4</opencsv.version>
@@ -1107,8 +1109,13 @@
         <artifactId>zt-process-killer</artifactId>
         <version>${zt.processkiller.version}</version>
       </dependency>
-
-
+      <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>bom</artifactId>
+        <version>${aws.sdkv2.bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -1197,11 +1204,9 @@
             <release>${maven.compiler.jdk.version}</release>
             <!-- JDK <= 8 <source>${maven.compiler.jdk.version}</source>
               <target>${maven.compiler.jdk.version}</target> -->
-            <configuration>
-              <compilerArgs>
-                <arg>-Xlint</arg>
-              </compilerArgs>
-            </configuration>
+            <compilerArgs>
+              <arg>-Xlint</arg>
+            </compilerArgs>
           </configuration>
         </plugin>
         <plugin>
@@ -1209,6 +1214,7 @@
           <version>${maven.eclipse.plugin.version}</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
           <version>${maven.failsafe.plugin.version}</version>
           <configuration>
@@ -1242,6 +1248,7 @@
           </executions>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jarsigner-plugin</artifactId>
           <version>${maven.jarsigner.plugin.version}</version>
           <executions>
@@ -1278,6 +1285,7 @@
           <version>${maven.source.plugin.version}</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven.surefire.plugin.version}</version>
           <configuration>
@@ -1570,7 +1578,6 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${maven.javadoc.plugin.version}</version>
         <configuration>
-          <additionalparam>-Xdoclint:none</additionalparam>
           <additionalJOption>-Xdoclint:none</additionalJOption>
           <detectJavaApiLink>false</detectJavaApiLink>
         </configuration>
@@ -1608,7 +1615,6 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <configuration>
               <detectJavaApiLink>false</detectJavaApiLink>
-              <additionalparam>-Xdoclint:none</additionalparam>
               <additionalJOption>-Xdoclint:none</additionalJOption>
             </configuration>
           </plugin>
