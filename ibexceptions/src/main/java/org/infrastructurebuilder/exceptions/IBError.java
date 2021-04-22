@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright © 2019 admin (admin@infrastructurebuilder.org)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
