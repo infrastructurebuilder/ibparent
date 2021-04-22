@@ -26,7 +26,7 @@
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
   <url>${ib.site.view.url}/</url>
-  <version>49-SNAPSHOT</version>
+  <version>50-SNAPSHOT</version>
   <issueManagement>
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
@@ -41,7 +41,7 @@
 
   <properties>
 
-    <maven.bundle.plugin.version>5.1.1</maven.bundle.plugin.version>
+    <maven.bundle.plugin.version>5.1.2</maven.bundle.plugin.version>
     <maven.cobertura.version>2.7</maven.cobertura.version>
     <maven.compiler.jdk.version>11</maven.compiler.jdk.version>
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
@@ -64,7 +64,8 @@
     <maven.war.plugin.version>3.3.1</maven.war.plugin.version>
 
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
-    <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version>
+<!--     <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version> -->
+    <karaf.maven.plugin.version>4.3.1</karaf.maven.plugin.version>
 
     <ib.logconfig.version>0.13.0</ib.logconfig.version> <!-- A default. This may or may not change over time -->
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
@@ -74,7 +75,7 @@
     <akka.version>2.5.17</akka.version>
     <amazon.kinesis.client.version>1.14.2</amazon.kinesis.client.version>
     <antlr4.version>4.9.2</antlr4.version>
-    <apache.ant.version>1.10.9</apache.ant.version>
+    <apache.ant.version>1.10.10</apache.ant.version>
     <apache.commons.codec.version>1.15</apache.commons.codec.version>
     <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
@@ -85,13 +86,13 @@
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.19.0</assertj.core.version>
     <avro.core.version>1.10.2</avro.core.version>
-    <aws.sdk.version>1.11.982</aws.sdk.version>
+    <aws.sdk.version>1.11.1002</aws.sdk.version>
     <aws.sdkv2.bom.version>2.16.34</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.68</bouncycastle.version>
     <chronicle.map.version>3.20.84</chronicle.map.version>
-    <classgraph.version>4.8.103</classgraph.version>
+    <classgraph.version>4.8.104</classgraph.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.8.0</commons.dbcp2.version>
@@ -105,7 +106,7 @@
     <cucumber.jvm.deps.version>1.0.5</cucumber.jvm.deps.version>
     <discipline.version>0.7.3</discipline.version>
     <derby.version>10.15.2.0</derby.version>
-    <dropwizard.version>2.0.20</dropwizard.version>
+    <dropwizard.version>2.0.21</dropwizard.version>
     <dom4j.version>2.1.3</dom4j.version>
     <egit.github.version>5.1.0.201809111528-r</egit.github.version>
     <embedded.redis.version>0.6</embedded.redis.version>
@@ -122,16 +123,16 @@
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>1.12.1</gmavenplus.plugin.version>
-    <google.dagger.version>2.33</google.dagger.version>
-    <google.guava.version>30.1-jre</google.guava.version>
+    <google.dagger.version>2.34.1</google.dagger.version>
+    <google.guava.version>30.1.1-jre</google.guava.version>
     <google.inject.guice.version>4.2.1</google.inject.guice.version> <!-- NOT LATEST -->
     <google.maps.services.version>0.18.0</google.maps.services.version>
-    <google.protobuf.java.version>3.13.0</google.protobuf.java.version>
+    <google.protobuf.java.version>3.15.8</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
     <hazelcast.version>4.2</hazelcast.version>
     <hikari.cp.version>4.0.3</hikari.cp.version>
     <itextpdf.version>5.5.13.2</itextpdf.version>
-    <jackson.version>2.12.2</jackson.version>
+    <jackson.version>2.12.3</jackson.version>
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
     <jacoco.it.execution.dest.file>${jacoco.it.execution.data.file}</jacoco.it.execution.dest.file>
     <jacoco.maven.plugin.version>${jacoco.version}</jacoco.maven.plugin.version>
@@ -148,7 +149,7 @@
     <java.semver4j.version>3.2.0.3</java.semver4j.version>
     <java.semver.version>0.9.0</java.semver.version>
     <javaslang.version>2.0.5</javaslang.version>
-    <java.websocket.version>1.5.1</java.websocket.version>
+    <java.websocket.version>1.5.2</java.websocket.version>
     <javax.inject.version>1</javax.inject.version>
     <jaxb.api.version>2.3.1</jaxb.api.version>
     <jclouds.version>1.9.0</jclouds.version>
@@ -158,8 +159,8 @@
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.10</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.14.8</jooq.jooq.version>
-    <jooq.joor.version>0.9.13</jooq.joor.version>
+    <jooq.jooq.version>3.14.9</jooq.jooq.version>
+    <jooq.joor.version>0.9.14</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.1.1</jsonassert.version>
     <json.version>20210307</json.version>
@@ -167,24 +168,24 @@
     <jtds.version>1.3.1</jtds.version>
     <junit.interface.version>0.11</junit.interface.version>
     <junit.platform.maven.plugin.version>1.1.2</junit.platform.maven.plugin.version>
-    <kafka.version>2.7.0</kafka.version>
+    <kafka.version>2.8.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
-    <kohsuke.github.api.version>1.124</kohsuke.github.api.version>
-    <kotlin.version>1.4.30</kotlin.version>
+    <kohsuke.github.api.version>1.128</kohsuke.github.api.version>
+    <kotlin.version>1.4.32</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
     <logstash.logback.encoder.version>6.6</logstash.logback.encoder.version>
-    <lombok.version>1.18.18</lombok.version>
+    <lombok.version>1.18.20</lombok.version>
     <mariadb.java.client.version>2.7.2</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
-    <mockito.version>3.8.0</mockito.version>
+    <mockito.version>3.9.0</mockito.version>
     <moditect.maven.plugin.version>1.0.0.RC1</moditect.maven.plugin.version>
     <mybatis.version>3.5.6</mybatis.version>
     <mysql.connector.version>8.0.23</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.4</opencsv.version>
-    <owasp.dependency.check.maven.version>6.1.3</owasp.dependency.check.maven.version>
+    <owasp.dependency.check.maven.version>6.1.5</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
@@ -196,13 +197,13 @@
     <site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
     <snappy.java.version>1.1.8.4</snappy.java.version>
-    <spotbugs.maven.plugin.version>4.2.2</spotbugs.maven.plugin.version>
-    <spotbugs.version>4.2.2</spotbugs.version>
+    <spotbugs.maven.plugin.version>4.2.3</spotbugs.maven.plugin.version>
+    <spotbugs.version>4.2.3</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.4.4</spring.boot.version>
-    <spring.version>5.3.5</spring.version>
+    <spring.boot.version>2.4.5</spring.boot.version>
+    <spring.version>5.3.6</spring.version>
     <sqlite.jdbc.version>3.34.0</sqlite.jdbc.version>
-    <tika.version>1.25</tika.version>
+    <tika.version>1.26</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
     <typesafe.config.version>1.4.1</typesafe.config.version>
     <validation.api.version>2.0.1.Final</validation.api.version>
