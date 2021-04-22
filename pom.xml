@@ -25,7 +25,7 @@
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
   <url>${ib.site.view.url}/</url>
-  <version>49</version>
+  <version>50-SNAPSHOT</version>
   <issueManagement>
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
@@ -35,7 +35,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>ibparent-49</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
