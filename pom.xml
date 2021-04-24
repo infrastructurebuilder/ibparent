@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>42</version>
+    <version>43</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -1186,11 +1186,6 @@
             <logDependencyChanges>true</logDependencyChanges>
             <overwriteChangedDependencies>true</overwriteChangedDependencies>
           </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.infrastructurebuilder.maven</groupId>
-          <artifactId>ibversions-maven-plugin</artifactId>
-          <version>${ib.versioning.support.plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.avro</groupId>
