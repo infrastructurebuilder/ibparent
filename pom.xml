@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>44</version>
+    <version>45</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -46,7 +46,7 @@
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
     <maven.eclipse.plugin.version>2.10</maven.eclipse.plugin.version>
     <maven.failsafe.plugin.version>3.0.0-M5</maven.failsafe.plugin.version>
-    <maven.javadoc.plugin.version>3.2.0</maven.javadoc.plugin.version>
+    <maven.javadoc.plugin.version>3.3.0</maven.javadoc.plugin.version>
     <maven.jdepend.plugin.version>2.0</maven.jdepend.plugin.version>
     <maven.jxr.plugin.version>2.5</maven.jxr.plugin.version>
     <maven.modello.plugin.version>1.11</maven.modello.plugin.version>
@@ -66,7 +66,7 @@
 <!--     <karaf.maven.plugin.version>${karaf.tooling.version}</karaf.maven.plugin.version> -->
     <karaf.maven.plugin.version>4.3.2</karaf.maven.plugin.version>
 
-    <ib.logconfig.version>0.13.0</ib.logconfig.version> <!-- A default. This may or may not change over time -->
+    <ib.logconfig.version>0.13.1</ib.logconfig.version> <!-- A default. This may or may not change over time -->
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
 
     <akka.http.version>2.0.5</akka.http.version>
@@ -85,8 +85,8 @@
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.19.0</assertj.core.version>
     <avro.core.version>1.10.2</avro.core.version>
-    <aws.sdk.version>1.11.1022</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.16.66</aws.sdkv2.bom.version>
+    <aws.sdk.version>1.11.1026</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.16.71</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.68</bouncycastle.version>
@@ -96,7 +96,7 @@
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.8.0</commons.dbcp2.version>
     <commons.email.version>1.5</commons.email.version>
-    <commons.io.version>2.8.0</commons.io.version>
+    <commons.io.version>2.9.0</commons.io.version>
     <commons.pool.version>1.6</commons.pool.version>
     <commons.vfs2.version>2.8.0</commons.vfs2.version>
     <corn.cps.version>1.1.10</corn.cps.version>
@@ -122,11 +122,11 @@
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>1.12.1</gmavenplus.plugin.version>
-    <google.dagger.version>2.35.1</google.dagger.version>
+    <google.dagger.version>2.36</google.dagger.version>
     <google.guava.version>30.1.1-jre</google.guava.version>
-    <google.inject.guice.version>4.2.1</google.inject.guice.version> <!-- NOT LATEST -->
+    <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT LATEST -->
     <google.maps.services.version>0.18.1</google.maps.services.version>
-    <google.protobuf.java.version>3.15.8</google.protobuf.java.version>
+    <google.protobuf.java.version>3.17.1</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
     <hazelcast.version>4.2</hazelcast.version>
     <hikari.cp.version>4.0.3</hikari.cp.version>
@@ -154,11 +154,11 @@
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.81</jcommander.version>
     <discord.jda.version>1.2.2_139</discord.jda.version>
-    <jmh.version>1.31</jmh.version>
+    <jmh.version>1.32</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
     <joda.time.version>2.10.10</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.14.9</jooq.jooq.version>
+    <jooq.jooq.version>3.14.11</jooq.jooq.version>
     <jooq.joor.version>0.9.14</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsonassert.version>1.5.1.1</jsonassert.version>
@@ -169,7 +169,7 @@
     <junit.platform.maven.plugin.version>1.1.2</junit.platform.maven.plugin.version>
     <kafka.version>2.8.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
-    <kohsuke.github.api.version>1.128</kohsuke.github.api.version>
+    <kohsuke.github.api.version>1.129</kohsuke.github.api.version>
     <kotlin.version>1.5.0</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
@@ -199,7 +199,7 @@
     <spotbugs.maven.plugin.version>4.2.3</spotbugs.maven.plugin.version>
     <spotbugs.version>4.2.3</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.4.5</spring.boot.version>
+    <spring.boot.version>2.5.0</spring.boot.version>
     <spring.version>5.3.7</spring.version>
     <sqlite.jdbc.version>3.34.0</sqlite.jdbc.version>
     <tika.version>1.26</tika.version>
