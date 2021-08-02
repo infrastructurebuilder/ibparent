@@ -74,7 +74,7 @@
     <akka.version>2.5.17</akka.version>
     <amazon.kinesis.client.version>1.14.3</amazon.kinesis.client.version>
     <antlr4.version>4.9.2</antlr4.version>
-    <apache.ant.version>1.10.10</apache.ant.version>
+    <apache.ant.version>1.10.11</apache.ant.version>
     <apache.commons.codec.version>1.15</apache.commons.codec.version>
     <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
