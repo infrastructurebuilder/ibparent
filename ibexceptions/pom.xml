@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent</artifactId>
-    <version>57</version>
+    <version>58-SNAPSHOT</version>
   </parent>
   <artifactId>ibexceptions</artifactId>
   <packaging>jar</packaging>
