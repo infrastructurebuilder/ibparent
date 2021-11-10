@@ -72,25 +72,25 @@
     <akka.stream.version>2.0.5</akka.stream.version>
     <akka.version>2.5.17</akka.version>
     <amazon.kinesis.client.version>1.14.4</amazon.kinesis.client.version>
-    <antlr4.version>4.9.2</antlr4.version>
-    <apache.ant.version>1.10.11</apache.ant.version>
+    <antlr4.version>4.9.3</antlr4.version>
+    <apache.ant.version>1.10.12</apache.ant.version>
     <apache.commons.codec.version>1.15</apache.commons.codec.version>
     <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
     <apache.curator.version>5.2.0</apache.curator.version>
     <apache.httpclient.version>4.5.13</apache.httpclient.version>
-    <apache.poi.version>5.0.0</apache.poi.version>
+    <apache.poi.version>5.1.0</apache.poi.version>
     <apache.shiro.version>1.8.0</apache.shiro.version>
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.21.0</assertj.core.version>
-    <avro.core.version>1.10.2</avro.core.version>
-    <aws.sdk.version>1.12.81</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.17.53</aws.sdkv2.bom.version>
+    <avro.core.version>1.11.0</avro.core.version>
+    <aws.sdk.version>1.12.107</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.17.78</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.69</bouncycastle.version>
     <chronicle.map.version>3.20.84</chronicle.map.version>
-    <classgraph.version>4.8.123</classgraph.version>
+    <classgraph.version>4.8.131</classgraph.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.9.0</commons.dbcp2.version>
@@ -122,10 +122,10 @@
     <github.global.server>github</github.global.server>
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>1.13.0</gmavenplus.plugin.version>
-    <google.dagger.version>2.39.1</google.dagger.version>
+    <google.dagger.version>2.40</google.dagger.version>
     <google.guava.version>30.1.1-jre</google.guava.version>
     <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT LATEST -->
-    <google.maps.services.version>1.0.0</google.maps.services.version>
+    <google.maps.services.version>1.0.1</google.maps.services.version>
     <google.protobuf.java.version>3.17.1</google.protobuf.java.version>
     <h2.database.version>1.4.200</h2.database.version>
     <hazelcast.version>5.0</hazelcast.version>
@@ -155,9 +155,9 @@
     <jcommander.version>1.81</jcommander.version>
     <jmh.version>1.33</jmh.version>
     <joda.convert.version>2.2.1</joda.convert.version>
-    <joda.time.version>2.10.12</joda.time.version>
+    <joda.time.version>2.10.13</joda.time.version>
     <jooq.jool.version>0.9.14</jooq.jool.version>
-    <jooq.jooq.version>3.15.3</jooq.jooq.version>
+    <jooq.jooq.version>3.15.4</jooq.jooq.version>
     <jooq.joor.version>0.9.14</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
     <jsch.version>0.1.55</jsch.version>
@@ -169,22 +169,22 @@
     <junit.platform.maven.plugin.version>1.1.5</junit.platform.maven.plugin.version>
     <kafka.version>3.0.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
-    <kohsuke.github.api.version>1.133</kohsuke.github.api.version>
+    <kohsuke.github.api.version>1.135</kohsuke.github.api.version>
     <kotlin.version>1.5.30</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
     <logstash.logback.encoder.version>6.6</logstash.logback.encoder.version>
-    <lombok.version>1.18.20</lombok.version>
+    <lombok.version>1.18.22</lombok.version>
     <mariadb.java.client.version>2.7.2</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
-    <mockito.version>3.12.4</mockito.version>
+    <mockito.version>4.0.0</mockito.version>
     <moditect.maven.plugin.version>1.0.0.RC2</moditect.maven.plugin.version>
     <mybatis.version>3.5.7</mybatis.version>
-    <mysql.connector.version>8.0.26</mysql.connector.version>
+    <mysql.connector.version>8.0.27</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.5.2</opencsv.version>
-    <owasp.dependency.check.maven.version>6.3.2</owasp.dependency.check.maven.version>
+    <owasp.dependency.check.maven.version>6.5.0</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
@@ -197,11 +197,11 @@
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
     <snappy.java.version>1.1.8.4</snappy.java.version>
     <snakeyml.version>1.29</snakeyml.version>
-    <spotbugs.maven.plugin.version>4.4.1</spotbugs.maven.plugin.version>
-    <spotbugs.version>4.4.1</spotbugs.version>
+    <spotbugs.maven.plugin.version>4.4.2.2</spotbugs.maven.plugin.version>
+    <spotbugs.version>4.4.2</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.5.5</spring.boot.version>
-    <spring.version>5.3.10</spring.version>
+    <spring.boot.version>2.5.6</spring.boot.version>
+    <spring.version>5.3.12</spring.version>
     <sqlite.jdbc.version>3.36.0.3</sqlite.jdbc.version>
     <tika.version>2.1.0</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
@@ -211,7 +211,7 @@
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
     <vertx.jooq.version>6.2.0</vertx.jooq.version>
-    <vertx.version>4.1.2</vertx.version>
+    <vertx.version>4.2.1</vertx.version>
 
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
     <webjars.emberjs.version>1.12.0</webjars.emberjs.version>
