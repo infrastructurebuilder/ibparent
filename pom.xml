@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>51</version>
+    <version>52</version>
   </parent>
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
@@ -84,13 +84,13 @@
     <aspectj.version>1.9.6</aspectj.version>
     <assertj.core.version>3.21.0</assertj.core.version>
     <avro.core.version>1.11.0</avro.core.version>
-    <aws.sdk.version>1.12.110</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.17.81</aws.sdkv2.bom.version>
+    <aws.sdk.version>1.12.114</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.17.85</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.69</bouncycastle.version>
     <chronicle.map.version>3.20.84</chronicle.map.version>
-    <classgraph.version>4.8.132</classgraph.version>
+    <classgraph.version>4.8.133</classgraph.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.9.0</commons.dbcp2.version>
@@ -173,7 +173,7 @@
     <kotlin.version>1.6.0</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.3.0-alpha5</logback.version> <!-- was 1.2.3 -->
-    <logstash.logback.encoder.version>7.0</logstash.logback.encoder.version>
+    <logstash.logback.encoder.version>7.0.1</logstash.logback.encoder.version>
     <lombok.version>1.18.22</lombok.version>
     <mariadb.java.client.version>2.7.2</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
@@ -197,10 +197,10 @@
     <slf4j.version>2.0.0-alpha1</slf4j.version> <!-- was 1.7.26 -->
     <snappy.java.version>1.1.8.4</snappy.java.version>
     <snakeyml.version>1.29</snakeyml.version>
-    <spotbugs.maven.plugin.version>4.4.2.2</spotbugs.maven.plugin.version>
+    <spotbugs.maven.plugin.version>4.5.0.0</spotbugs.maven.plugin.version>
     <spotbugs.version>4.5.0</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>2.5.6</spring.boot.version>
+    <spring.boot.version>2.6.0</spring.boot.version>
     <spring.version>5.3.13</spring.version>
     <sqlite.jdbc.version>3.36.0.3</sqlite.jdbc.version>
     <tika.version>2.1.0</tika.version>
