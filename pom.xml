@@ -128,7 +128,7 @@
     <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT LATEST -->
     <google.maps.services.version>1.0.1</google.maps.services.version>
     <google.protobuf.java.version>3.17.1</google.protobuf.java.version>
-    <h2.database.version>2.0.202</h2.database.version>
+    <h2.database.version>2.1.210</h2.database.version>
     <hazelcast.version>5.0.2</hazelcast.version>
     <hikari.cp.version>5.0.0</hikari.cp.version>
     <itextpdf.version>5.5.13.2</itextpdf.version>
