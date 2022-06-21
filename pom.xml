@@ -181,7 +181,7 @@
     <mockito.version>4.2.0</mockito.version>
     <moditect.maven.plugin.version>1.0.0.RC2</moditect.maven.plugin.version>
     <mybatis.version>3.5.8</mybatis.version>
-    <mysql.connector.version>8.0.27</mysql.connector.version>
+    <mysql.connector.version>8.0.28</mysql.connector.version>
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.5.2</opencsv.version>
