@@ -1,11 +1,18 @@
 package com.mscharhag.et;
 
+import static com.mscharhag.et.test.TestUtil.BAR_EXCEPTION;
+import static com.mscharhag.et.test.TestUtil.BAR_EXCEPTION_MESSAGE;
+import static com.mscharhag.et.test.TestUtil.FOO_EXCEPTION;
+import static com.mscharhag.et.test.TestUtil.FOO_EXCEPTION_MESSAGE;
+import static com.mscharhag.et.test.TestUtil.expectException;
+import static com.mscharhag.et.test.TestUtil.translateException;
+
+import org.junit.Test;
+
 import com.mscharhag.et.test.exceptions.BarException;
 import com.mscharhag.et.test.exceptions.BarRuntimeException;
 import com.mscharhag.et.test.exceptions.FooException;
 import com.mscharhag.et.test.exceptions.FooRuntimeException;
-import static com.mscharhag.et.test.TestUtil.*;
-import org.junit.Test;
 
 public class InheritedConfigurationTest {
 

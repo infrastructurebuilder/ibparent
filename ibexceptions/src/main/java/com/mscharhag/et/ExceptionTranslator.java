@@ -2,10 +2,20 @@ package com.mscharhag.et;
 
 public interface ExceptionTranslator {
 
-    void withTranslation(TryBlock tryBlock);
+  void translate(TryBlock tryBlock);
 
-    <T> T withReturningTranslation(ReturningTryBlock<T> invokable);
+  @Deprecated
+  default void withTranslation(TryBlock tryBlock) {
+    translate(tryBlock);
+  }
 
-    ExceptionTranslatorConfigurer newConfiguration();
+  <T> T returns(ReturningTryBlock<T> invokable);
+
+  @Deprecated
+  default <T> T withReturningTranslation(ReturningTryBlock<T> invokable) {
+    return returns(invokable);
+  }
+
+  ExceptionTranslatorConfigurer newConfiguration();
 
 }

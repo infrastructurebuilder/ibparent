@@ -1,13 +1,14 @@
 package com.mscharhag.et.impl;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import com.mscharhag.et.TargetExceptionResolver;
 import com.mscharhag.et.TranslationException;
 import com.mscharhag.et.test.TestUtil;
 import com.mscharhag.et.test.exceptions.BarRuntimeException;
-import static org.junit.Assert.*;
-
 import com.mscharhag.et.test.exceptions.FooRuntimeException;
-import org.junit.Test;
 
 public class ExceptionMappingsTest {
 

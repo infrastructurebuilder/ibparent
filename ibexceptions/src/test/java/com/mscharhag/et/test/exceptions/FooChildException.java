@@ -1,5 +1,6 @@
 package com.mscharhag.et.test.exceptions;
 
+@SuppressWarnings("serial")
 public class FooChildException extends FooException {
 
     public FooChildException(String message) {

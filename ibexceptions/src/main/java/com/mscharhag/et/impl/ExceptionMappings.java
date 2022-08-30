@@ -1,12 +1,12 @@
 package com.mscharhag.et.impl;
 
-import com.mscharhag.et.TargetExceptionResolver;
-import com.mscharhag.et.TranslationException;
-
 import java.util.HashMap;
 import java.util.Map;
 
-class ExceptionMappings {
+import com.mscharhag.et.TargetExceptionResolver;
+import com.mscharhag.et.TranslationException;
+
+public class ExceptionMappings {
 
     protected ExceptionMappings parentExceptionMappings;
     protected Map<Class<? extends Exception>, TargetExceptionResolver> exceptionMappings = new HashMap<>();
@@ -30,8 +30,8 @@ class ExceptionMappings {
 
         // add mapping to translate checked exception to runtime exceptions
         parentMappings.addExceptionMapping(Exception.class, (m, ex) -> {
-            if (ex instanceof RuntimeException) {
-                return (RuntimeException) ex;
+            if (ex instanceof RuntimeException rex) {
+                return rex;
             }
             return new RuntimeException(ex.getMessage(), ex);
         });
@@ -52,7 +52,7 @@ class ExceptionMappings {
 
 
     TargetExceptionResolver getExceptionResolver(Class<? extends Exception> sourceExceptionClass) {
-        Class exceptionClass = sourceExceptionClass;
+        Class<?> exceptionClass = sourceExceptionClass;
 
         while (!exceptionClass.equals(Throwable.class)) {
             TargetExceptionResolver resolver = this.exceptionMappings.get(exceptionClass);
