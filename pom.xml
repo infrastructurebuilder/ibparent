@@ -214,7 +214,7 @@
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
     <vertx.jooq.version>6.2.0</vertx.jooq.version>
-    <vertx.version>4.3.3</vertx.version>
+    <vertx.version>4.3.5</vertx.version>
 
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
     <webjars.emberjs.version>1.12.0</webjars.emberjs.version>
