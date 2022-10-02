@@ -27,6 +27,17 @@ public class DefaultConfigurationTest {
     }
 
     @Test
+    public void deprecatedtranslateTranslatesCheckedExceptionsToRuntimeExceptions() {
+        RuntimeException result = TestUtil.catchException(() -> {
+            et.withTranslation(() -> {
+                throw checkedException;
+            });
+        });
+        expect(result.getMessage()).toEqual("checked exception");
+        expect(result.getCause()).toEqual(checkedException);
+    }
+
+    @Test
     public void translateDoesNothingIfNoExceptionIsThrown() {
         et.translate(() -> {
             // empty
@@ -42,6 +53,7 @@ public class DefaultConfigurationTest {
         });
         expect(result).toEqual(runtimeException);
     }
+
 
     @Test
     public void returnsTranslatesCheckedExceptionsToRuntimeExceptions() {
@@ -64,6 +76,16 @@ public class DefaultConfigurationTest {
     public void returnsDoesNotTranslateRuntimeExceptions() {
         RuntimeException result = TestUtil.catchException(() -> {
             et.returns(() -> {
+                throw runtimeException;
+            });
+        });
+        expect(result).toEqual(runtimeException);
+    }
+
+    @Test
+    public void deprecatedreturnsDoesNotTranslateRuntimeExceptions() {
+        RuntimeException result = TestUtil.catchException(() -> {
+            et.withReturningTranslation(() -> {
                 throw runtimeException;
             });
         });

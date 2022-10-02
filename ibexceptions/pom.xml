@@ -30,7 +30,8 @@
   <url>${github.url.base}/${project.artifactId}</url>
   <properties>
   <!--  Cant figure out how to test a piece inside of the exception translator  -->
-    <test.coverage.percentage.required>94</test.coverage.percentage.required>
+  <!-- Apparently, the default impls in ExceptionTranslator don't show up in coverage -->
+    <test.coverage.percentage.required>95</test.coverage.percentage.required>
   </properties>
   <dependencies>
     <dependency>

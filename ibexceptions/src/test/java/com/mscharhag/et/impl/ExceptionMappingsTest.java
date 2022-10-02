@@ -43,6 +43,13 @@ public class ExceptionMappingsTest {
         this.exceptionMappings.addExceptionMapping(Exception.class, new ReflectiveExceptionResolver(BarRuntimeException.class));
     }
 
+    @Test(expected = TranslationException.class)
+    public void itIsPossibleToGetATranslationExceptionFromNoResolver() {
+      exceptionMappings.parentExceptionMappings = null;
+      Exception ex = new Exception("foo");
+      exceptionMappings.getExceptionResolver(Exception.class);
+    }
+
 
     private RuntimeException getTargetException(ExceptionMappings mappings, Exception source) {
         TargetExceptionResolver exceptionResolver = mappings.getExceptionResolver(source.getClass());
