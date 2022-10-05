@@ -149,7 +149,6 @@
 
     <java.semver4j.version>3.2.0.3</java.semver4j.version>
     <java.semver.version>0.9.0</java.semver.version>
-    <javaslang.version>2.0.5</javaslang.version>
     <java.websocket.version>1.5.3</java.websocket.version>
     <javax.inject.version>1.0</javax.inject.version>
     <jaxb.api.version>2.3.1</jaxb.api.version>
@@ -211,6 +210,7 @@
     <trove4j.version>3.0.3</trove4j.version>
     <typesafe.config.version>1.4.2</typesafe.config.version>
     <validation.api.version>2.0.1.Final</validation.api.version>
+    <vavr.version>0.10.4</vavr.version>
     <velocity.version>2.3</velocity.version>
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
@@ -534,6 +534,21 @@
         <groupId>io.avaje</groupId>
         <artifactId>javax.inject</artifactId>
         <version>${javax.inject.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.vavr</groupId>
+        <artifactId>vavr</artifactId>
+        <version>${vavr.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.vavr</groupId>
+        <artifactId>vavr-match</artifactId>
+        <version>${vavr.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.vavr</groupId>
+        <artifactId>vavr-test</artifactId>
+        <version>${vavr.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.validation</groupId>
