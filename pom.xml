@@ -201,7 +201,7 @@
     <spotbugs.version>4.7.0</spotbugs.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>2.7.0</spring.boot.version>
-    <spring.version>5.3.21</spring.version>
+    <spring.version>6.0.0</spring.version>
     <sqlite.jdbc.version>3.36.0.3</sqlite.jdbc.version>
     <tika.version>2.4.1</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
