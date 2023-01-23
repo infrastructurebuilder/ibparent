@@ -1,5 +1,6 @@
 package com.mscharhag.et.test.exceptions;
 
+@SuppressWarnings("serial")
 public class BarException extends Exception {
 
     public BarException(String message) {

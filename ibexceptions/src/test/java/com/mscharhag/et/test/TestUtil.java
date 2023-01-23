@@ -1,13 +1,12 @@
 package com.mscharhag.et.test;
 
-import com.mscharhag.et.ET;
+import static com.mscharhag.oleaster.matcher.Matchers.expect;
+
 import com.mscharhag.et.ExceptionTranslator;
 import com.mscharhag.et.test.exceptions.BarException;
 import com.mscharhag.et.test.exceptions.FooChildException;
 import com.mscharhag.et.test.exceptions.FooException;
 import com.mscharhag.et.test.exceptions.FooRuntimeException;
-
-import static com.mscharhag.oleaster.matcher.Matchers.*;
 
 public class TestUtil {
 
@@ -39,7 +38,7 @@ public class TestUtil {
 
     public static RuntimeException translateException(ExceptionTranslator et, Exception exception) {
         return TestUtil.catchException(() -> {
-            et.withTranslation(() -> {
+            et.translate(() -> {
                 throw exception;
             });
         });

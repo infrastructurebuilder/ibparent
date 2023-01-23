@@ -1,10 +1,10 @@
 package com.mscharhag.et.impl;
 
-import com.mscharhag.et.*;
-
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
+import com.mscharhag.et.ExceptionMappingConfigurer;
+import com.mscharhag.et.ExceptionTranslator;
+import com.mscharhag.et.ExceptionTranslatorConfigurer;
 
 public class DefaultExceptionTranslatorConfigurer extends ExceptionTranslatorConfigurer {
 

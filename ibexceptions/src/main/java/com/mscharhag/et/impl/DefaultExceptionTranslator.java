@@ -1,6 +1,11 @@
 package com.mscharhag.et.impl;
 
-import com.mscharhag.et.*;
+import com.mscharhag.et.ExceptionTranslator;
+import com.mscharhag.et.ExceptionTranslatorConfigurer;
+import com.mscharhag.et.ReturningTryBlock;
+import com.mscharhag.et.TargetExceptionResolver;
+import com.mscharhag.et.TranslationException;
+import com.mscharhag.et.TryBlock;
 
 class DefaultExceptionTranslator implements ExceptionTranslator {
 
@@ -11,17 +16,17 @@ class DefaultExceptionTranslator implements ExceptionTranslator {
     }
 
     @Override
-    public void withTranslation(TryBlock tryBlock) {
-        Arguments.ensureNotNull(tryBlock, "null is not a valid argument for ET.withTranslation()");
-        this.withReturningTranslation(() -> {
+    public void translate(TryBlock tryBlock) {
+        Arguments.ensureNotNull(tryBlock, "null is not a valid argument for ET.translate()");
+        this.returns(() -> {
             tryBlock.run();
             return null;
         });
     }
 
     @Override
-    public <T> T withReturningTranslation(ReturningTryBlock<T> invokable) {
-        Arguments.ensureNotNull(invokable, "null is not a valid argument for ET.withReturningTranslation()");
+    public <T> T returns(ReturningTryBlock<T> invokable) {
+        Arguments.ensureNotNull(invokable, "null is not a valid argument for ET.returns()");
         try {
             return invokable.run();
         } catch (Exception e) {

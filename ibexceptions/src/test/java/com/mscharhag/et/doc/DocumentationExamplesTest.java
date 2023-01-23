@@ -1,18 +1,16 @@
 package com.mscharhag.et.doc;
 
+import static org.junit.Assert.assertEquals;
+
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
 import com.mscharhag.et.ET;
 import com.mscharhag.et.ExceptionTranslator;
 import com.mscharhag.et.test.TestUtil;
-import static org.junit.Assert.*;
-import org.junit.Test;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.URLConnection;
-
+@SuppressWarnings("serial")
 public class DocumentationExamplesTest {
 
     @Test
@@ -34,7 +32,7 @@ public class DocumentationExamplesTest {
                     .done();
 
             // will throw SomeRuntimeException
-            et.withTranslation(() -> {
+            et.translate(() -> {
                 // code that can throw SomeException
                 throw new SomeException();
             });
@@ -46,12 +44,12 @@ public class DocumentationExamplesTest {
 
 
     @Test
-    public void gettingStartedWithTranslation()  {
+    public void gettingStartedtranslate()  {
         ExceptionTranslator et = ET.newConfiguration()
                 .translate(ReflectiveOperationException.class).to(SomeRuntimeException.class)
                 .done();
 
-        et.withTranslation(() -> {
+        et.translate(() -> {
 
             // this piece of code can throw NoSuchMethodException,
             // InvocationTargetException and IllegalAccessException
@@ -64,12 +62,12 @@ public class DocumentationExamplesTest {
     }
 
     @Test
-    public void gettingStartedWithReturningTranslation()  {
+    public void gettingStartedreturns()  {
         ExceptionTranslator et = ET.newConfiguration()
                 .translate(ReflectiveOperationException.class).to(SomeRuntimeException.class)
                 .done();
 
-        String result = et.withReturningTranslation(() -> {
+        String result = et.returns(() -> {
             Method method = String.class.getMethod("toLowerCase");
             return (String) method.invoke("FOO");
         });

@@ -1,5 +1,6 @@
 package com.mscharhag.et;
 
+@SuppressWarnings("serial")
 public class TranslationException extends RuntimeException {
 
     public TranslationException(String message) {

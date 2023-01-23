@@ -1,9 +1,9 @@
 package com.mscharhag.et.impl;
 
+import java.util.List;
+
 import com.mscharhag.et.ExceptionMappingConfigurer;
 import com.mscharhag.et.TargetExceptionResolver;
-
-import java.util.List;
 
 public class DefaultExceptionMappingConfigurer implements ExceptionMappingConfigurer {
 

@@ -1,13 +1,14 @@
 package com.mscharhag.et.impl;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import com.mscharhag.et.TargetExceptionResolver;
 import com.mscharhag.et.TranslationException;
 import com.mscharhag.et.test.TestUtil;
 import com.mscharhag.et.test.exceptions.BarRuntimeException;
-import static org.junit.Assert.*;
-
 import com.mscharhag.et.test.exceptions.FooRuntimeException;
-import org.junit.Test;
 
 public class ExceptionMappingsTest {
 
@@ -40,6 +41,13 @@ public class ExceptionMappingsTest {
     public void itIsNotPossibleToAddDuplicateSourceExceptionMappings() {
         this.exceptionMappings.addExceptionMapping(Exception.class, new ReflectiveExceptionResolver(FooRuntimeException.class));
         this.exceptionMappings.addExceptionMapping(Exception.class, new ReflectiveExceptionResolver(BarRuntimeException.class));
+    }
+
+    @Test(expected = TranslationException.class)
+    public void itIsPossibleToGetATranslationExceptionFromNoResolver() {
+      exceptionMappings.parentExceptionMappings = null;
+      Exception ex = new Exception("foo");
+      exceptionMappings.getExceptionResolver(Exception.class);
     }
 
 

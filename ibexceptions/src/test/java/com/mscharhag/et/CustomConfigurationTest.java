@@ -1,12 +1,20 @@
 package com.mscharhag.et;
 
-import com.mscharhag.et.test.exceptions.*;
-import com.mscharhag.et.test.TestUtil;
+import static com.mscharhag.et.test.TestUtil.FOO_CHILD_EXCEPTION;
+import static com.mscharhag.et.test.TestUtil.FOO_CHILD_EXCEPTION_MESSAGE;
+import static com.mscharhag.et.test.TestUtil.expectException;
+import static com.mscharhag.et.test.TestUtil.translateException;
+import static com.mscharhag.oleaster.matcher.Matchers.expect;
+
 import org.junit.Test;
 
-import static com.mscharhag.et.test.TestUtil.*;
-import static com.mscharhag.et.test.TestUtil.FOO_CHILD_EXCEPTION;
-import static com.mscharhag.oleaster.matcher.Matchers.*;
+import com.mscharhag.et.test.TestUtil;
+import com.mscharhag.et.test.exceptions.BarException;
+import com.mscharhag.et.test.exceptions.BarRuntimeException;
+import com.mscharhag.et.test.exceptions.FooChildException;
+import com.mscharhag.et.test.exceptions.FooChildRuntimeException;
+import com.mscharhag.et.test.exceptions.FooException;
+import com.mscharhag.et.test.exceptions.FooRuntimeException;
 
 public class CustomConfigurationTest {
 
@@ -78,7 +86,7 @@ public class CustomConfigurationTest {
                 .translate(FooException.class).using((m, ex) -> null)
                 .done();
 
-        et.withTranslation(() -> {
+        et.translate(() -> {
             throw new FooException("foo");
         });
     }

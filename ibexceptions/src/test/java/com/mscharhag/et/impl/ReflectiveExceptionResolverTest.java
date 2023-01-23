@@ -1,10 +1,12 @@
 package com.mscharhag.et.impl;
 
+import org.junit.Test;
+
 import com.mscharhag.et.TranslationException;
 import com.mscharhag.et.test.TestUtil;
 import com.mscharhag.et.test.exceptions.FooException;
-import org.junit.Test;
 
+@SuppressWarnings("serial")
 public class ReflectiveExceptionResolverTest {
 
     ReflectiveExceptionResolver resolver;

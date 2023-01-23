@@ -1,11 +1,12 @@
 package com.mscharhag.et;
 
-import static com.mscharhag.oleaster.matcher.Matchers.*;
-
-import com.mscharhag.et.test.TestUtil;
-import org.junit.Test;
+import static com.mscharhag.oleaster.matcher.Matchers.expect;
 
 import java.io.IOException;
+
+import org.junit.Test;
+
+import com.mscharhag.et.test.TestUtil;
 
 public class DefaultConfigurationTest {
 
@@ -15,7 +16,18 @@ public class DefaultConfigurationTest {
 
 
     @Test
-    public void withTranslationTranslatesCheckedExceptionsToRuntimeExceptions() {
+    public void translateTranslatesCheckedExceptionsToRuntimeExceptions() {
+        RuntimeException result = TestUtil.catchException(() -> {
+            et.translate(() -> {
+                throw checkedException;
+            });
+        });
+        expect(result.getMessage()).toEqual("checked exception");
+        expect(result.getCause()).toEqual(checkedException);
+    }
+
+    @Test
+    public void deprecatedtranslateTranslatesCheckedExceptionsToRuntimeExceptions() {
         RuntimeException result = TestUtil.catchException(() -> {
             et.withTranslation(() -> {
                 throw checkedException;
@@ -26,26 +38,27 @@ public class DefaultConfigurationTest {
     }
 
     @Test
-    public void withTranslationDoesNothingIfNoExceptionIsThrown() {
-        et.withTranslation(() -> {
+    public void translateDoesNothingIfNoExceptionIsThrown() {
+        et.translate(() -> {
             // empty
         });
     }
 
     @Test
-    public void withTranslationDoesNotTranslateRuntimeExceptions() {
+    public void translateDoesNotTranslateRuntimeExceptions() {
         RuntimeException result = TestUtil.catchException(() -> {
-            et.withTranslation(() -> {
+            et.translate(() -> {
                 throw runtimeException;
             });
         });
         expect(result).toEqual(runtimeException);
     }
 
+
     @Test
-    public void withReturningTranslationTranslatesCheckedExceptionsToRuntimeExceptions() {
+    public void returnsTranslatesCheckedExceptionsToRuntimeExceptions() {
         RuntimeException result = TestUtil.catchException(() -> {
-            et.withReturningTranslation(() -> {
+            et.returns(() -> {
                 throw checkedException;
             });
         });
@@ -54,13 +67,23 @@ public class DefaultConfigurationTest {
     }
 
     @Test
-    public void withReturningTranslationReturnsTheValueIfNoExceptionIsThrown() {
-        String result = et.withReturningTranslation(() -> "foo");
+    public void returnsReturnsTheValueIfNoExceptionIsThrown() {
+        String result = et.returns(() -> "foo");
         expect(result).toEqual("foo");
     }
 
     @Test
-    public void withReturningTranslationDoesNotTranslateRuntimeExceptions() {
+    public void returnsDoesNotTranslateRuntimeExceptions() {
+        RuntimeException result = TestUtil.catchException(() -> {
+            et.returns(() -> {
+                throw runtimeException;
+            });
+        });
+        expect(result).toEqual(runtimeException);
+    }
+
+    @Test
+    public void deprecatedreturnsDoesNotTranslateRuntimeExceptions() {
         RuntimeException result = TestUtil.catchException(() -> {
             et.withReturningTranslation(() -> {
                 throw runtimeException;
@@ -70,17 +93,17 @@ public class DefaultConfigurationTest {
     }
 
     @Test
-    public void withTranslationFailsIfNullIsPassed() {
-        RuntimeException result = TestUtil.catchException(() -> et.withTranslation(null));
+    public void translateFailsIfNullIsPassed() {
+        RuntimeException result = TestUtil.catchException(() -> et.translate(null));
         expect(result.getClass()).toEqual(IllegalArgumentException.class);
-        expect(result.getMessage()).toEqual("null is not a valid argument for ET.withTranslation()");
+        expect(result.getMessage()).toEqual("null is not a valid argument for ET.translate()");
     }
 
     @Test
-    public void withReturningTranslationFailsIfNullIsPassed() {
-        RuntimeException result = TestUtil.catchException(() -> et.withReturningTranslation(null));
+    public void returnsFailsIfNullIsPassed() {
+        RuntimeException result = TestUtil.catchException(() -> et.returns(null));
         expect(result.getClass()).toEqual(IllegalArgumentException.class);
-        expect(result.getMessage()).toEqual("null is not a valid argument for ET.withReturningTranslation()");
+        expect(result.getMessage()).toEqual("null is not a valid argument for ET.returns()");
     }
 
 }
