@@ -25,7 +25,7 @@
   <artifactId>ibparent</artifactId>
   <packaging>pom</packaging>
   <url>${ib.site.view.url}/</url>
-  <version>66-SNAPSHOT</version>
+  <version>66</version>
   <issueManagement>
     <url>${github.url.base}/ibparent/issues</url>
     <system>GitHub</system>
@@ -35,7 +35,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
+    <tag>ibparent-66</tag>
   </scm>
 
   <properties>
@@ -1160,9 +1160,9 @@
           <artifactId>serviceloader-maven-plugin</artifactId>
           <version>${serviceloader.maven.plugin}</version>
           <configuration>
-            <services></services>
-            <excludes></excludes>
-            <includes></includes>
+            <services />
+            <excludes />
+            <includes />
             <failOnMissingServiceClass>false</failOnMissingServiceClass>
           </configuration>
           <executions>
