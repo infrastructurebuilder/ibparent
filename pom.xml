@@ -206,6 +206,7 @@
     <snakeyml.version>2.0</snakeyml.version>
     <spotbugs.maven.plugin.version>4.7.3.4</spotbugs.maven.plugin.version>
     <spotbugs.version>4.7.3</spotbugs.version>
+    <spotify.dataenum.version>1.4.1</spotify.dataenum.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
     <spring.boot.version>3.0.6</spring.boot.version>
     <spring.version>6.0.8</spring.version>
@@ -376,6 +377,16 @@
         <groupId>com.opencsv</groupId>
         <artifactId>opencsv</artifactId>
         <version>${opencsv.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.spotify.dataenum</groupId>
+        <artifactId>dataenum</artifactId>
+        <version>${spotify.dataenum.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.spotify.dataenum</groupId>
+        <artifactId>dataenum-processor</artifactId>
+        <version>${spotify.dataenum.version}</version>
       </dependency>
       <dependency>
         <groupId>com.typesafe</groupId>
