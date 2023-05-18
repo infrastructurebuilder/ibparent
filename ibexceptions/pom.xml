@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
+    @formatter:off
     Copyright © 2019 admin (admin@infrastructurebuilder.org)
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,26 +15,32 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
-    <groupId>org.infrastructurebuilder</groupId>
-    <artifactId>ibparent</artifactId>
-    <version>71-SNAPSHOT</version>
+   <groupId>org.infrastructurebuilder</groupId>
+   <artifactId>ibparent</artifactId>
+   <version>01-test-SNAPSHOT</version>
   </parent>
+
   <artifactId>ibexceptions</artifactId>
   <packaging>jar</packaging>
+
   <name>${project.artifactId}</name>
   <description>Infrastructurebilder exceptions</description>
-  <inceptionYear>2019</inceptionYear>
   <url>${github.url.base}/${project.artifactId}</url>
+  <inceptionYear>2019</inceptionYear>
+
   <properties>
   <!--  Cant figure out how to test a piece inside of the exception translator  -->
   <!-- Apparently, the default impls in ExceptionTranslator don't show up in coverage -->
     <test.coverage.percentage.required>95</test.coverage.percentage.required>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -53,6 +61,7 @@
     </dependency>
 
   </dependencies>
+
   <build>
     <plugins>
       <plugin>

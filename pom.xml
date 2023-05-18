@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
+    @formatter:off
     Copyright © 2019 admin (admin@infrastructurebuilder.org)
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,29 +15,39 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>59</version>
+    <version>60</version>
   </parent>
+
   <artifactId>ibparent</artifactId>
+  <version>01-test-SNAPSHOT</version>
   <packaging>pom</packaging>
+
   <url>${ib.site.view.url}/</url>
-  <version>71-SNAPSHOT</version>
-  <issueManagement>
-    <url>${github.url.base}/ibparent/issues</url>
-    <system>GitHub</system>
-  </issueManagement>
+
+  <modules>
+    <module>ibexceptions</module>
+  </modules>
+
   <scm>
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
     <tag>HEAD</tag>
   </scm>
+  <issueManagement>
+    <url>${github.url.base}/ibparent/issues</url>
+    <system>GitHub</system>
+  </issueManagement>
+
   <properties>
     <maven.bundle.plugin.version>5.1.8</maven.bundle.plugin.version>
     <maven.cobertura.version>2.7</maven.cobertura.version>
@@ -109,6 +121,8 @@
     <findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
     <fluent.hc.version>4.5.14</fluent.hc.version>
+    <formatter.plugin.version>2.22.0</formatter.plugin.version>
+    <formatter.config.location>${user.home}/.ibstyle-eclipse.xml</formatter.config.location>
     <freemarker.version>2.3.32</freemarker.version>
     <functional.java.version>5.0</functional.java.version>
     <github.host>github.com</github.host>
@@ -231,6 +245,7 @@
     <zt.exec.version>1.12</zt.exec.version>
     <zt.processkiller.version>1.10</zt.processkiller.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -401,7 +416,6 @@
         <version>${simpleslack.api.version}</version>
       </dependency>
       <dependency>
-        <!--         <groupId>com.vdurmont</groupId> -->
         <groupId>org.infrastructurebuilder.usurped</groupId>
         <artifactId>semver4j</artifactId>
         <version>${java.semver4j.version}</version>
@@ -448,8 +462,7 @@
         <version>${cucumber.jvm.deps.version}</version>
         <scope>test</scope>
       </dependency>
-      <dependency>
-        <!-- TODO Move me to the parents -->
+      <dependency><!-- TODO Move me to the parents -->
         <groupId>io.dropwizard</groupId>
         <artifactId>dropwizard-core</artifactId>
         <version>${dropwizard.version}</version>
@@ -958,7 +971,6 @@
         <version>${mariadb.java.client.version}</version>
       </dependency>
       <dependency>
-        <!--         <groupId>org.infrastructurebuilder.usurped</groupId> -->
         <groupId>org.infrastructurebuilder.usurped</groupId>
         <artifactId>jsonassert</artifactId>
         <version>${jsonassert.version}</version>
@@ -1110,8 +1122,8 @@
         <version>${spring.version}</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1207,6 +1219,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <resources>
       <resource>
@@ -1700,6 +1713,7 @@
       </plugin>
     </plugins>
   </build>
+
   <reporting>
     <plugins>
       <plugin>
@@ -1735,6 +1749,7 @@
       </plugin>
     </plugins>
   </reporting>
+
   <profiles>
     <profile>
       <id>doclint-java8-disable</id>
@@ -1803,7 +1818,4 @@
       </build>
     </profile>
   </profiles>
-  <modules>
-    <module>ibexceptions</module>
-  </modules>
 </project>
