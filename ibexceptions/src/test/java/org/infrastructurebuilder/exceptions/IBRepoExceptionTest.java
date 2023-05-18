@@ -45,17 +45,17 @@ public class IBRepoExceptionTest {
 
   @Test
   public void testIBMavenException() {
-    assertNotNull( new IBRepoException(),"Empty maven exception");
+    assertNotNull(new IBRepoException(), "Empty maven exception");
   }
 
   @Test
   public void testIBMavenExceptionString() {
-    assertNotNull( new IBRepoException("ABC"),"With string");
+    assertNotNull(new IBRepoException("ABC"), "With string");
   }
 
   @Test
   public void testIBMavenExceptionStringThrowable() {
-    assertNotNull( new IBRepoException("ABC", new IBException("DEF")));
+    assertNotNull(new IBRepoException("ABC", new IBException("DEF")));
   }
 
   @Test

@@ -86,6 +86,4 @@ public class IBVersionsSupplierTest {
     assertTrue(t.getArtifactDependency().get().contains("g:a:1.2.3"));
   }
 
-
-
 }

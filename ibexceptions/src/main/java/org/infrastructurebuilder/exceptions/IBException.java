@@ -40,7 +40,8 @@ public class IBException extends RuntimeException {
   }
 
   public IBException(final String message, final Throwable cause, final boolean enableSuppression,
-      final boolean writableStackTrace) {
+      final boolean writableStackTrace)
+  {
     super(message, cause, enableSuppression, writableStackTrace);
   }
 
