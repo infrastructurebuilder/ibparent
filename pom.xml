@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
+    @formatter:off
     Copyright © 2019 admin (admin@infrastructurebuilder.org)
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,29 +15,41 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>59</version>
+    <version>60</version>
   </parent>
+
   <artifactId>ibparent</artifactId>
-  <packaging>pom</packaging>
-  <url>${ib.site.view.url}/</url>
   <version>71-SNAPSHOT</version>
-  <issueManagement>
-    <url>${github.url.base}/ibparent/issues</url>
-    <system>GitHub</system>
-  </issueManagement>
+  <packaging>pom</packaging>
+
+  <url>${ib.site.view.url}/</url>
+
+  <modules>
+    <module>ibexceptions</module>
+  </modules>
+
   <scm>
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
     <tag>HEAD</tag>
   </scm>
+  <issueManagement>
+    <url>${github.url.base}/ibparent/issues</url>
+    <system>GitHub</system>
+  </issueManagement>
+
   <properties>
     <maven.bundle.plugin.version>5.1.8</maven.bundle.plugin.version>
     <maven.cobertura.version>2.7</maven.cobertura.version>
@@ -59,7 +73,8 @@
     <maven.war.plugin.version>3.3.2</maven.war.plugin.version>
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
     <karaf.maven.plugin.version>4.4.3</karaf.maven.plugin.version>
-    <ib.logconfig.version>0.13.2</ib.logconfig.version> <!-- A default. This may or may not change over time -->
+    <ib.logconfig.version>0.13.2</ib.logconfig.version> <!-- A default. This may
+    or may not change over time -->
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
     <akka.http.version>2.0.5</akka.http.version>
     <akka.stream.version>2.0.5</akka.stream.version>
@@ -108,6 +123,8 @@
     <findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
     <fluent.hc.version>4.5.14</fluent.hc.version>
+    <formatter.plugin.version>2.22.0</formatter.plugin.version>
+    <formatter.config.location>${user.home}/.ibstyle-eclipse.xml</formatter.config.location>
     <freemarker.version>2.3.32</freemarker.version>
     <functional.java.version>5.0</functional.java.version>
     <github.host>github.com</github.host>
@@ -118,7 +135,8 @@
     <gmavenplus.plugin.version>2.1.0</gmavenplus.plugin.version>
     <google.dagger.version>2.45</google.dagger.version>
     <google.guava.version>31.1-jre</google.guava.version>
-    <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT LATEST -->
+    <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT
+    LATEST -->
     <google.maps.services.version>2.2.0</google.maps.services.version>
     <google.protobuf.java.version>3.21.12</google.protobuf.java.version>
     <h2.database.version>2.1.214</h2.database.version>
@@ -229,6 +247,7 @@
     <zt.exec.version>1.12</zt.exec.version>
     <zt.processkiller.version>1.10</zt.processkiller.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -399,7 +418,6 @@
         <version>${simpleslack.api.version}</version>
       </dependency>
       <dependency>
-        <!--         <groupId>com.vdurmont</groupId> -->
         <groupId>org.infrastructurebuilder.usurped</groupId>
         <artifactId>semver4j</artifactId>
         <version>${java.semver4j.version}</version>
@@ -446,8 +464,7 @@
         <version>${cucumber.jvm.deps.version}</version>
         <scope>test</scope>
       </dependency>
-      <dependency>
-        <!-- TODO Move me to the parents -->
+      <dependency><!-- TODO Move me to the parents -->
         <groupId>io.dropwizard</groupId>
         <artifactId>dropwizard-core</artifactId>
         <version>${dropwizard.version}</version>
@@ -689,14 +706,14 @@
       </dependency>
       <!-- No longer using corn-cps
       <dependency>
-        <groupId>net.sf.corn</groupId>
+      <groupId>net.sf.corn</groupId>
         <artifactId>corn-cps</artifactId>
-        <version>${corn.cps.version}</version>
+      <version>${corn.cps.version}</version>
         <exclusions>
           <exclusion>
-            <groupId>com.sun.tools</groupId>
+      <groupId>com.sun.tools</groupId>
             <artifactId>tools</artifactId>
-          </exclusion>
+      </exclusion>
         </exclusions>
       </dependency>
       -->
@@ -881,7 +898,8 @@
         <version>${freemarker.version}</version>
       </dependency>
       <!-- FIXME The org.functionaljava deps appear dangerous in the face
-        of changing JVM editions -->
+        of
+      changing JVM editions -->
       <dependency>
         <groupId>org.functionaljava</groupId>
         <artifactId>functionaljava-java-core</artifactId>
@@ -955,15 +973,14 @@
         <version>${mariadb.java.client.version}</version>
       </dependency>
       <dependency>
-        <!--         <groupId>org.infrastructurebuilder.usurped</groupId> -->
         <groupId>org.infrastructurebuilder.usurped</groupId>
         <artifactId>jsonassert</artifactId>
         <version>${jsonassert.version}</version>
         <!--
         <exclusions>
           <exclusion>
-            <groupId>com.vaadin.external.google</groupId>
-            <artifactId>android-json</artifactId>
+        <groupId>com.vaadin.external.google</groupId>
+        <artifactId>android-json</artifactId>
           </exclusion>
         </exclusions>
 -->
@@ -1107,8 +1124,8 @@
         <version>${spring.version}</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1204,6 +1221,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <resources>
       <resource>
@@ -1219,6 +1237,14 @@
     </testResources>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>net.revelc.code.formatter</groupId>
+          <artifactId>formatter-maven-plugin</artifactId>
+          <version>2.22.0</version>
+          <configuration>
+            <configFile>${user.home}/.ibstyle-eclipse.xml</configFile>
+          </configuration>
+        </plugin>
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
@@ -1288,7 +1314,7 @@
           <configuration>
             <release>${maven.compiler.jdk.version}</release>
             <!-- JDK <= 8 <source>${maven.compiler.jdk.version}</source>
-              <target>${maven.compiler.jdk.version}</target> -->
+            <target>${maven.compiler.jdk.version}</target> -->
             <compilerArgs>
               <arg>-Xlint</arg>
             </compilerArgs>
@@ -1689,6 +1715,7 @@
       </plugin>
     </plugins>
   </build>
+
   <reporting>
     <plugins>
       <plugin>
@@ -1724,6 +1751,7 @@
       </plugin>
     </plugins>
   </reporting>
+
   <profiles>
     <profile>
       <id>doclint-java8-disable</id>
@@ -1792,7 +1820,4 @@
       </build>
     </profile>
   </profiles>
-  <modules>
-    <module>ibexceptions</module>
-  </modules>
 </project>
