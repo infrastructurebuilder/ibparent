@@ -1238,9 +1238,9 @@
         <plugin>
           <groupId>net.revelc.code.formatter</groupId>
           <artifactId>formatter-maven-plugin</artifactId>
-          <version>2.22.0</version>
+          <version>${formatter.plugin.version}</version>
           <configuration>
-            <configFile>${user.home}/.ibstyle-eclipse.xml</configFile>
+            <configFile>${formatter.config.location}</configFile>
           </configuration>
         </plugin>
         <plugin>
