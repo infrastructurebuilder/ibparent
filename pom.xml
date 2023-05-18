@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>60</version>
+    <version>61</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -71,7 +71,7 @@
     <maven.war.plugin.version>3.3.2</maven.war.plugin.version>
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
     <karaf.maven.plugin.version>4.4.3</karaf.maven.plugin.version>
-    <ib.logconfig.version>0.13.2</ib.logconfig.version> <!-- A default. This may
+    <ib.logconfig.version>0.14.0</ib.logconfig.version> <!-- A default. This may
     or may not change over time -->
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
     <akka.http.version>2.0.5</akka.http.version>
