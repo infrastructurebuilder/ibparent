@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>61</version>
+    <version>62</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
