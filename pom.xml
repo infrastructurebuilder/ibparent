@@ -1796,8 +1796,8 @@
               <execution>
                 <id>attach-sources</id>
                 <goals>
-                  <goal>jar</goal>
-                  <goal>test-jar</goal>
+                  <goal>jar-no-fork</goal>
+                  <goal>test-jar-no-fork</goal>
                 </goals>
               </execution>
             </executions>
@@ -1810,8 +1810,8 @@
                 <id>check-javadoc</id>
                 <phase>verify</phase>
                 <goals>
-                  <goal>javadoc</goal>
-                  <goal>test-javadoc</goal>
+                  <goal>javadoc-no-fork</goal>
+                  <goal>test-javadoc-no-fork</goal>
                 </goals>
                 <configuration>
                   <quiet>true</quiet>
