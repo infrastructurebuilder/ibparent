@@ -28,7 +28,7 @@
   </parent>
 
   <artifactId>ibparent</artifactId>
-  <version>77-SNAPSHOT</version>
+  <version>76-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <url>${ib.site.view.url}/</url>
