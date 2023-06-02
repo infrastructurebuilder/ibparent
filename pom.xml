@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>62</version>
+    <version>63</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -71,7 +71,7 @@
     <maven.war.plugin.version>3.3.2</maven.war.plugin.version>
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
     <karaf.maven.plugin.version>4.4.3</karaf.maven.plugin.version>
-    <ib.logconfig.version>0.14.0</ib.logconfig.version> <!-- A default. This may
+    <ib.logconfig.version>0.14.2</ib.logconfig.version> <!-- A default. This may
     or may not change over time -->
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
     <akka.http.version>2.0.5</akka.http.version>
@@ -91,8 +91,8 @@
     <aspectj.version>1.9.19</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
     <avro.core.version>1.11.1</avro.core.version>
-    <aws.sdk.version>1.12.474</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.20.71</aws.sdkv2.bom.version>
+    <aws.sdk.version>1.12.480</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.20.77</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.70</bouncycastle.version>
@@ -132,7 +132,7 @@
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>3.0.0</gmavenplus.plugin.version>
     <google.dagger.version>2.46.1</google.dagger.version>
-    <google.guava.version>31.1-jre</google.guava.version>
+    <google.guava.version>32.0.0-jre</google.guava.version>
     <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT
     LATEST -->
     <google.maps.services.version>2.2.0</google.maps.services.version>
@@ -141,7 +141,7 @@
     <hazelcast.version>5.3.0</hazelcast.version>
     <hikari.cp.version>5.0.1</hikari.cp.version>
     <itextpdf.version>5.5.13.3</itextpdf.version>
-    <jackson.version>2.15.1</jackson.version>
+    <jackson.version>2.15.2</jackson.version>
     <jacoco.it.execution.data.file>${project.build.directory}/jacoco-it.exec</jacoco.it.execution.data.file>
     <jacoco.it.execution.dest.file>${jacoco.it.execution.data.file}</jacoco.it.execution.dest.file>
     <jacoco.maven.plugin.version>${jacoco.version}</jacoco.maven.plugin.version>
@@ -170,7 +170,7 @@
     <jbock.jbock.version>5.16</jbock.jbock.version>
     <jbock.javapoet.version>1.15</jbock.javapoet.version>
     <jbock.parmigiano.version>1.02</jbock.parmigiano.version>
-    <jbock.simple.component.version>1.014</jbock.simple.component.version>
+    <jbock.simple.component.version>1.015</jbock.simple.component.version>
     <jbock.truth.version>1.1.3.3</jbock.truth.version>
     <jclouds.version>1.9.0</jclouds.version>
     <jcommander.version>1.82</jcommander.version>
@@ -191,12 +191,12 @@
     <junit.platform.maven.plugin.version>1.1.7</junit.platform.maven.plugin.version>
     <kafka.version>3.4.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
-    <kohsuke.github.api.version>1.314</kohsuke.github.api.version>
+    <kohsuke.github.api.version>1.315</kohsuke.github.api.version>
     <kotlin.version>1.8.21</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.4.7</logback.version> <!-- was 1.2.3 -->
     <logstash.logback.encoder.version>7.3</logstash.logback.encoder.version>
-    <lombok.version>1.18.26</lombok.version>
+    <lombok.version>1.18.28</lombok.version>
     <mariadb.java.client.version>3.1.4</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
     <mockito.version>5.3.1</mockito.version>
