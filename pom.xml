@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>63</version>
+    <version>64</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -91,8 +91,8 @@
     <aspectj.version>1.9.19</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
     <avro.core.version>1.11.1</avro.core.version>
-    <aws.sdk.version>1.12.480</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.20.77</aws.sdkv2.bom.version>
+    <aws.sdk.version>1.12.482</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.20.79</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.70</bouncycastle.version>
@@ -189,7 +189,7 @@
     <junit.interface.version>0.11</junit.interface.version>
     <junit.jupiter.version>5.9.3</junit.jupiter.version>
     <junit.platform.maven.plugin.version>1.1.7</junit.platform.maven.plugin.version>
-    <kafka.version>3.4.0</kafka.version>
+    <kafka.version>3.4.1</kafka.version>
     <kamon.version>0.6.5</kamon.version>
     <kohsuke.github.api.version>1.315</kohsuke.github.api.version>
     <kotlin.version>1.8.21</kotlin.version>
