@@ -18,7 +18,9 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -236,6 +238,7 @@
     <vert.spring.ext.version>2.4</vert.spring.ext.version>
     <vertx.guice.version>2.3.1</vertx.guice.version>
     <vertx.jooq.version>6.2.0</vertx.jooq.version>
+    <vertx.maven.plugin.version>1.0.28</vertx.maven.plugin.version>
     <vertx.version>4.3.7</vertx.version>
     <webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
     <webjars.emberjs.version>1.12.0</webjars.emberjs.version>
@@ -1285,6 +1288,23 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>io.reactiverse</groupId>
+          <artifactId>vertx-maven-plugin</artifactId>
+          <version>${vertx.maven.plugin.version}</version>
+          <executions>
+            <execution>
+              <id>vmp</id>
+              <goals>
+                <goal>initialize</goal>
+                <goal>package</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <redeploy>true</redeploy>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.karaf.tooling</groupId>
