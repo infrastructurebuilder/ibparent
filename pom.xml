@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>64</version>
+    <version>65</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -213,7 +213,7 @@
     <play2.version>2.7.0</play2.version>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-    <quarkus.platform.version>3.1.0.Final</quarkus.platform.version>
+    <quarkus.platform.version>3.1.1.Final</quarkus.platform.version>
     <service.lifecycle.api.version>2.0.0</service.lifecycle.api.version>
     <serviceloader.maven.plugin>1.4.0</serviceloader.maven.plugin>
     <sesame.version>4.1.2</sesame.version>
