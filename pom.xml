@@ -211,6 +211,9 @@
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
+    <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
+    <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
+    <quarkus.platform.version>3.1.0.Final</quarkus.platform.version>
     <service.lifecycle.api.version>2.0.0</service.lifecycle.api.version>
     <serviceloader.maven.plugin>1.4.0</serviceloader.maven.plugin>
     <sesame.version>4.1.2</sesame.version>
@@ -574,7 +577,13 @@
         <artifactId>quarkus-jpastreamer</artifactId>
         <version>${jpastreamer.quarkus.version}</version>
       </dependency>
-
+      <dependency>
+        <groupId>${quarkus.platform.group-id}</groupId>
+        <artifactId>${quarkus.platform.artifact-id}</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>io.vavr</groupId>
         <artifactId>vavr</artifactId>
