@@ -54,30 +54,29 @@
     <maven.compiler.jdk.version>17</maven.compiler.jdk.version>
     <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
     <maven.eclipse.plugin.version>2.10</maven.eclipse.plugin.version>
-    <maven.failsafe.plugin.version>3.1.0</maven.failsafe.plugin.version>
+    <maven.failsafe.plugin.version>3.1.2</maven.failsafe.plugin.version>
     <maven.javadoc.plugin.version>3.5.0</maven.javadoc.plugin.version>
     <maven.jdepend.plugin.version>2.0</maven.jdepend.plugin.version>
     <maven.jxr.plugin.version>2.5</maven.jxr.plugin.version>
-    <maven.modello.plugin.version>2.1.1</maven.modello.plugin.version>
+    <maven.modello.plugin.version>2.1.2</maven.modello.plugin.version>
     <maven.plexus.component.metadata.version>2.1.1</maven.plexus.component.metadata.version>
     <maven.plugin.annotations.version>3.6.1</maven.plugin.annotations.version>
     <maven.plugin.plugin.version>3.9.0</maven.plugin.plugin.version>
     <maven.pmd.plugin.version>3.10.0</maven.pmd.plugin.version>
     <maven.shade.plugin.version>3.4.1</maven.shade.plugin.version>
     <maven.sisu.plugin.version>0.9.0.M2</maven.sisu.plugin.version>
-    <maven.surefire.plugin.version>3.1.0</maven.surefire.plugin.version>
+    <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
     <maven.surefire.report.plugin.version>2.2.0</maven.surefire.report.plugin.version>
     <maven.taglist.plugin.version>2.4</maven.taglist.plugin.version>
     <maven.war.plugin.version>3.3.2</maven.war.plugin.version>
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
     <karaf.maven.plugin.version>4.4.3</karaf.maven.plugin.version>
-    <ib.logconfig.version>0.14.2</ib.logconfig.version> <!-- A default. This may
-    or may not change over time -->
+    <!-- A default. This may or may not change over time -->
+    <ib.logconfig.version>0.14.3</ib.logconfig.version>
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
     <akka.http.version>2.0.5</akka.http.version>
     <akka.stream.version>2.0.5</akka.stream.version>
     <akka.version>2.5.17</akka.version>
-    <amazon.kinesis.client.version>1.14.10</amazon.kinesis.client.version>
     <antlr4.version>4.13.0</antlr4.version>
     <apache.ant.version>1.10.13</apache.ant.version>
     <apache.commons.codec.version>1.15</apache.commons.codec.version>
@@ -91,8 +90,8 @@
     <aspectj.version>1.9.19</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
     <avro.core.version>1.11.1</avro.core.version>
-    <aws.sdk.version>1.12.482</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.20.79</aws.sdkv2.bom.version>
+    <aws.sdk.version>1.12.487</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.20.84</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.70</bouncycastle.version>
@@ -102,7 +101,7 @@
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.9.0</commons.dbcp2.version>
     <commons.email.version>1.5</commons.email.version>
-    <commons.io.version>2.12.0</commons.io.version>
+    <commons.io.version>2.13.0</commons.io.version>
     <commons.pool.version>1.6</commons.pool.version>
     <commons.vfs2.version>2.9.0</commons.vfs2.version>
     <corn.cps.version>1.1.10</corn.cps.version>
@@ -121,7 +120,7 @@
     <findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
     <fge.json.schema.validator>2.2.8</fge.json.schema.validator>
     <fluent.hc.version>4.5.14</fluent.hc.version>
-    <formatter.plugin.version>2.22.0</formatter.plugin.version>
+    <formatter.plugin.version>2.23.0</formatter.plugin.version>
     <formatter.config.location>${user.home}/.ibstyle-eclipse.xml</formatter.config.location>
     <freemarker.version>2.3.32</freemarker.version>
     <functional.java.version>5.0</functional.java.version>
@@ -132,13 +131,13 @@
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>3.0.0</gmavenplus.plugin.version>
     <google.dagger.version>2.46.1</google.dagger.version>
-    <google.guava.version>32.0.0-jre</google.guava.version>
+    <google.guava.version>32.0.1-jre</google.guava.version>
     <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT
     LATEST -->
     <google.maps.services.version>2.2.0</google.maps.services.version>
     <google.protobuf.java.version>3.21.12</google.protobuf.java.version>
     <h2.database.version>2.1.214</h2.database.version>
-    <hazelcast.version>5.3.0</hazelcast.version>
+    <hazelcast.version>5.3.1</hazelcast.version>
     <hikari.cp.version>5.0.1</hikari.cp.version>
     <itextpdf.version>5.5.13.3</itextpdf.version>
     <jackson.version>2.15.2</jackson.version>
@@ -181,6 +180,8 @@
     <jooq.jooq.version>3.18.4</jooq.jooq.version>
     <jooq.joor.version>0.9.14</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
+    <jpastreamer.version>3.0.1</jpastreamer.version>
+    <jpastreamer.quarkus.version>3.0.1.Alpha3</jpastreamer.quarkus.version>
     <jsch.version>0.1.55</jsch.version>
     <jsonassert.version>1.5.1.1</jsonassert.version>
     <json.version>20230227</json.version>
@@ -189,12 +190,12 @@
     <junit.interface.version>0.11</junit.interface.version>
     <junit.jupiter.version>5.9.3</junit.jupiter.version>
     <junit.platform.maven.plugin.version>1.1.7</junit.platform.maven.plugin.version>
-    <kafka.version>3.4.1</kafka.version>
+    <kafka.version>3.5.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
     <kohsuke.github.api.version>1.315</kohsuke.github.api.version>
     <kotlin.version>1.8.21</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
-    <logback.version>1.4.7</logback.version> <!-- was 1.2.3 -->
+    <logback.version>1.4.8</logback.version> <!-- was 1.2.3 -->
     <logstash.logback.encoder.version>7.3</logstash.logback.encoder.version>
     <lombok.version>1.18.28</lombok.version>
     <mariadb.java.client.version>3.1.4</mariadb.java.client.version>
@@ -206,7 +207,7 @@
     <nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
     <nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
     <opencsv.version>5.7.1</opencsv.version>
-    <owasp.dependency.check.maven.version>8.2.1</owasp.dependency.check.maven.version>
+    <owasp.dependency.check.maven.version>8.3.1</owasp.dependency.check.maven.version>
     <pax.url.version>2.6.1</pax.url.version>
     <play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
     <play2.version>2.7.0</play2.version>
@@ -397,6 +398,11 @@
         <version>${opencsv.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.speedment.jpastreamer</groupId>
+        <artifactId>jpastreamer-core</artifactId>
+        <version>${jpastreamer.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.spotify.dataenum</groupId>
         <artifactId>dataenum</artifactId>
         <version>${spotify.dataenum.version}</version>
@@ -563,6 +569,12 @@
         <artifactId>javax.inject</artifactId>
         <version>${javax.inject.version}</version>
       </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jpastreamer</groupId>
+        <artifactId>quarkus-jpastreamer</artifactId>
+        <version>${jpastreamer.quarkus.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>io.vavr</groupId>
         <artifactId>vavr</artifactId>
