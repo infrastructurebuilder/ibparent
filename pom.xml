@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>65</version>
+    <version>66-SNAPSHOT</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -63,12 +63,12 @@
     <maven.plugin.annotations.version>3.6.1</maven.plugin.annotations.version>
     <maven.plugin.plugin.version>3.9.0</maven.plugin.plugin.version>
     <maven.pmd.plugin.version>3.10.0</maven.pmd.plugin.version>
-    <maven.shade.plugin.version>3.4.1</maven.shade.plugin.version>
+    <maven.shade.plugin.version>3.5.0</maven.shade.plugin.version>
     <maven.sisu.plugin.version>0.9.0.M2</maven.sisu.plugin.version>
     <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
     <maven.surefire.report.plugin.version>2.2.0</maven.surefire.report.plugin.version>
     <maven.taglist.plugin.version>2.4</maven.taglist.plugin.version>
-    <maven.war.plugin.version>3.3.2</maven.war.plugin.version>
+    <maven.war.plugin.version>3.4.0</maven.war.plugin.version>
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
     <karaf.maven.plugin.version>4.4.3</karaf.maven.plugin.version>
     <!-- A default. This may or may not change over time -->
@@ -79,7 +79,7 @@
     <akka.version>2.5.17</akka.version>
     <antlr4.version>4.13.0</antlr4.version>
     <apache.ant.version>1.10.13</apache.ant.version>
-    <apache.commons.codec.version>1.15</apache.commons.codec.version>
+    <apache.commons.codec.version>1.16.0</apache.commons.codec.version>
     <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
     <apache.curator.version>5.5.0</apache.curator.version>
@@ -89,14 +89,14 @@
     <apiguardian.api.version>1.1.2</apiguardian.api.version>
     <aspectj.version>1.9.19</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
-    <avro.core.version>1.11.1</avro.core.version>
-    <aws.sdk.version>1.12.487</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.20.84</aws.sdkv2.bom.version>
+    <avro.core.version>1.11.2</avro.core.version>
+    <aws.sdk.version>1.12.503</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.20.100</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.70</bouncycastle.version>
     <chronicle.map.version>3.23.5</chronicle.map.version>
-    <classgraph.version>4.8.160</classgraph.version>
+    <classgraph.version>4.8.161</classgraph.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.9.0</commons.dbcp2.version>
@@ -110,9 +110,9 @@
     <cucumber.jvm.deps.version>1.0.5</cucumber.jvm.deps.version>
     <discipline.version>0.7.3</discipline.version>
     <derby.version>10.16.1.1</derby.version>
-    <discord.jda.version>5.0.0-beta.9</discord.jda.version>
+    <discord.jda.version>5.0.0-beta.12</discord.jda.version>
     <dom4j.version>2.1.4</dom4j.version>
-    <dropwizard.version>4.0.0</dropwizard.version>
+    <dropwizard.version>4.0.1</dropwizard.version>
     <egit.github.version>5.1.0.201809111528-r</egit.github.version>
     <embedded.redis.version>0.6</embedded.redis.version>
     <exec.maven.plugin.version>1.4.0</exec.maven.plugin.version>
@@ -131,12 +131,12 @@
     <github.site.plugin.version>0.11</github.site.plugin.version>
     <gmavenplus.plugin.version>3.0.0</gmavenplus.plugin.version>
     <google.dagger.version>2.46.1</google.dagger.version>
-    <google.guava.version>32.0.1-jre</google.guava.version>
+    <google.guava.version>32.1.1-jre</google.guava.version>
     <google.inject.guice.version>4.2.3</google.inject.guice.version> <!-- NOT
     LATEST -->
     <google.maps.services.version>2.2.0</google.maps.services.version>
     <google.protobuf.java.version>3.21.12</google.protobuf.java.version>
-    <h2.database.version>2.1.214</h2.database.version>
+    <h2.database.version>2.2.220</h2.database.version>
     <hazelcast.version>5.3.1</hazelcast.version>
     <hikari.cp.version>5.0.1</hikari.cp.version>
     <itextpdf.version>5.5.13.3</itextpdf.version>
@@ -177,14 +177,14 @@
     <joda.convert.version>2.2.3</joda.convert.version>
     <joda.time.version>2.12.5</joda.time.version>
     <jooq.jool.version>0.9.15</jooq.jool.version>
-    <jooq.jooq.version>3.18.4</jooq.jooq.version>
+    <jooq.jooq.version>3.18.5</jooq.jooq.version>
     <jooq.joor.version>0.9.14</jooq.joor.version>
     <jooq.joox.version>1.6.2</jooq.joox.version>
-    <jpastreamer.version>3.0.1</jpastreamer.version>
+    <jpastreamer.version>3.0.2</jpastreamer.version>
     <jpastreamer.quarkus.version>3.0.1.Alpha3</jpastreamer.quarkus.version>
     <jsch.version>0.1.55</jsch.version>
     <jsonassert.version>1.5.1.1</jsonassert.version>
-    <json.version>20230227</json.version>
+    <json.version>20230618</json.version>
     <jsoup.version>1.16.1</jsoup.version>
     <jtds.version>1.3.1</jtds.version>
     <junit.interface.version>0.11</junit.interface.version>
@@ -193,14 +193,14 @@
     <kafka.version>3.5.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
     <kohsuke.github.api.version>1.315</kohsuke.github.api.version>
-    <kotlin.version>1.8.21</kotlin.version>
+    <kotlin.version>1.9.0</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.4.8</logback.version> <!-- was 1.2.3 -->
-    <logstash.logback.encoder.version>7.3</logstash.logback.encoder.version>
+    <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
     <lombok.version>1.18.28</lombok.version>
     <mariadb.java.client.version>3.1.4</mariadb.java.client.version>
     <mockito.core.version>2.21.0</mockito.core.version>
-    <mockito.version>5.3.1</mockito.version>
+    <mockito.version>5.4.0</mockito.version>
     <moditect.maven.plugin.version>1.0.0.Final</moditect.maven.plugin.version>
     <mybatis.version>3.5.13</mybatis.version>
     <mysql.connector.version>8.0.33</mysql.connector.version>
@@ -213,7 +213,7 @@
     <play2.version>2.7.0</play2.version>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-    <quarkus.platform.version>3.1.1.Final</quarkus.platform.version>
+    <quarkus.platform.version>3.2.0.Final</quarkus.platform.version>
     <service.lifecycle.api.version>2.0.0</service.lifecycle.api.version>
     <serviceloader.maven.plugin>1.4.0</serviceloader.maven.plugin>
     <sesame.version>4.1.2</sesame.version>
@@ -222,14 +222,14 @@
     <simulacrum.version>0.11.0</simulacrum.version>
     <site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
     <slf4j.version>2.0.7</slf4j.version> <!-- was 1.7.26 -->
-    <snappy.java.version>1.1.10.0</snappy.java.version>
+    <snappy.java.version>1.1.10.1</snappy.java.version>
     <snakeyml.version>2.0</snakeyml.version>
-    <spotbugs.maven.plugin.version>4.7.3.4</spotbugs.maven.plugin.version>
+    <spotbugs.maven.plugin.version>4.7.3.5</spotbugs.maven.plugin.version>
     <spotbugs.version>4.7.3</spotbugs.version>
     <spotify.dataenum.version>1.4.1</spotify.dataenum.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.boot.version>3.1.0</spring.boot.version>
-    <spring.version>6.0.9</spring.version>
+    <spring.version>6.0.10</spring.version>
+    <spring.boot.version>3.1.1</spring.boot.version>
     <sqlite.jdbc.version>3.42.0.0</sqlite.jdbc.version>
     <tika.version>2.8.0</tika.version>
     <trove4j.version>3.0.3</trove4j.version>
