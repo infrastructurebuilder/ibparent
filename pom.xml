@@ -80,7 +80,7 @@
     <antlr4.version>4.13.0</antlr4.version>
     <apache.ant.version>1.10.13</apache.ant.version>
     <apache.commons.codec.version>1.16.0</apache.commons.codec.version>
-    <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
+    <apache.commons.lang3.version>3.13.0</apache.commons.lang3.version>
     <apache.commons.lang.version>2.6</apache.commons.lang.version>
     <apache.curator.version>5.5.0</apache.curator.version>
     <apache.httpclient.version>4.5.14</apache.httpclient.version>
@@ -90,8 +90,8 @@
     <aspectj.version>1.9.19</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
     <avro.core.version>1.11.2</avro.core.version>
-    <aws.sdk.version>1.12.513</aws.sdk.version>
-    <aws.sdkv2.bom.version>2.20.110</aws.sdkv2.bom.version>
+    <aws.sdk.version>1.12.519</aws.sdk.version>
+    <aws.sdkv2.bom.version>2.20.116</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.70</bouncycastle.version>
