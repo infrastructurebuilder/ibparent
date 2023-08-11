@@ -18,9 +18,7 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -30,7 +28,7 @@
 	</parent>
 
 	<artifactId>ibparent</artifactId>
-	<version>82-SNAPSHOT</version>
+	<version>82</version>
 	<packaging>pom</packaging>
 
 	<url>${ib.site.view.url}/</url>
@@ -43,7 +41,7 @@
 		<connection>scm:git:${git.url}</connection>
 		<developerConnection>scm:git:${git.url}</developerConnection>
 		<url>${git.scm.url}</url>
-		<tag>HEAD</tag>
+		<tag>ibparent-82</tag>
 	</scm>
 	<issueManagement>
 		<url>${github.url.base}/ibparent/issues</url>
@@ -1359,8 +1357,7 @@
 					<version>${maven.compiler.plugin.version}</version>
 					<configuration>
 						<release>${maven.compiler.jdk.version}</release>
-						<!-- JDK <= 8
-						<source>${maven.compiler.jdk.version}</source>
+						<!-- JDK <= 8 <source>${maven.compiler.jdk.version}</source>
             <target>${maven.compiler.jdk.version}</target> -->
 						<compilerArgs>
 							<arg>-Xlint</arg>
@@ -1605,19 +1602,16 @@
 							<configuration>
 								<haltOnFailure>true</haltOnFailure>
 								<rules>
-									<rule
-										implementation="org.jacoco.maven.RuleConfiguration">
+									<rule implementation="org.jacoco.maven.RuleConfiguration">
 										<element>BUNDLE</element>
 										<limits>
-											<limit
-												implementation="org.jacoco.report.check.Limit">
+											<limit implementation="org.jacoco.report.check.Limit">
 												<counter>INSTRUCTION</counter>
 												<value>COVEREDRATIO</value>
 												<minimum>
 													.${test.coverage.percentage.required}</minimum>
 											</limit>
-											<limit
-												implementation="org.jacoco.report.check.Limit">
+											<limit implementation="org.jacoco.report.check.Limit">
 												<counter>CLASS</counter>
 												<value>MISSEDCOUNT</value>
 												<maximum>
