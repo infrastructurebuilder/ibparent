@@ -78,7 +78,7 @@
 		<akka.stream.version>2.0.5</akka.stream.version>
 		<akka.version>2.5.17</akka.version>
 		<antlr4.version>4.13.0</antlr4.version>
-		<apache.ant.version>1.10.13</apache.ant.version>
+		<apache.ant.version>1.10.14</apache.ant.version>
 		<apache.commons.codec.version>1.16.0</apache.commons.codec.version>
 		<apache.commons.lang3.version>3.13.0</apache.commons.lang3.version>
 		<apache.commons.lang.version>2.6</apache.commons.lang.version>
@@ -87,11 +87,11 @@
 		<apache.poi.version>5.2.3</apache.poi.version>
 		<apache.shiro.version>1.12.0</apache.shiro.version>
 		<apiguardian.api.version>1.1.2</apiguardian.api.version>
-		<aspectj.version>1.9.19</aspectj.version>
+		<aspectj.version>1.9.20</aspectj.version>
 		<assertj.core.version>3.24.2</assertj.core.version>
 		<avro.core.version>1.11.2</avro.core.version>
-		<aws.sdk.version>1.12.527</aws.sdk.version>
-		<aws.sdkv2.bom.version>2.20.124</aws.sdkv2.bom.version>
+		<aws.sdk.version>1.12.534</aws.sdk.version>
+		<aws.sdkv2.bom.version>2.20.131</aws.sdkv2.bom.version>
 		<bettercloud.vault.version>5.1.0</bettercloud.vault.version>
 		<better.files.version>2.17.1</better.files.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
@@ -137,7 +137,7 @@
 		<google.maps.services.version>2.2.0</google.maps.services.version>
 		<google.protobuf.java.version>3.21.12</google.protobuf.java.version>
 		<h2.database.version>2.2.220</h2.database.version>
-		<hazelcast.version>5.3.1</hazelcast.version>
+		<hazelcast.version>5.3.2</hazelcast.version>
 		<hikari.cp.version>5.0.1</hikari.cp.version>
 		<itextpdf.version>5.5.13.3</itextpdf.version>
 		<jackson.version>2.15.2</jackson.version>
@@ -192,7 +192,7 @@
 		<junit.platform.maven.plugin.version>1.1.7</junit.platform.maven.plugin.version>
 		<kafka.version>3.5.1</kafka.version>
 		<kamon.version>0.6.5</kamon.version>
-		<kohsuke.github.api.version>1.315</kohsuke.github.api.version>
+		<kohsuke.github.api.version>1.316</kohsuke.github.api.version>
 		<kotlin.version>1.9.0</kotlin.version>
 		<lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
 		<logback.version>1.4.11</logback.version> <!-- was 1.2.3 -->
@@ -200,14 +200,14 @@
 		<lombok.version>1.18.28</lombok.version>
 		<mariadb.java.client.version>3.1.4</mariadb.java.client.version>
 		<mockito.core.version>2.21.0</mockito.core.version>
-		<mockito.version>5.4.0</mockito.version>
+		<mockito.version>5.5.0</mockito.version>
 		<moditect.maven.plugin.version>1.0.0.Final</moditect.maven.plugin.version>
 		<mybatis.version>3.5.13</mybatis.version>
 		<mysql.connector.version>8.0.33</mysql.connector.version>
 		<nexus.site.url>https://nexus.site.infrastructurebuilder.org/sites</nexus.site.url>
 		<nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
 		<opencsv.version>5.8</opencsv.version>
-		<owasp.dependency.check.maven.version>8.3.1</owasp.dependency.check.maven.version>
+		<owasp.dependency.check.maven.version>8.4.0</owasp.dependency.check.maven.version>
 		<pax.url.version>2.6.1</pax.url.version>
 		<play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
 		<play2.version>2.7.0</play2.version>
@@ -589,7 +589,7 @@
 				<groupId>io.soabase.record-builder</groupId>
 				<artifactId>record-builder-processor</artifactId>
 				<version>${record.builder.version}</version>
-				<scope>provider</scope>
+				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>io.vavr</groupId>
