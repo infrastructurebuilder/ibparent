@@ -90,8 +90,8 @@
 		<aspectj.version>1.9.20</aspectj.version>
 		<assertj.core.version>3.24.2</assertj.core.version>
 		<avro.core.version>1.11.2</avro.core.version>
-		<aws.sdk.version>1.12.534</aws.sdk.version>
-		<aws.sdkv2.bom.version>2.20.131</aws.sdkv2.bom.version>
+		<aws.sdk.version>1.12.538</aws.sdk.version>
+		<aws.sdkv2.bom.version>2.20.135</aws.sdkv2.bom.version>
 		<bettercloud.vault.version>5.1.0</bettercloud.vault.version>
 		<better.files.version>2.17.1</better.files.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
@@ -178,7 +178,7 @@
 		<joda.time.version>2.12.5</joda.time.version>
 		<jooq.jool.version>0.9.15</jooq.jool.version>
 		<jooq.jooq.version>3.18.6</jooq.jooq.version>
-		<jooq.joor.version>0.9.14</jooq.joor.version>
+		<jooq.joor.version>0.9.15</jooq.joor.version>
 		<jooq.joox.version>1.6.2</jooq.joox.version>
 		<jpastreamer.version>3.0.3</jpastreamer.version>
 		<jpastreamer.quarkus.version>3.0.2.Final</jpastreamer.quarkus.version>
@@ -193,12 +193,12 @@
 		<kafka.version>3.5.1</kafka.version>
 		<kamon.version>0.6.5</kamon.version>
 		<kohsuke.github.api.version>1.316</kohsuke.github.api.version>
-		<kotlin.version>1.9.0</kotlin.version>
+		<kotlin.version>1.9.10</kotlin.version>
 		<lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
 		<logback.version>1.4.11</logback.version> <!-- was 1.2.3 -->
 		<logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
 		<lombok.version>1.18.28</lombok.version>
-		<mariadb.java.client.version>3.1.4</mariadb.java.client.version>
+		<mariadb.java.client.version>3.2.0</mariadb.java.client.version>
 		<mockito.core.version>2.21.0</mockito.core.version>
 		<mockito.version>5.5.0</mockito.version>
 		<moditect.maven.plugin.version>1.0.0.Final</moditect.maven.plugin.version>
@@ -213,7 +213,7 @@
 		<play2.version>2.7.0</play2.version>
 		<quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
 		<quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-		<quarkus.platform.version>3.2.2.Final</quarkus.platform.version>
+		<quarkus.platform.version>3.3.0</quarkus.platform.version>
 		<record.builder.version>37</record.builder.version>
 		<service.lifecycle.api.version>2.0.0</service.lifecycle.api.version>
 		<serviceloader.maven.plugin>1.4.0</serviceloader.maven.plugin>
@@ -230,8 +230,8 @@
 		<spotify.dataenum.version>1.4.1</spotify.dataenum.version>
 		<spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
 		<spring.version>6.0.11</spring.version>
-		<spring.boot.version>3.1.2</spring.boot.version>
-		<sqlite.jdbc.version>3.42.0.0</sqlite.jdbc.version>
+		<spring.boot.version>3.1.3</spring.boot.version>
+		<sqlite.jdbc.version>3.42.0.1</sqlite.jdbc.version>
 		<tika.version>2.8.0</tika.version>
 		<trove4j.version>3.0.3</trove4j.version>
 		<typesafe.config.version>1.4.2</typesafe.config.version>
