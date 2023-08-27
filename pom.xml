@@ -224,7 +224,7 @@
 		<site.target.url>${ib.site.wagon.method}:${ib.site.view.url}</site.target.url>
 		<slf4j.version>2.0.7</slf4j.version> <!-- was 1.7.26 -->
 		<snappy.java.version>1.1.10.3</snappy.java.version>
-		<snakeyml.version>2.1</snakeyml.version>
+		<snakeyml.version>2.2</snakeyml.version>
 		<spotbugs.maven.plugin.version>4.7.3.5</spotbugs.maven.plugin.version>
 		<spotbugs.version>4.7.3</spotbugs.version>
 		<spotify.dataenum.version>1.4.1</spotify.dataenum.version>
