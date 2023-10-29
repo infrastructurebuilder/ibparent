@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>71</version>
+    <version>72-SNAPSHOT</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -578,6 +578,7 @@
         <artifactId>quarkus-jpastreamer</artifactId>
         <version>${jpastreamer.quarkus.version}</version>
       </dependency>
+      <!--
       <dependency>
         <groupId>${quarkus.platform.group-id}</groupId>
         <artifactId>${quarkus.platform.artifact-id}</artifactId>
@@ -585,6 +586,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      -->
       <dependency>
         <groupId>io.soabase.record-builder</groupId>
         <artifactId>record-builder-processor</artifactId>
@@ -1226,6 +1228,7 @@
         <artifactId>zt-process-killer</artifactId>
         <version>${zt.processkiller.version}</version>
       </dependency>
+      <!--
       <dependency>
         <groupId>software.amazon.awssdk</groupId>
         <artifactId>bom</artifactId>
@@ -1233,6 +1236,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      -->
     </dependencies>
   </dependencyManagement>
   <dependencies>

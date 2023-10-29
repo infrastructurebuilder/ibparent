@@ -40,7 +40,8 @@
     <!-- Apparently, the default impls in ExceptionTranslator don't show up in
     coverage -->
     <test.coverage.percentage.required>95</test.coverage.percentage.required>
-  </properties>
+    <maven.compiler.jdk.version>11</maven.compiler.jdk.version>
+</properties>
 
   <dependencies>
     <dependency>
