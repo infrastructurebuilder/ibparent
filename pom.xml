@@ -28,7 +28,7 @@
   </parent>
 
   <artifactId>ibparent</artifactId>
-  <version>93-SNAPSHOT</version>
+  <version>93</version>
   <packaging>pom</packaging>
 
   <url>${ib.site.view.url}/</url>
@@ -41,7 +41,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
+    <tag>ibparent-93</tag>
   </scm>
   <issueManagement>
     <url>${github.url.base}/ibparent/issues</url>
