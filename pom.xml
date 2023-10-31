@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>72</version>
+    <version>73</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -72,7 +72,7 @@
     <karaf.tooling.version>4.3.0</karaf.tooling.version>
     <karaf.maven.plugin.version>4.4.4</karaf.maven.plugin.version>
     <!-- A default. This may or may not change over time -->
-    <ib.logconfig.version>0.14.3</ib.logconfig.version>
+    <ib.logconfig.version>0.14.4</ib.logconfig.version>
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
     <akka.http.version>2.0.5</akka.http.version>
     <akka.stream.version>2.0.5</akka.stream.version>
@@ -90,7 +90,7 @@
     <aspectj.version>1.9.20.1</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
     <avro.core.version>1.11.3</avro.core.version>
-    <aws.sdk.version>1.12.576</aws.sdk.version>
+    <aws.sdk.version>1.12.577</aws.sdk.version>
     <aws.sdkv2.bom.version>2.20.151</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
@@ -193,7 +193,7 @@
     <kafka.version>3.6.0</kafka.version>
     <kamon.version>0.6.5</kamon.version>
     <kohsuke.github.api.version>1.317</kohsuke.github.api.version>
-    <kotlin.version>1.9.10</kotlin.version>
+    <kotlin.version>1.9.20</kotlin.version>
     <lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
     <logback.version>1.4.11</logback.version> <!-- was 1.2.3 -->
     <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
