@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent</artifactId>
-    <version>94-SNAPSHOT</version>
+    <version>94</version>
   </parent>
 
   <artifactId>ibexceptions</artifactId>
