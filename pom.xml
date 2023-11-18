@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>75</version>
+    <version>76</version>
   </parent>
 
   <artifactId>ibparent</artifactId>
@@ -74,6 +74,7 @@
     <!-- A default. This may or may not change over time -->
     <ib.logconfig.version>0.14.4</ib.logconfig.version>
     <ib.exceptions.version>${project.version}</ib.exceptions.version>
+    <ib.urlclasspath.version>1.0.1</ib.urlclasspath.version>
     <akka.http.version>2.0.5</akka.http.version>
     <akka.stream.version>2.0.5</akka.stream.version>
     <akka.version>2.5.17</akka.version>
@@ -90,13 +91,13 @@
     <aspectj.version>1.9.20.1</aspectj.version>
     <assertj.core.version>3.24.2</assertj.core.version>
     <avro.core.version>1.11.3</avro.core.version>
-    <aws.sdk.version>1.12.590</aws.sdk.version>
+    <aws.sdk.version>1.12.592</aws.sdk.version>
     <aws.sdkv2.bom.version>2.20.151</aws.sdkv2.bom.version>
     <bettercloud.vault.version>5.1.0</bettercloud.vault.version>
     <better.files.version>2.17.1</better.files.version>
     <bouncycastle.version>1.70</bouncycastle.version>
     <chronicle.map.version>3.23.5</chronicle.map.version>
-    <classgraph.version>4.8.164</classgraph.version>
+    <classgraph.version>4.8.165</classgraph.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.dbcp2.version>2.11.0</commons.dbcp2.version>
@@ -229,7 +230,7 @@
     <spotbugs.version>4.8.1</spotbugs.version>
     <spotify.dataenum.version>1.5.0</spotify.dataenum.version>
     <spring.boot.maven.plugin.version>${spring.boot.version}</spring.boot.maven.plugin.version>
-    <spring.version>6.0.13</spring.version>
+    <spring.version>6.1.0</spring.version>
     <spring.boot.version>3.1.5</spring.boot.version>
     <sqlite.jdbc.version>3.44.0.0</sqlite.jdbc.version>
     <tika.version>2.9.1</tika.version>
@@ -948,6 +949,11 @@
         <groupId>org.functionaljava</groupId>
         <artifactId>functionaljava</artifactId>
         <version>${functional.java.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder.util</groupId>
+        <artifactId>ibcore-urlclasspath</artifactId>
+        <version>${ib.urlclasspath.version}</version>
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.util.logging</groupId>
