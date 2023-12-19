@@ -9,6 +9,10 @@ This parent is meant to be a unifying version and config parent for IB projects.
 
 The code from the [com.mscharhag.ET](git@github.com:mscharhag/ET.git) package was directly into `ibexceptions` for modularization.  If the ET project ever releases with modules, we will remove it and start depending on that module.
 
+### GAV Stuff
+
+The Maven GAV equivalents in IB work (GroupId, ArtifactId, Version) stuff was moved into `ibexceptions` because it makes more sense than to be in `ibcore`, as it reduces the necessary footprint of anything in IB needing to have a GAV.  Specifically, this applies to the `ibversions-maven-plugin`, but probably for other stuff, too.
+
 ## Changes
 
 This parent releases regularly.  Usually, this means every 2 weeks or so, but might mean more frequently if many things are changing or there is a security concern.  It also might mean that this happens less frequently than that.
