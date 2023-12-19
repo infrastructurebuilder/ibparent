@@ -28,8 +28,9 @@ public class DefaultGAVBasic implements GAVBasic {
   private String groupId, artifactId, version, extension, classifier;
 
   protected DefaultGAVBasic() {
-    
+
   }
+
   public DefaultGAVBasic(final String from) {
     final String[] l = copyOf(from.split(":"), 5);
 
@@ -53,6 +54,7 @@ public class DefaultGAVBasic implements GAVBasic {
       }
     }
   }
+
   public DefaultGAVBasic(final String groupId, final String artifactId, final String version, final String extension) {
     this(groupId, artifactId, null, version, extension);
   }
@@ -60,7 +62,6 @@ public class DefaultGAVBasic implements GAVBasic {
   public DefaultGAVBasic(final String groupId, final String artifactId, final String version) {
     this(groupId, artifactId, version, BASIC_PACKAGING);
   }
-
 
   public DefaultGAVBasic(final String groupId, final String artifactId, final String classifier, final String version,
       final String extension)
@@ -71,7 +72,6 @@ public class DefaultGAVBasic implements GAVBasic {
     this.extension = extension;
     this.classifier = classifier;
   }
-
 
   @Override
   public String getArtifactId() {
@@ -97,23 +97,27 @@ public class DefaultGAVBasic implements GAVBasic {
   public Optional<String> getVersion() {
     return Optional.ofNullable(this.version);
   }
-  
+
   protected DefaultGAVBasic setGroupId(String groupId) {
     this.groupId = groupId;
     return this;
   }
+
   protected DefaultGAVBasic setArtifactId(String artifactId) {
     this.artifactId = Objects.requireNonNull(artifactId);
     return this;
   }
+
   protected DefaultGAVBasic setVersion(String version) {
     this.version = version;
     return this;
   }
+
   protected DefaultGAVBasic setExtension(String extension) {
     this.extension = ofNullable(extension).orElse(BASIC_PACKAGING);
     return this;
   }
+
   protected DefaultGAVBasic setClassifier(String classifier) {
     if (classifier != null && "".equals(classifier.trim())) {
       this.classifier = null;
@@ -122,7 +126,5 @@ public class DefaultGAVBasic implements GAVBasic {
     }
     return this;
   }
-  
-  
 
 }

@@ -47,13 +47,11 @@ public interface GAVBasic extends Comparable<GAVBasic> {
     }
   }
 
-
   default String getDefaultSignaturePath() {
     return String.format("%s:%s:%s%s:%s", getGroupId(), getArtifactId(),
         ofNullable(getExtension()).map(pp -> pp).orElse("jar"), getClassifier().map(c2 -> ":" + c2).orElse(""),
         getVersion().orElseThrow(() -> new IBException("No string version available")));
   }
-
 
   default Optional<String> asModelId() {
 
@@ -80,7 +78,6 @@ public interface GAVBasic extends Comparable<GAVBasic> {
   default String asRange() {
     return "[" + getVersion().orElse("0.0.0,99999.99999.99999") + "]";
   }
-
 
   String getArtifactId();
 
@@ -110,7 +107,6 @@ public interface GAVBasic extends Comparable<GAVBasic> {
   default boolean isSnapshot() {
     return getVersion().map(v -> v.endsWith(SNAPSHOT_DESIGNATOR)).orElse(false);
   }
-
 
   default boolean equalsIgnoreClassifier(final GAVBasic other, boolean ignoreClassifier) {
     if (!this.getExtension().equals(requireNonNull(other).getExtension()))
