@@ -25,16 +25,15 @@ import java.util.Optional;
 import java.util.StringJoiner;
 
 /**
- * There are what <b>APPEAR TO BE SOME INCONSISTENCIES</b> in the constructors of
- * {@link DefaultGAVBasic}.  However, there are some reasons for making the 
- * possibility of choosing the wrong one a thing.
- * 
+ * There are what <b>APPEAR TO BE SOME INCONSISTENCIES</b> in the constructors of {@link DefaultGAVBasic}. However,
+ * there are some reasons for making the possibility of choosing the wrong one a thing.
+ *
  * IF you use a dependency string, then the extension is NOT defaulted to 'jar'.
- * 
+ *
  * IF you use the 3-argument constructor, the extension is NOT defaulted to 'jar'.
- * 
+ *
  * IF you call {@link #setExtension(String)}, the extension IS defaulted to 'jar'.
- * 
+ *
  */
 public class DefaultGAVBasic implements GAVBasic {
 

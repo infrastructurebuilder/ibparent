@@ -84,7 +84,7 @@ public interface GAVBasic extends Comparable<GAVBasic> {
 
   /**
    * Note that this sets a default extension to 'jar'!
-   * 
+   *
    * @param v
    * @return
    */
