@@ -17,18 +17,22 @@
  */
 package org.infrastructurebuilder.util.versions;
 
+import static java.lang.String.format;
 import static java.util.Objects.requireNonNull;
 import static java.util.Optional.empty;
+import static java.util.Optional.of;
 import static java.util.Optional.ofNullable;
 
 import java.nio.file.Path;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.StringJoiner;
 
 import org.infrastructurebuilder.exceptions.IBException;
 
 public interface GAVBasic extends Comparable<GAVBasic> {
-  String BASIC_PACKAGING = "jar";
+  public static final String DELIMITER = ":";
+  public static final String BASIC_PACKAGING = "jar";
   String SNAPSHOT_DESIGNATOR = "-SNAPSHOT";
 
   default Optional<String> asMavenDependencyGet() {
@@ -36,39 +40,58 @@ public interface GAVBasic extends Comparable<GAVBasic> {
     try {
       final String theVersion = getVersion().map(v -> v.toString())
           .orElseThrow(() -> new IllegalArgumentException("No version available"));
-      final String theClassifier = getClassifier().map(c -> ":" + c).orElse("");
+      final String theClassifier = getClassifier().map(c -> DELIMITER + c).orElse("");
 
-      final String theType = ofNullable(getExtension()).map(t -> ":" + t)
-          .orElse("".equals(theClassifier) ? "" : ":jar");
-      return Optional
-          .of(String.format("%s:%s:%s%s%s", getGroupId(), getArtifactId(), theVersion, theType, theClassifier));
+      final String theType = getExtension().map(t -> DELIMITER + t)
+          .orElse("".equals(theClassifier) ? "" : DELIMITER + BASIC_PACKAGING);
+      return of(format("%s:%s:%s%s%s", getGroupId(), getArtifactId(), theVersion, theType, theClassifier));
     } catch (final IllegalArgumentException e) {
       return empty();
     }
   }
 
+  default public String getDefaultToString() {
+    String[] s = new String[5];
+    StringJoiner j = new StringJoiner(DELIMITER);
+    s[0] = getGroupId();
+    s[1] = getArtifactId();
+    s[2] = getVersion().orElse(null);
+    s[3] = getExtension().orElse(null);
+    s[4] = getClassifier().orElse(null);
+    for (String ss : s)
+      if (ss != null)
+        j.add(ss);
+      else
+        break;
+    return j.toString();
+  }
+
   default String getDefaultSignaturePath() {
-    return String.format("%s:%s:%s%s:%s", getGroupId(), getArtifactId(),
-        ofNullable(getExtension()).map(pp -> pp).orElse("jar"), getClassifier().map(c2 -> ":" + c2).orElse(""),
+    return format("%s:%s:%s%s:%s", getGroupId(), getArtifactId(), getExtension().orElse(BASIC_PACKAGING),
+        getClassifier().map(c2 -> DELIMITER + c2).orElse(""),
         getVersion().orElseThrow(() -> new IBException("No string version available")));
   }
 
   default Optional<String> asModelId() {
-
     try {
-      final String theVersion = getVersion().map(v -> v.toString())
-          .orElseThrow(() -> new IllegalArgumentException("No version available"));
-      return Optional.of(String.format("%s:%s:%s", getGroupId(), getArtifactId(), theVersion));
+      final String theVersion = getVersion().orElseThrow(() -> new IllegalArgumentException("No version available"));
+      return of(format("%s:%s:%s", getGroupId(), getArtifactId(), theVersion));
     } catch (final IllegalArgumentException e) {
       return empty();
     }
 
   }
 
+  /**
+   * Note that this sets a default extension to 'jar'!
+   * 
+   * @param v
+   * @return
+   */
   static String asPaxUrl(final GAVBasic v) {
     final String cl = !v.getClassifier().isPresent() ? "" : "/" + v.getClassifier().orElse("");
-    return String.format("mvn:%s/%s/%s/%s%s", v.getGroupId(), v.getArtifactId(), v.getVersion().orElse(""),
-        v.getExtension(), cl);
+    return format("mvn:%s/%s/%s/%s%s", v.getGroupId(), v.getArtifactId(), v.getVersion().orElse(""),
+        v.getExtension().orElse(BASIC_PACKAGING), cl);
   }
 
   default String asPaxUrl() {
@@ -83,7 +106,7 @@ public interface GAVBasic extends Comparable<GAVBasic> {
 
   Optional<String> getClassifier();
 
-  String getExtension();
+  Optional<String> getExtension();
 
   String getGroupId();
 
@@ -133,14 +156,23 @@ public interface GAVBasic extends Comparable<GAVBasic> {
     if (cmp == 0) {
       cmp = getArtifactId().compareTo(o.getArtifactId());
       if (cmp == 0) {
-        cmp = IBException.cet.returns(() -> {
-          return compareVersion(o);
-        });
-        if (cmp == 0) {
-          cmp = getExtension().compareTo(o.getExtension());
+        var e = getExtension();
+        var o1 = o.getExtension();
+        if (e.isPresent()) {
+          if (o1.isPresent())
+            cmp = e.get().compareTo(o1.get());
+        } else {
+          if (o1.isPresent())
+            cmp = 1;
         }
-
       }
+
+    }
+    if (cmp == 0) {
+      cmp = IBException.cet.returns(() -> {
+        // FIXME Bad comparison
+        return compareVersion(o);
+      });
     }
     return cmp;
   }

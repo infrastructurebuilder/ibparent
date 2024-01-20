@@ -18,11 +18,24 @@
 package org.infrastructurebuilder.util.versions;
 
 import static java.util.Arrays.copyOf;
+import static java.util.Objects.requireNonNull;
 import static java.util.Optional.ofNullable;
 
-import java.util.Objects;
 import java.util.Optional;
+import java.util.StringJoiner;
 
+/**
+ * There are what <b>APPEAR TO BE SOME INCONSISTENCIES</b> in the constructors of
+ * {@link DefaultGAVBasic}.  However, there are some reasons for making the 
+ * possibility of choosing the wrong one a thing.
+ * 
+ * IF you use a dependency string, then the extension is NOT defaulted to 'jar'.
+ * 
+ * IF you use the 3-argument constructor, the extension is NOT defaulted to 'jar'.
+ * 
+ * IF you call {@link #setExtension(String)}, the extension IS defaulted to 'jar'.
+ * 
+ */
 public class DefaultGAVBasic implements GAVBasic {
 
   private String groupId, artifactId, version, extension, classifier;
@@ -35,6 +48,8 @@ public class DefaultGAVBasic implements GAVBasic {
     final String[] l = copyOf(from.split(":"), 5);
 
     for (int i = 0; i < 5; ++i) {
+      if ("".equals(l[i]))
+        l[i] = null;
       switch (i) {
       case 0:
         setGroupId(l[i]);
@@ -55,19 +70,24 @@ public class DefaultGAVBasic implements GAVBasic {
     }
   }
 
+  @Override
+  public String toString() {
+    return getDefaultToString();
+  }
+
   public DefaultGAVBasic(final String groupId, final String artifactId, final String version, final String extension) {
     this(groupId, artifactId, null, version, extension);
   }
 
   public DefaultGAVBasic(final String groupId, final String artifactId, final String version) {
-    this(groupId, artifactId, version, BASIC_PACKAGING);
+    this(groupId, artifactId, version, null);
   }
 
   public DefaultGAVBasic(final String groupId, final String artifactId, final String classifier, final String version,
       final String extension)
   {
-    this.groupId = Objects.requireNonNull(groupId);
-    this.artifactId = Objects.requireNonNull(artifactId);
+    this.groupId = requireNonNull(groupId);
+    this.artifactId = requireNonNull(artifactId);
     this.version = version;
     this.extension = extension;
     this.classifier = classifier;
@@ -80,12 +100,12 @@ public class DefaultGAVBasic implements GAVBasic {
 
   @Override
   public Optional<String> getClassifier() {
-    return Optional.ofNullable(this.classifier);
+    return ofNullable(this.classifier);
   }
 
   @Override
-  public String getExtension() {
-    return this.extension;
+  public Optional<String> getExtension() {
+    return ofNullable(this.extension);
   }
 
   @Override
@@ -95,7 +115,7 @@ public class DefaultGAVBasic implements GAVBasic {
 
   @Override
   public Optional<String> getVersion() {
-    return Optional.ofNullable(this.version);
+    return ofNullable(this.version);
   }
 
   protected DefaultGAVBasic setGroupId(String groupId) {
@@ -104,7 +124,7 @@ public class DefaultGAVBasic implements GAVBasic {
   }
 
   protected DefaultGAVBasic setArtifactId(String artifactId) {
-    this.artifactId = Objects.requireNonNull(artifactId);
+    this.artifactId = requireNonNull(artifactId);
     return this;
   }
 
