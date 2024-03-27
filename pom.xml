@@ -24,7 +24,7 @@
 	<parent>
 		<groupId>org.infrastructurebuilder</groupId>
 		<artifactId>ibparent-minimal</artifactId>
-		<version>81</version>
+		<version>82-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>ibparent</artifactId>
@@ -52,7 +52,7 @@
 		<maven.bundle.plugin.version>5.1.9</maven.bundle.plugin.version>
 		<maven.cobertura.version>2.7</maven.cobertura.version>
 		<maven.compiler.jdk.version>17</maven.compiler.jdk.version>
-		<maven.compiler.plugin.version>3.12.1</maven.compiler.plugin.version>
+		<maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
 		<maven.eclipse.plugin.version>2.10</maven.eclipse.plugin.version>
 		<maven.failsafe.plugin.version>3.2.5</maven.failsafe.plugin.version>
 		<maven.javadoc.plugin.version>3.6.3</maven.javadoc.plugin.version>
@@ -88,17 +88,17 @@
 		<apache.poi.version>5.2.5</apache.poi.version>
 		<apache.shiro.version>1.13.0</apache.shiro.version>
 		<apiguardian.api.version>1.1.2</apiguardian.api.version>
-		<aspectj.version>1.9.21.2</aspectj.version>
+		<aspectj.version>1.9.22</aspectj.version>
 		<assertj.core.version>3.25.3</assertj.core.version>
 		<avaje.jsr305.version>1.2</avaje.jsr305.version>
 		<avro.core.version>1.11.3</avro.core.version>
-		<aws.sdk.version>1.12.680</aws.sdk.version>
-		<aws.sdkv2.bom.version>2.25.10</aws.sdkv2.bom.version>
+		<aws.sdk.version>1.12.688</aws.sdk.version>
+		<aws.sdkv2.bom.version>2.25.18</aws.sdkv2.bom.version>
 		<bettercloud.vault.version>5.1.0</bettercloud.vault.version>
 		<better.files.version>2.17.1</better.files.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
-		<chronicle.map.version>3.23.5</chronicle.map.version>
-		<classgraph.version>4.8.165</classgraph.version>
+		<chronicle.map.version>3.25ea6</chronicle.map.version>
+		<classgraph.version>4.8.168</classgraph.version>
 		<commons.beanutils.version>1.9.4</commons.beanutils.version>
 		<commons.dbcp.version>1.4</commons.dbcp.version>
 		<commons.dbcp2.version>2.12.0</commons.dbcp2.version>
@@ -195,12 +195,12 @@
 		<junit.platform.maven.plugin.version>1.1.7</junit.platform.maven.plugin.version>
 		<kafka.version>3.7.0</kafka.version>
 		<kamon.version>0.6.5</kamon.version>
-		<kohsuke.github.api.version>1.319</kohsuke.github.api.version>
+		<kohsuke.github.api.version>1.321</kohsuke.github.api.version>
 		<kotlin.version>1.9.20</kotlin.version>
 		<lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
 		<logback.version>1.5.3</logback.version> <!-- was 1.2.3 -->
 		<logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
-		<lombok.version>1.18.30</lombok.version>
+		<lombok.version>1.18.32</lombok.version>
 		<mariadb.java.client.version>3.3.3</mariadb.java.client.version>
 		<mockito.core.version>2.21.0</mockito.core.version>
 		<mockito.version>5.11.0</mockito.version>
@@ -233,9 +233,9 @@
 		<spotbugs.maven.plugin.version>4.8.3.1</spotbugs.maven.plugin.version>
 		<spotbugs.version>4.8.3</spotbugs.version>
 		<spotify.dataenum.version>1.5.0</spotify.dataenum.version>
-		<spring.boot.maven.plugin.version>3.2.3</spring.boot.maven.plugin.version>
+		<spring.boot.maven.plugin.version>3.2.4</spring.boot.maven.plugin.version>
 		<spring.version>6.1.5</spring.version>
-		<spring.boot.version>3.2.3</spring.boot.version>
+		<spring.boot.version>3.2.4</spring.boot.version>
 		<sqlite.jdbc.version>3.45.2.0</sqlite.jdbc.version>
 		<tika.version>3.0.0-BETA</tika.version>
 		<trove4j.version>3.0.3</trove4j.version>
@@ -247,7 +247,7 @@
 		<vertx.guice.version>2.3.1</vertx.guice.version>
 		<vertx.jooq.version>6.2.0</vertx.jooq.version>
 		<vertx.maven.plugin.version>1.0.28</vertx.maven.plugin.version>
-		<vertx.version>4.5.5</vertx.version>
+		<vertx.version>4.5.6</vertx.version>
 		<webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
 		<webjars.emberjs.version>1.12.0</webjars.emberjs.version>
 		<webjars.handlebars.version>4.7.7</webjars.handlebars.version>
