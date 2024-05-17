@@ -88,12 +88,12 @@
 		<apache.poi.version>5.2.5</apache.poi.version>
 		<apache.shiro.version>1.13.0</apache.shiro.version>
 		<apiguardian.api.version>1.1.2</apiguardian.api.version>
-		<aspectj.version>1.9.22</aspectj.version>
+		<aspectj.version>1.9.22.1</aspectj.version>
 		<assertj.core.version>3.25.3</assertj.core.version>
 		<avaje.jsr305.version>1.2</avaje.jsr305.version>
 		<avro.core.version>1.11.3</avro.core.version>
-		<aws.sdk.version>1.12.718</aws.sdk.version>
-		<aws.sdkv2.bom.version>2.25.48</aws.sdkv2.bom.version>
+		<aws.sdk.version>1.12.724</aws.sdk.version>
+		<aws.sdkv2.bom.version>2.25.55</aws.sdkv2.bom.version>
 		<bettercloud.vault.version>5.1.0</bettercloud.vault.version>
 		<better.files.version>2.17.1</better.files.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
@@ -112,7 +112,7 @@
 		<cucumber.jvm.deps.version>1.0.5</cucumber.jvm.deps.version>
 		<discipline.version>0.7.3</discipline.version>
 		<derby.version>10.17.1.0</derby.version>
-		<discord.jda.version>5.0.0-beta.23</discord.jda.version>
+		<discord.jda.version>5.0.0-beta.24</discord.jda.version>
 		<dom4j.version>2.1.4</dom4j.version>
 		<dropwizard.version>5.0.0-alpha.1</dropwizard.version>
 		<egit.github.version>5.1.0.201809111528-r</egit.github.version>
@@ -137,7 +137,7 @@
 		<!-- Not latest.  Actually is 7.0.0 -->
 		<google.inject.guice.version>7.0.0</google.inject.guice.version>
 		<google.maps.services.version>2.2.0</google.maps.services.version>
-		<google.protobuf.java.version>4.26.0</google.protobuf.java.version>
+		<google.protobuf.java.version>4.27.0-RC3</google.protobuf.java.version>
 		<h2.database.version>2.2.224</h2.database.version>
 		<hazelcast.version>5.4.0</hazelcast.version>
 		<hikari.cp.version>5.1.0</hikari.cp.version>
@@ -201,9 +201,9 @@
 		<logback.version>1.5.6</logback.version> <!-- was 1.2.3 -->
 		<logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
 		<lombok.version>1.18.32</lombok.version>
-		<mariadb.java.client.version>3.3.3</mariadb.java.client.version>
+		<mariadb.java.client.version>3.4.0</mariadb.java.client.version>
 		<mockito.core.version>2.21.0</mockito.core.version>
-		<mockito.version>5.11.0</mockito.version>
+		<mockito.version>5.12.0</mockito.version>
 		<moditect.maven.plugin.version>1.2.1.Final</moditect.maven.plugin.version>
 		<moshi.version>1.15.1</moshi.version>
 		<mybatis.version>3.5.16</mybatis.version>
@@ -212,7 +212,7 @@
 		<nexus.staging.maven.plugin.version>1.6.7</nexus.staging.maven.plugin.version>
 		<opencsv.version>5.9</opencsv.version>
 		<org.immutables.version>2.10.1</org.immutables.version>
-		<owasp.dependency.check.maven.version>9.1.0</owasp.dependency.check.maven.version>
+		<owasp.dependency.check.maven.version>9.2.0</owasp.dependency.check.maven.version>
 		<pax.url.version>2.6.14</pax.url.version>
 		<play2.maven.plugin.version>1.0.0-rc2</play2.maven.plugin.version>
 		<play2.version>2.7.0</play2.version>
@@ -234,7 +234,7 @@
 		<spotbugs.version>4.8.5</spotbugs.version>
 		<spotify.dataenum.version>1.5.0</spotify.dataenum.version>
 		<spring.boot.maven.plugin.version>3.2.5</spring.boot.maven.plugin.version>
-		<spring.version>6.1.6</spring.version>
+		<spring.version>6.1.7</spring.version>
 		<spring.boot.version>3.2.5</spring.boot.version>
 		<sqlite.jdbc.version>3.45.3.0</sqlite.jdbc.version>
 		<tika.version>3.0.0-BETA</tika.version>
