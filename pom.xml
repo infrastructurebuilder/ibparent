@@ -55,16 +55,16 @@
 		<maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
 		<maven.eclipse.plugin.version>2.10</maven.eclipse.plugin.version>
 		<maven.failsafe.plugin.version>3.2.5</maven.failsafe.plugin.version>
-		<maven.javadoc.plugin.version>3.6.3</maven.javadoc.plugin.version>
+		<maven.javadoc.plugin.version>3.7.0</maven.javadoc.plugin.version>
 		<maven.jdepend.plugin.version>2.0</maven.jdepend.plugin.version>
 		<maven.jxr.plugin.version>2.5</maven.jxr.plugin.version>
 		<maven.modello.plugin.version>2.4.0</maven.modello.plugin.version>
 		<maven.plexus.component.metadata.version>2.2.0</maven.plexus.component.metadata.version>
 		<maven.plugin.annotations.version>3.6.1</maven.plugin.annotations.version>
-		<maven.plugin.plugin.version>3.13.0</maven.plugin.plugin.version>
+		<maven.plugin.plugin.version>3.13.1</maven.plugin.plugin.version>
 		<maven.pmd.plugin.version>3.10.0</maven.pmd.plugin.version>
-		<maven.shade.plugin.version>3.5.3</maven.shade.plugin.version>
-		<maven.sisu.plugin.version>0.9.0.M2</maven.sisu.plugin.version>
+		<maven.shade.plugin.version>3.6.0</maven.shade.plugin.version>
+		<maven.sisu.plugin.version>0.9.0.M3</maven.sisu.plugin.version>
 		<maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>
 		<maven.surefire.report.plugin.version>2.2.0</maven.surefire.report.plugin.version>
 		<maven.taglist.plugin.version>2.4</maven.taglist.plugin.version>
@@ -89,16 +89,16 @@
 		<apache.shiro.version>1.13.0</apache.shiro.version>
 		<apiguardian.api.version>1.1.2</apiguardian.api.version>
 		<aspectj.version>1.9.22.1</aspectj.version>
-		<assertj.core.version>3.25.3</assertj.core.version>
+		<assertj.core.version>3.26.0</assertj.core.version>
 		<avaje.jsr305.version>1.2</avaje.jsr305.version>
 		<avro.core.version>1.11.3</avro.core.version>
-		<aws.sdk.version>1.12.724</aws.sdk.version>
-		<aws.sdkv2.bom.version>2.25.55</aws.sdkv2.bom.version>
+		<aws.sdk.version>1.12.737</aws.sdk.version>
+		<aws.sdkv2.bom.version>2.25.67</aws.sdkv2.bom.version>
 		<bettercloud.vault.version>5.1.0</bettercloud.vault.version>
 		<better.files.version>2.17.1</better.files.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
 		<chronicle.map.version>3.25ea6</chronicle.map.version>
-		<classgraph.version>4.8.172</classgraph.version>
+		<classgraph.version>4.8.173</classgraph.version>
 		<commons.beanutils.version>1.9.4</commons.beanutils.version>
 		<commons.dbcp.version>1.4</commons.dbcp.version>
 		<commons.dbcp2.version>2.12.0</commons.dbcp2.version>
@@ -122,9 +122,9 @@
 		<findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
 		<fge.json.schema.validator>2.2.8</fge.json.schema.validator>
 		<fluent.hc.version>4.5.14</fluent.hc.version>
-		<formatter.plugin.version>2.23.0</formatter.plugin.version>
+		<formatter.plugin.version>2.24.1</formatter.plugin.version>
 		<formatter.config.location>${user.home}/.ibstyle-eclipse.xml</formatter.config.location>
-		<freemarker.version>2.3.32</freemarker.version>
+		<freemarker.version>2.3.33</freemarker.version>
 		<functional.java.version>5.0</functional.java.version>
 		<github.host>github.com</github.host>
 		<github.url.base>https://${github.host}/${team.group.id}</github.url.base>
@@ -133,11 +133,11 @@
 		<github.site.plugin.version>0.11</github.site.plugin.version>
 		<gmavenplus.plugin.version>3.0.2</gmavenplus.plugin.version>
 		<google.dagger.version>2.51.1</google.dagger.version>
-		<google.guava.version>33.2.0-jre</google.guava.version>
+		<google.guava.version>33.2.1-jre</google.guava.version>
 		<!-- Not latest.  Actually is 7.0.0 -->
 		<google.inject.guice.version>7.0.0</google.inject.guice.version>
 		<google.maps.services.version>2.2.0</google.maps.services.version>
-		<google.protobuf.java.version>4.27.0-RC3</google.protobuf.java.version>
+		<google.protobuf.java.version>4.27.0</google.protobuf.java.version>
 		<h2.database.version>2.2.224</h2.database.version>
 		<hazelcast.version>5.4.0</hazelcast.version>
 		<hikari.cp.version>5.1.0</hikari.cp.version>
@@ -179,7 +179,7 @@
 		<joda.convert.version>2.2.3</joda.convert.version>
 		<joda.time.version>2.12.7</joda.time.version>
 		<jooq.jool.version>0.9.15</jooq.jool.version>
-		<jooq.jooq.version>3.19.8</jooq.jooq.version>
+		<jooq.jooq.version>3.19.9</jooq.jooq.version>
 		<jooq.joor.version>0.9.15</jooq.joor.version>
 		<jooq.joox.version>1.6.2</jooq.joox.version>
 		<jpastreamer.version>3.0.4</jpastreamer.version>
@@ -196,7 +196,7 @@
 		<kafka.version>3.7.0</kafka.version>
 		<kamon.version>0.6.5</kamon.version>
 		<kohsuke.github.api.version>1.321</kohsuke.github.api.version>
-		<kotlin.version>1.9.20</kotlin.version>
+		<kotlin.version>2.0.0</kotlin.version>
 		<lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
 		<logback.version>1.5.6</logback.version> <!-- was 1.2.3 -->
 		<logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
@@ -233,10 +233,10 @@
 		<spotbugs.maven.plugin.version>4.8.5.0</spotbugs.maven.plugin.version>
 		<spotbugs.version>4.8.5</spotbugs.version>
 		<spotify.dataenum.version>1.5.0</spotify.dataenum.version>
-		<spring.boot.maven.plugin.version>3.2.5</spring.boot.maven.plugin.version>
-		<spring.version>6.1.7</spring.version>
-		<spring.boot.version>3.2.5</spring.boot.version>
-		<sqlite.jdbc.version>3.45.3.0</sqlite.jdbc.version>
+		<spring.boot.maven.plugin.version>3.3.0</spring.boot.maven.plugin.version>
+		<spring.version>6.1.8</spring.version>
+		<spring.boot.version>3.3.0</spring.boot.version>
+		<sqlite.jdbc.version>3.46.0.0</sqlite.jdbc.version>
 		<tika.version>3.0.0-BETA</tika.version>
 		<trove4j.version>3.0.3</trove4j.version>
 		<typesafe.config.version>1.4.3</typesafe.config.version>
@@ -247,7 +247,7 @@
 		<vertx.guice.version>2.3.1</vertx.guice.version>
 		<vertx.jooq.version>6.2.0</vertx.jooq.version>
 		<vertx.maven.plugin.version>1.0.28</vertx.maven.plugin.version>
-		<vertx.version>4.5.7</vertx.version>
+		<vertx.version>4.5.8</vertx.version>
 		<webjars.emberjs.data.version>1.0.1-beta.11</webjars.emberjs.data.version>
 		<webjars.emberjs.version>1.12.0</webjars.emberjs.version>
 		<webjars.handlebars.version>4.7.7</webjars.handlebars.version>
