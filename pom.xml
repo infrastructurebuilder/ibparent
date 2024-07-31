@@ -92,8 +92,8 @@
 		<assertj.core.version>3.26.3</assertj.core.version>
 		<avaje.jsr305.version>1.2</avaje.jsr305.version>
 		<avro.core.version>1.11.3</avro.core.version>
-		<aws.sdk.version>1.12.764</aws.sdk.version>
-		<aws.sdkv2.bom.version>2.26.24</aws.sdkv2.bom.version>
+		<aws.sdk.version>1.12.767</aws.sdk.version>
+		<aws.sdkv2.bom.version>2.26.27</aws.sdkv2.bom.version>
 		<bettercloud.vault.version>5.1.0</bettercloud.vault.version>
 		<better.files.version>2.17.1</better.files.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
@@ -193,13 +193,13 @@
 		<junit.interface.version>0.11</junit.interface.version>
 		<junit.jupiter.version>5.10.2</junit.jupiter.version>
 		<junit.platform.maven.plugin.version>1.1.7</junit.platform.maven.plugin.version>
-		<kafka.version>3.7.1</kafka.version>
+		<kafka.version>3.8.0</kafka.version>
 		<kamon.version>0.6.5</kamon.version>
 		<kohsuke.github.api.version>1.323</kohsuke.github.api.version>
 		<kotlin.version>2.0.20-Beta2</kotlin.version>
 		<lambdaworks.jacks.version>2.5.2</lambdaworks.jacks.version>
 		<logback.version>1.5.6</logback.version> <!-- was 1.2.3 -->
-		<logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
+		<logstash.logback.encoder.version>8.0</logstash.logback.encoder.version>
 		<lombok.version>1.18.34</lombok.version>
 		<mariadb.java.client.version>3.4.1</mariadb.java.client.version>
 		<mockito.core.version>2.21.0</mockito.core.version>
@@ -236,7 +236,7 @@
 		<spring.boot.maven.plugin.version>3.3.2</spring.boot.maven.plugin.version>
 		<spring.version>6.1.11</spring.version>
 		<spring.boot.version>3.3.2</spring.boot.version>
-		<sqlite.jdbc.version>3.46.0.0</sqlite.jdbc.version>
+		<sqlite.jdbc.version>3.46.0.1</sqlite.jdbc.version>
 		<tika.version>3.0.0-BETA2</tika.version>
 		<trove4j.version>3.0.3</trove4j.version>
 		<typesafe.config.version>1.4.3</typesafe.config.version>
