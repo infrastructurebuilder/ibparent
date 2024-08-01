@@ -18,9 +18,7 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -30,7 +28,7 @@
 	</parent>
 
 	<artifactId>ibparent</artifactId>
-	<version>102-SNAPSHOT</version>
+	<version>102</version>
 	<packaging>pom</packaging>
 
 	<url>${ib.site.view.url}/</url>
@@ -43,7 +41,7 @@
 		<connection>scm:git:${git.url}</connection>
 		<developerConnection>scm:git:${git.url}</developerConnection>
 		<url>${git.scm.url}</url>
-		<tag>HEAD</tag>
+		<tag>ibparent-102</tag>
 	</scm>
 	<issueManagement>
 		<url>${github.url.base}/ibparent/issues</url>
